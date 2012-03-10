@@ -1,0 +1,313 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B1CCF6DD150BD81300007A33 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF6DC150BD81300007A33 /* UIKit.framework */; };
+		B1CCF6DF150BD81300007A33 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF6DE150BD81300007A33 /* Foundation.framework */; };
+		B1CCF6E1150BD81300007A33 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF6E0150BD81300007A33 /* CoreGraphics.framework */; };
+		B1CCF6E7150BD81300007A33 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1CCF6E5150BD81300007A33 /* InfoPlist.strings */; };
+		B1CCF6E9150BD81300007A33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CCF6E8150BD81300007A33 /* main.m */; };
+		B1CCF6ED150BD81300007A33 /* VKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CCF6EC150BD81300007A33 /* VKAppDelegate.m */; };
+		B1CCF6F0150BD81300007A33 /* VKFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CCF6EF150BD81300007A33 /* VKFirstViewController.m */; };
+		B1CCF6F2150BD81300007A33 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = B1CCF6F1150BD81300007A33 /* first.png */; };
+		B1CCF6F4150BD81300007A33 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1CCF6F3150BD81300007A33 /* first@2x.png */; };
+		B1CCF6F7150BD81300007A33 /* VKSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CCF6F6150BD81300007A33 /* VKSecondViewController.m */; };
+		B1CCF6F9150BD81300007A33 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = B1CCF6F8150BD81300007A33 /* second.png */; };
+		B1CCF6FB150BD81300007A33 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1CCF6FA150BD81300007A33 /* second@2x.png */; };
+		B1CCF6FE150BD81300007A33 /* VKFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1CCF6FC150BD81300007A33 /* VKFirstViewController.xib */; };
+		B1CCF701150BD81300007A33 /* VKSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1CCF6FF150BD81300007A33 /* VKSecondViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B1CCF6D8150BD81300007A33 /* vkmessanger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vkmessanger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1CCF6DC150BD81300007A33 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B1CCF6DE150BD81300007A33 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B1CCF6E0150BD81300007A33 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B1CCF6E4150BD81300007A33 /* vkmessanger-Info.plist */ = {isa = PBXFileReference; path = "vkmessanger-Info.plist"; sourceTree = "<group>"; };
+		B1CCF6E6150BD81300007A33 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B1CCF6E8150BD81300007A33 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B1CCF6EA150BD81300007A33 /* vkmessanger-Prefix.pch */ = {isa = PBXFileReference; path = "vkmessanger-Prefix.pch"; sourceTree = "<group>"; };
+		B1CCF6EB150BD81300007A33 /* VKAppDelegate.h */ = {isa = PBXFileReference; path = VKAppDelegate.h; sourceTree = "<group>"; };
+		B1CCF6EC150BD81300007A33 /* VKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VKAppDelegate.m; sourceTree = "<group>"; };
+		B1CCF6EE150BD81300007A33 /* VKFirstViewController.h */ = {isa = PBXFileReference; path = VKFirstViewController.h; sourceTree = "<group>"; };
+		B1CCF6EF150BD81300007A33 /* VKFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VKFirstViewController.m; sourceTree = "<group>"; };
+		B1CCF6F1150BD81300007A33 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		B1CCF6F3150BD81300007A33 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		B1CCF6F5150BD81300007A33 /* VKSecondViewController.h */ = {isa = PBXFileReference; path = VKSecondViewController.h; sourceTree = "<group>"; };
+		B1CCF6F6150BD81300007A33 /* VKSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VKSecondViewController.m; sourceTree = "<group>"; };
+		B1CCF6F8150BD81300007A33 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		B1CCF6FA150BD81300007A33 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		B1CCF6FD150BD81300007A33 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/VKFirstViewController.xib; sourceTree = "<group>"; };
+		B1CCF700150BD81300007A33 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/VKSecondViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1CCF6D5150BD81300007A33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1CCF6DD150BD81300007A33 /* UIKit.framework in Frameworks */,
+				B1CCF6DF150BD81300007A33 /* Foundation.framework in Frameworks */,
+				B1CCF6E1150BD81300007A33 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B1CCF6CD150BD81200007A33 = {
+			isa = PBXGroup;
+			children = (
+				B1CCF6E2150BD81300007A33 /* vkmessanger */,
+				B1CCF6DB150BD81300007A33 /* Frameworks */,
+				B1CCF6D9150BD81300007A33 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B1CCF6D9150BD81300007A33 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1CCF6D8150BD81300007A33 /* vkmessanger.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1CCF6DB150BD81300007A33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1CCF6DC150BD81300007A33 /* UIKit.framework */,
+				B1CCF6DE150BD81300007A33 /* Foundation.framework */,
+				B1CCF6E0150BD81300007A33 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1CCF6E2150BD81300007A33 /* vkmessanger */ = {
+			isa = PBXGroup;
+			children = (
+				B1CCF6EB150BD81300007A33 /* VKAppDelegate.h */,
+				B1CCF6EC150BD81300007A33 /* VKAppDelegate.m */,
+				B1CCF6EE150BD81300007A33 /* VKFirstViewController.h */,
+				B1CCF6EF150BD81300007A33 /* VKFirstViewController.m */,
+				B1CCF6F1150BD81300007A33 /* first.png */,
+				B1CCF6F3150BD81300007A33 /* first@2x.png */,
+				B1CCF6F5150BD81300007A33 /* VKSecondViewController.h */,
+				B1CCF6F6150BD81300007A33 /* VKSecondViewController.m */,
+				B1CCF6F8150BD81300007A33 /* second.png */,
+				B1CCF6FA150BD81300007A33 /* second@2x.png */,
+				B1CCF6FC150BD81300007A33 /* VKFirstViewController.xib */,
+				B1CCF6FF150BD81300007A33 /* VKSecondViewController.xib */,
+				B1CCF6E3150BD81300007A33 /* Supporting Files */,
+			);
+			path = vkmessanger;
+			sourceTree = "<group>";
+		};
+		B1CCF6E3150BD81300007A33 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1CCF6E4150BD81300007A33 /* vkmessanger-Info.plist */,
+				B1CCF6E5150BD81300007A33 /* InfoPlist.strings */,
+				B1CCF6E8150BD81300007A33 /* main.m */,
+				B1CCF6EA150BD81300007A33 /* vkmessanger-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1CCF6D7150BD81300007A33 /* vkmessanger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1CCF704150BD81300007A33 /* Build configuration list for PBXNativeTarget "vkmessanger" */;
+			buildPhases = (
+				B1CCF6D4150BD81300007A33 /* Sources */,
+				B1CCF6D5150BD81300007A33 /* Frameworks */,
+				B1CCF6D6150BD81300007A33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vkmessanger;
+			productName = vkmessanger;
+			productReference = B1CCF6D8150BD81300007A33 /* vkmessanger.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1CCF6CF150BD81200007A33 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = B1CCF6D2150BD81200007A33 /* Build configuration list for PBXProject "vkmessanger" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B1CCF6CD150BD81200007A33;
+			productRefGroup = B1CCF6D9150BD81300007A33 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1CCF6D7150BD81300007A33 /* vkmessanger */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1CCF6D6150BD81300007A33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1CCF6E7150BD81300007A33 /* InfoPlist.strings in Resources */,
+				B1CCF6F2150BD81300007A33 /* first.png in Resources */,
+				B1CCF6F4150BD81300007A33 /* first@2x.png in Resources */,
+				B1CCF6F9150BD81300007A33 /* second.png in Resources */,
+				B1CCF6FB150BD81300007A33 /* second@2x.png in Resources */,
+				B1CCF6FE150BD81300007A33 /* VKFirstViewController.xib in Resources */,
+				B1CCF701150BD81300007A33 /* VKSecondViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1CCF6D4150BD81300007A33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1CCF6E9150BD81300007A33 /* main.m in Sources */,
+				B1CCF6ED150BD81300007A33 /* VKAppDelegate.m in Sources */,
+				B1CCF6F0150BD81300007A33 /* VKFirstViewController.m in Sources */,
+				B1CCF6F7150BD81300007A33 /* VKSecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B1CCF6E5150BD81300007A33 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1CCF6E6150BD81300007A33 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B1CCF6FC150BD81300007A33 /* VKFirstViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1CCF6FD150BD81300007A33 /* en */,
+			);
+			name = VKFirstViewController.xib;
+			sourceTree = "<group>";
+		};
+		B1CCF6FF150BD81300007A33 /* VKSecondViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1CCF700150BD81300007A33 /* en */,
+			);
+			name = VKSecondViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B1CCF702150BD81300007A33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B1CCF703150BD81300007A33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B1CCF705150BD81300007A33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "vkmessanger/vkmessanger-Prefix.pch";
+				INFOPLIST_FILE = "vkmessanger/vkmessanger-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B1CCF706150BD81300007A33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "vkmessanger/vkmessanger-Prefix.pch";
+				INFOPLIST_FILE = "vkmessanger/vkmessanger-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1CCF6D2150BD81200007A33 /* Build configuration list for PBXProject "vkmessanger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1CCF702150BD81300007A33 /* Debug */,
+				B1CCF703150BD81300007A33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1CCF704150BD81300007A33 /* Build configuration list for PBXNativeTarget "vkmessanger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1CCF705150BD81300007A33 /* Debug */,
+				B1CCF706150BD81300007A33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1CCF6CF150BD81200007A33 /* Project object */;
+}
