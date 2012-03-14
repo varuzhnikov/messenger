@@ -45,7 +45,6 @@
 		B1CCF742150BD93600007A33 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF6E0150BD81300007A33 /* CoreGraphics.framework */; };
 		B1CCF748150BD93600007A33 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1CCF746150BD93600007A33 /* InfoPlist.strings */; };
 		B1CCF74A150BD93600007A33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CCF749150BD93600007A33 /* main.m */; };
-		B1CCF753150BDAF500007A33 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF752150BDAF500007A33 /* GHUnitIOS.framework */; };
 		B1CCF773150BDDF100007A33 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CCF75B150BDDF100007A33 /* NSObject+SBJson.m */; };
 		B1CCF774150BDDF100007A33 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CCF75B150BDDF100007A33 /* NSObject+SBJson.m */; };
 		B1CCF775150BDDF100007A33 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CCF75E150BDDF100007A33 /* SBJsonParser.m */; };
@@ -179,7 +178,6 @@
 		B1CCF747150BD93600007A33 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B1CCF749150BD93600007A33 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B1CCF74B150BD93600007A33 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		B1CCF752150BDAF500007A33 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GHUnitIOS.framework; sourceTree = "<group>"; };
 		B1CCF75A150BDDF100007A33 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
 		B1CCF75B150BDDF100007A33 /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
 		B1CCF75C150BDDF100007A33 /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
@@ -295,7 +293,6 @@
 				B1CCF740150BD93600007A33 /* UIKit.framework in Frameworks */,
 				B1CCF741150BD93600007A33 /* Foundation.framework in Frameworks */,
 				B1CCF742150BD93600007A33 /* CoreGraphics.framework in Frameworks */,
-				B1CCF753150BDAF500007A33 /* GHUnitIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +364,6 @@
 		B1CCF707150BD8A000007A33 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
-				B1CCF752150BDAF500007A33 /* GHUnitIOS.framework */,
 				B1CCF708150BD8A000007A33 /* ASIHTTPRequest */,
 				B1F98BE3150F945E0044B491 /* Oxen */,
 			);
