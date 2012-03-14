@@ -6,7 +6,7 @@
 
 
 #import <Foundation/Foundation.h>
-#import <GHUnitIOS/GHAsyncTestCase.h>
+#import "GHUnitIOS/GHAsyncTestCase.h"
 
 @class ASIHTTPRequest;
 
