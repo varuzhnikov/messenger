@@ -13,6 +13,7 @@
 		B12BEA0E15108A06006B2592 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B5856B /* libxml2.dylib */; };
 		B12BEA1015108A61006B2592 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12BEA0F15108A61006B2592 /* CoreData.framework */; };
 		B12BEA1115108A68006B2592 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12BEA0F15108A61006B2592 /* CoreData.framework */; };
+		B14E26F11511288E00345AF3 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B14E26F01511288E00345AF3 /* GHUnitIOS.framework */; };
 		B1A89BCD150E2E5D0068BD8C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF797150BDEE000007A33 /* CFNetwork.framework */; };
 		B1A89BCF150E2E680068BD8C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF79D150BDF0500007A33 /* libz.dylib */; };
 		B1A89BD0150E2E8B0068BD8C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF79B150BDEF300007A33 /* MobileCoreServices.framework */; };
@@ -131,6 +132,7 @@
 /* Begin PBXFileReference section */
 		B1186C8D1510D4D70057237B /* RunTests.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = RunTests.sh; sourceTree = "<group>"; };
 		B12BEA0F15108A61006B2592 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B14E26F01511288E00345AF3 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = vkmessanger/Libs/GHUnitIOS.framework; sourceTree = "<group>"; };
 		B1CCF6D8150BD81300007A33 /* vkmessanger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vkmessanger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1CCF6DC150BD81300007A33 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B1CCF6DE150BD81300007A33 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -284,6 +286,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B14E26F11511288E00345AF3 /* GHUnitIOS.framework in Frameworks */,
 				B12BEA1115108A68006B2592 /* CoreData.framework in Frameworks */,
 				B12BEA0E15108A06006B2592 /* libxml2.dylib in Frameworks */,
 				B1CCF79E150BDF0500007A33 /* libz.dylib in Frameworks */,
@@ -302,6 +305,7 @@
 		B1CCF6CD150BD81200007A33 = {
 			isa = PBXGroup;
 			children = (
+				B14E26F01511288E00345AF3 /* GHUnitIOS.framework */,
 				B12BEA0F15108A61006B2592 /* CoreData.framework */,
 				B1E6CBC4151084F000B5856B /* libxml2.dylib */,
 				B1CCF79D150BDF0500007A33 /* libz.dylib */,
