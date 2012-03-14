@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/139/trunk/main/Classes/Container
+END
+OxICThreadLocalProxyFactoryObject.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/138/trunk/main/Classes/Container/OxICThreadLocalProxyFactoryObject.m
+END
+OxICDefaultFactoryObject.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/33/trunk/main/Classes/Container/OxICDefaultFactoryObject.m
+END
+OxICXmlContainerBuilder.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/109/trunk/main/Classes/Container/OxICXmlContainerBuilder.h
+END
+OxICObjectDefinition.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/16/trunk/main/Classes/Container/OxICObjectDefinition.h
+END
+OxICXmlContainerBuilder.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/109/trunk/main/Classes/Container/OxICXmlContainerBuilder.m
+END
+OxICLazyProxy.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/14/trunk/main/Classes/Container/OxICLazyProxy.h
+END
+OxICContainer.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/32/trunk/main/Classes/Container/OxICContainer.h
+END
+OxICManagedObjectModelFactoryObject.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/16/trunk/main/Classes/Container/OxICManagedObjectModelFactoryObject.h
+END
+OxICThreadLocalProxy.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/138/trunk/main/Classes/Container/OxICThreadLocalProxy.h
+END
+OxICObjectDefinition.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/16/trunk/main/Classes/Container/OxICObjectDefinition.m
+END
+OxICContainerBuilderDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/2/trunk/main/Classes/Container/OxICContainerBuilderDelegate.h
+END
+OxICLazyProxy.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/32/trunk/main/Classes/Container/OxICLazyProxy.m
+END
+OxICContainer.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/138/trunk/main/Classes/Container/OxICContainer.m
+END
+OxICNibFactoryObject.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/14/trunk/main/Classes/Container/OxICNibFactoryObject.h
+END
+OxICManagedObjectModelFactoryObject.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/16/trunk/main/Classes/Container/OxICManagedObjectModelFactoryObject.m
+END
+OxICThreadLocalProxy.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/138/trunk/main/Classes/Container/OxICThreadLocalProxy.m
+END
+OxICNibFactoryObject.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/16/trunk/main/Classes/Container/OxICNibFactoryObject.m
+END
+OxICViewControllerFactoryObject.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/34/trunk/main/Classes/Container/OxICViewControllerFactoryObject.h
+END
+OxICFactoryObject.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/14/trunk/main/Classes/Container/OxICFactoryObject.h
+END
+OxICLazyProxyFactoryObject.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/139/trunk/main/Classes/Container/OxICLazyProxyFactoryObject.h
+END
+OxICPersistentStoreCoordinatorFactoryObject.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/16/trunk/main/Classes/Container/OxICPersistentStoreCoordinatorFactoryObject.h
+END
+OxICViewControllerFactoryObject.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/109/trunk/main/Classes/Container/OxICViewControllerFactoryObject.m
+END
+OxICThreadLocalProxyFactoryObject.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/138/trunk/main/Classes/Container/OxICThreadLocalProxyFactoryObject.h
+END
+OxICDefaultFactoryObject.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/14/trunk/main/Classes/Container/OxICDefaultFactoryObject.h
+END
+OxICLazyProxyFactoryObject.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/139/trunk/main/Classes/Container/OxICLazyProxyFactoryObject.m
+END
+OxICPersistentStoreCoordinatorFactoryObject.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/16/trunk/main/Classes/Container/OxICPersistentStoreCoordinatorFactoryObject.m
+END

@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VKAppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate>
+@class OxICContainer;
+
+@interface VKAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
-@property (strong, nonatomic) UITabBarController *tabBarController;
+@property (nonatomic, retain) OxICContainer *container;
 
 @end
