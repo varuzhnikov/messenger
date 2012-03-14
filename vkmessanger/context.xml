@@ -1,0 +1,9 @@
+<contanier>
+	<!-- Service layer -->
+	<object id="theService" class="ExampleServiceImpl2" lazy="false"/>
+	
+	<!-- The executor -->
+	<object id="theExecutor" class="ServiceExecutorImpl1">
+		<property name="service" ref="theService"/>
+	</object>
+</contanier>
