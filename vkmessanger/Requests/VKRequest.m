@@ -11,9 +11,9 @@
 @interface VKRequest ()
 @property(nonatomic, readonly) NSString *urlString;
 
-- (void)addAllGETParams:(NSMutableString *)resultURL;
+- (void)addAllGETParamsTo:(NSMutableString *)resultURL;
 
-- (void)removeLastHttpGETDelimiter:(NSMutableString *)resultURL;
+- (void)removeLastHttpGETDelimiterFrom:(NSMutableString *)resultURL;
 
 - (BOOL)hasNotGETParams;
 
@@ -64,12 +64,12 @@
         return [NSURL URLWithString:self.urlString];
     }
     
-    [self addAllGETParams:resultURL];
+    [self addAllGETParamsTo:resultURL];
 
     return [NSURL URLWithString:resultURL];
 }
 
-- (void)addAllGETParams:(NSMutableString *)resultURL {
+- (void)addAllGETParamsTo:(NSMutableString *)resultURL {
     [resultURL appendString:GET_PARAMETERS_DELIMETER];
 
     for (NSString *name in [GETParameters allKeys]) {
@@ -78,11 +78,11 @@
         [resultURL appendString:[NSString stringWithFormat:@"%@=%@", name, encodedParamValue]];
         [resultURL appendString:HTTP_GET_PARAMS_DELIMETER];
     }
-    [self removeLastHttpGETDelimiter:resultURL];
+    [self removeLastHttpGETDelimiterFrom:resultURL];
 }
 
 
-- (void)removeLastHttpGETDelimiter:(NSMutableString *)resultURL {
+- (void)removeLastHttpGETDelimiterFrom:(NSMutableString *)resultURL {
     NSRange range = NSMakeRange([resultURL length] - 1, 1);
     [resultURL deleteCharactersInRange:range];
 }
