@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/138/trunk/main/Classes/Wrapper/API
+END
+OxICClassWrapper.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/35/trunk/main/Classes/Wrapper/API/OxICClassWrapper.h
+END
+OxICObjectWrapper.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/2/trunk/main/Classes/Wrapper/API/OxICObjectWrapper.h
+END
+OxICWrapperFactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/2/trunk/main/Classes/Wrapper/API/OxICWrapperFactory.h
+END
+OxICPropertyDescriptor.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/138/trunk/main/Classes/Wrapper/API/OxICPropertyDescriptor.m
+END
+OxICPropertyDescriptor.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/138/trunk/main/Classes/Wrapper/API/OxICPropertyDescriptor.h
+END
