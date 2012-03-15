@@ -7,6 +7,7 @@
 
 #import "VKServiceAPITest.h"
 #import "ASIHTTPRequest.h"
+#import "VKServiceAPI.h"
 
 
 @implementation VKServiceAPITest {

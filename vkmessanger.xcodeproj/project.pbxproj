@@ -116,6 +116,11 @@
 		B1F98BE3150F945E0044B497 /* ExampleServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F98BE3150F945E0044B495 /* ExampleServiceImpl.m */; };
 		B1F98BE3150F945E0044B4A3 /* ServiceExecutorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F98BE3150F945E0044B4A2 /* ServiceExecutorImpl.m */; };
 		B1F98BE3150F945E0044B4A4 /* ServiceExecutorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F98BE3150F945E0044B4A2 /* ServiceExecutorImpl.m */; };
+		B1F98BE3150F945E0044B4A6 /* VKServiceAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F98BE3150F945E0044B4A5 /* VKServiceAPI.m */; };
+		B1F98BE3150F945E0044B4A7 /* VKServiceAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F98BE3150F945E0044B4A5 /* VKServiceAPI.m */; };
+		B1F98BE3150F945E0044B4AB /* VKRequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F98BE3150F945E0044B4AA /* VKRequestTest.m */; };
+		B1F98BE3150F945E0044B4AE /* VKRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F98BE3150F945E0044B4AD /* VKRequest.m */; };
+		B1F98BE3150F945E0044B4AF /* VKRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F98BE3150F945E0044B4AD /* VKRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -241,6 +246,12 @@
 		B1F98BE3150F945E0044B49C /* ServiceExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceExecutor.h; sourceTree = "<group>"; };
 		B1F98BE3150F945E0044B4A1 /* ServiceExecutorImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceExecutorImpl.h; sourceTree = "<group>"; };
 		B1F98BE3150F945E0044B4A2 /* ServiceExecutorImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceExecutorImpl.m; sourceTree = "<group>"; };
+		B1F98BE3150F945E0044B4A5 /* VKServiceAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VKServiceAPI.m; path = vkmessanger/VKServiceAPI/VKServiceAPI.m; sourceTree = SOURCE_ROOT; };
+		B1F98BE3150F945E0044B4A8 /* VKServiceAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VKServiceAPI.h; path = vkmessanger/VKServiceAPI/VKServiceAPI.h; sourceTree = SOURCE_ROOT; };
+		B1F98BE3150F945E0044B4AA /* VKRequestTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKRequestTest.m; sourceTree = "<group>"; };
+		B1F98BE3150F945E0044B4AC /* VKRequestTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKRequestTest.h; sourceTree = "<group>"; };
+		B1F98BE3150F945E0044B4AD /* VKRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VKRequest.m; path = vkmessanger/Requests/VKRequest.m; sourceTree = SOURCE_ROOT; };
+		B1F98BE3150F945E0044B4B0 /* VKRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VKRequest.h; path = vkmessanger/Requests/VKRequest.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -343,6 +354,7 @@
 				B1CCF6E3150BD81300007A33 /* Supporting Files */,
 				B1CCF79E150BDF0500007A35 /* Resources */,
 				B1F98BE3150F945E0044B492 /* ExampleIoC */,
+				B1F98BE3150F945E0044B4B1 /* Requests */,
 			);
 			path = vkmessanger;
 			sourceTree = "<group>";
@@ -404,6 +416,7 @@
 				B1186C8D1510D4D70057237B /* RunTests.sh */,
 				B1CCF744150BD93600007A33 /* Supporting Files */,
 				B1CCF79E150BDF0500007A36 /* VKServiceAPI */,
+				B1F98BE3150F945E0044B4A9 /* Requests */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -480,6 +493,8 @@
 		B1CCF79E150BDF0500007A36 /* VKServiceAPI */ = {
 			isa = PBXGroup;
 			children = (
+				B1F98BE3150F945E0044B4A8 /* VKServiceAPI.h */,
+				B1F98BE3150F945E0044B4A5 /* VKServiceAPI.m */,
 				B1CCF79E150BDF0500007A39 /* VKServiceAPITest.h */,
 				B1CCF79E150BDF0500007A37 /* VKServiceAPITest.m */,
 			);
@@ -575,6 +590,24 @@
 				B1F98BE3150F945E0044B493 /* ExampleService.h */,
 			);
 			path = ExampleIoC;
+			sourceTree = "<group>";
+		};
+		B1F98BE3150F945E0044B4A9 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				B1F98BE3150F945E0044B4AC /* VKRequestTest.h */,
+				B1F98BE3150F945E0044B4AA /* VKRequestTest.m */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		B1F98BE3150F945E0044B4B1 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				B1F98BE3150F945E0044B4B0 /* VKRequest.h */,
+				B1F98BE3150F945E0044B4AD /* VKRequest.m */,
+			);
+			path = Requests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -732,6 +765,8 @@
 				B1F98BE3150F945E0044B48F /* OxICSimpleWrapperFactory.m in Sources */,
 				B1F98BE3150F945E0044B496 /* ExampleServiceImpl.m in Sources */,
 				B1F98BE3150F945E0044B4A3 /* ServiceExecutorImpl.m in Sources */,
+				B1F98BE3150F945E0044B4A6 /* VKServiceAPI.m in Sources */,
+				B1F98BE3150F945E0044B4AE /* VKRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -777,6 +812,9 @@
 				B1F98BE3150F945E0044B490 /* OxICSimpleWrapperFactory.m in Sources */,
 				B1F98BE3150F945E0044B497 /* ExampleServiceImpl.m in Sources */,
 				B1F98BE3150F945E0044B4A4 /* ServiceExecutorImpl.m in Sources */,
+				B1F98BE3150F945E0044B4A7 /* VKServiceAPI.m in Sources */,
+				B1F98BE3150F945E0044B4AB /* VKRequestTest.m in Sources */,
+				B1F98BE3150F945E0044B4AF /* VKRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
