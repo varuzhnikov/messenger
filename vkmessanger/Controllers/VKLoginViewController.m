@@ -7,8 +7,6 @@
 //
 
 #import "VKLoginViewController.h"
-#import "VKSecondViewController.h"
-#import "VKFirstViewController.h"
 #import "VKApplicationController.h"
 
 @implementation VKLoginViewController
