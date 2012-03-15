@@ -21,7 +21,6 @@
 		B1CCF6DD150BD81300007A33 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF6DC150BD81300007A33 /* UIKit.framework */; };
 		B1CCF6DF150BD81300007A33 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF6DE150BD81300007A33 /* Foundation.framework */; };
 		B1CCF6E1150BD81300007A33 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF6E0150BD81300007A33 /* CoreGraphics.framework */; };
-		B1CCF6E7150BD81300007A33 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1CCF6E5150BD81300007A33 /* InfoPlist.strings */; };
 		B1CCF6E9150BD81300007A33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CCF6E8150BD81300007A33 /* main.m */; };
 		B1CCF6ED150BD81300007A33 /* VKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CCF6EC150BD81300007A33 /* VKAppDelegate.m */; };
 		B1CCF6F0150BD81300007A33 /* VKFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CCF6EF150BD81300007A33 /* VKFirstViewController.m */; };
@@ -85,7 +84,7 @@
 		B1CCF79E150BDF0500007A33 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF79D150BDF0500007A33 /* libz.dylib */; };
 		B1CCF79E150BDF0500007A38 /* VKServiceAPITest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CCF79E150BDF0500007A37 /* VKServiceAPITest.m */; };
 		B1CCF79E150BDF0500007A3C /* VKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CCF79E150BDF0500007A3B /* VKLoginViewController.m */; };
-		B1CCF79E150BDF0500007A3E /* VKLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1CCF79E150BDF0500007A3D /* VKLoginViewController.xib */; };
+		B1CFF2421511E01700CB46C5 /* VKLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1CFF2441511E01700CB46C5 /* VKLoginViewController.xib */; };
 		B1F4CB45150FD0DD00DFE37A /* VKApplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F4CB43150FD0DD00DFE37A /* VKApplicationController.m */; };
 		B1F4CB46150FD0DD00DFE37A /* VKApplicationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1F4CB44150FD0DD00DFE37A /* VKApplicationController.xib */; };
 		B1F98BE3150F945E0044B446 /* VKWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1F98BE2150F945E0044B446 /* VKWindow.xib */; };
@@ -119,8 +118,6 @@
 		B1F98BE3150F945E0044B497 /* ExampleServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F98BE3150F945E0044B495 /* ExampleServiceImpl.m */; };
 		B1F98BE3150F945E0044B4A3 /* ServiceExecutorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F98BE3150F945E0044B4A2 /* ServiceExecutorImpl.m */; };
 		B1F98BE3150F945E0044B4A4 /* ServiceExecutorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F98BE3150F945E0044B4A2 /* ServiceExecutorImpl.m */; };
-		B1F98BE3150F945E0044B4A6 /* context.xml in Resources */ = {isa = PBXBuildFile; fileRef = B1F98BE3150F945E0044B4A5 /* context.xml */; };
-		B1F98BE3150F945E0044B4A7 /* context.xml in Resources */ = {isa = PBXBuildFile; fileRef = B1F98BE3150F945E0044B4A5 /* context.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -132,7 +129,6 @@
 		B1CCF6DE150BD81300007A33 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B1CCF6E0150BD81300007A33 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B1CCF6E4150BD81300007A33 /* vkmessanger-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "vkmessanger-Info.plist"; sourceTree = "<group>"; };
-		B1CCF6E6150BD81300007A33 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B1CCF6E8150BD81300007A33 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B1CCF6EA150BD81300007A33 /* vkmessanger-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "vkmessanger-Prefix.pch"; sourceTree = "<group>"; };
 		B1CCF6EB150BD81300007A33 /* VKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VKAppDelegate.h; sourceTree = "<group>"; };
@@ -207,7 +203,8 @@
 		B1CCF79E150BDF0500007A39 /* VKServiceAPITest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKServiceAPITest.h; sourceTree = "<group>"; };
 		B1CCF79E150BDF0500007A3A /* VKLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKLoginViewController.h; sourceTree = "<group>"; };
 		B1CCF79E150BDF0500007A3B /* VKLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKLoginViewController.m; sourceTree = "<group>"; };
-		B1CCF79E150BDF0500007A3D /* VKLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VKLoginViewController.xib; sourceTree = "<group>"; };
+		B1CFF2431511E01700CB46C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/VKLoginViewController.xib; sourceTree = "<group>"; };
+		B1CFF2451511E01F00CB46C5 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ru; path = ru.lproj/VKLoginViewController.xib; sourceTree = "<group>"; };
 		B1E6CBC4151084F000B5856B /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		B1F4CB42150FD0DD00DFE37A /* VKApplicationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKApplicationController.h; sourceTree = "<group>"; };
 		B1F4CB43150FD0DD00DFE37A /* VKApplicationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKApplicationController.m; sourceTree = "<group>"; };
@@ -250,7 +247,6 @@
 		B1F98BE3150F945E0044B49C /* ServiceExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceExecutor.h; sourceTree = "<group>"; };
 		B1F98BE3150F945E0044B4A1 /* ServiceExecutorImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceExecutorImpl.h; sourceTree = "<group>"; };
 		B1F98BE3150F945E0044B4A2 /* ServiceExecutorImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceExecutorImpl.m; sourceTree = "<group>"; };
-		B1F98BE3150F945E0044B4A5 /* context.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = context.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -331,11 +327,10 @@
 		B1CCF6E2150BD81300007A33 /* vkmessanger */ = {
 			isa = PBXGroup;
 			children = (
-				B1F98BE3150F945E0044B4A5 /* context.xml */,
 				B1CCF6EB150BD81300007A33 /* VKAppDelegate.h */,
 				B1CCF6EC150BD81300007A33 /* VKAppDelegate.m */,
-				B1CCF6E3150BD81300007A33 /* Supporting Files */,
 				B1CCF79E150BDF0500007A34 /* Controllers */,
+				B1CCF6E3150BD81300007A33 /* Supporting Files */,
 				B1CCF79E150BDF0500007A35 /* Resources */,
 				B1F98BE3150F945E0044B492 /* ExampleIoC */,
 			);
@@ -346,7 +341,6 @@
 			isa = PBXGroup;
 			children = (
 				B1CCF6E4150BD81300007A33 /* vkmessanger-Info.plist */,
-				B1CCF6E5150BD81300007A33 /* InfoPlist.strings */,
 				B1CCF6E8150BD81300007A33 /* main.m */,
 				B1CCF6EA150BD81300007A33 /* vkmessanger-Prefix.pch */,
 			);
@@ -449,7 +443,7 @@
 		B1CCF79E150BDF0500007A34 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B1CCF79E150BDF0500007A3D /* VKLoginViewController.xib */,
+				B1CFF2441511E01700CB46C5 /* VKLoginViewController.xib */,
 				B1CCF79E150BDF0500007A3B /* VKLoginViewController.m */,
 				B1CCF79E150BDF0500007A3A /* VKLoginViewController.h */,
 				B1CCF6F6150BD81300007A33 /* VKSecondViewController.m */,
@@ -629,6 +623,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				ru,
 			);
 			mainGroup = B1CCF6CD150BD81200007A33;
 			productRefGroup = B1CCF6D9150BD81300007A33 /* Products */;
@@ -646,17 +641,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1CCF6E7150BD81300007A33 /* InfoPlist.strings in Resources */,
 				B1CCF6F2150BD81300007A33 /* first.png in Resources */,
 				B1CCF6F4150BD81300007A33 /* first@2x.png in Resources */,
 				B1CCF6F9150BD81300007A33 /* second.png in Resources */,
 				B1CCF6FB150BD81300007A33 /* second@2x.png in Resources */,
 				B1CCF6FE150BD81300007A33 /* VKFirstViewController.xib in Resources */,
 				B1CCF701150BD81300007A33 /* VKSecondViewController.xib in Resources */,
-				B1CCF79E150BDF0500007A3E /* VKLoginViewController.xib in Resources */,
+				B1CFF2421511E01700CB46C5 /* VKLoginViewController.xib in Resources */,
 				B1F98BE3150F945E0044B446 /* VKWindow.xib in Resources */,
 				B1F4CB46150FD0DD00DFE37A /* VKApplicationController.xib in Resources */,
-				B1F98BE3150F945E0044B4A6 /* context.xml in Resources */,
 				B1186C8E1510D4D70057237B /* RunTests.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -666,7 +659,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1CCF748150BD93600007A33 /* InfoPlist.strings in Resources */,
-				B1F98BE3150F945E0044B4A7 /* context.xml in Resources */,
 				B1186C8F1510D4D70057237B /* RunTests.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -787,14 +779,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B1CCF6E5150BD81300007A33 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B1CCF6E6150BD81300007A33 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		B1CCF6FC150BD81300007A33 /* VKFirstViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -817,6 +801,15 @@
 				B1CCF747150BD93600007A33 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B1CFF2441511E01700CB46C5 /* VKLoginViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1CFF2431511E01700CB46C5 /* en */,
+				B1CFF2451511E01F00CB46C5 /* ru */,
+			);
+			name = VKLoginViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

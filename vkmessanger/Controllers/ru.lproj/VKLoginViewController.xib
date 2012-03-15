@@ -48,7 +48,7 @@
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
 						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">Enter</string>
+						<string key="IBUINormalTitle">Логин</string>
 						<object class="NSColor" key="IBUIHighlightedTitleColor" id="478640625">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MQA</bytes>
@@ -135,7 +135,7 @@
 					<object class="IBUILabel" id="76320523">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{91, 195}, {142, 24}}</string>
+						<string key="NSFrame">{{70, 195}, {205, 57}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSNextKeyView" ref="775848270"/>
 						<bool key="IBUIOpaque">NO</bool>
@@ -143,7 +143,7 @@
 						<int key="IBUIContentMode">7</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<string key="IBUIText">You can use account vk.com</string>
+						<string key="IBUIText">Вы можете использовать логин вконтакте</string>
 						<object class="NSColor" key="IBUITextColor">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MCAwIDAAA</bytes>
@@ -166,12 +166,13 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{91, 267}, {146, 116}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
+						<reference key="NSNextKeyView"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
 						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">Register</string>
+						<string key="IBUINormalTitle">Регистрация</string>
 						<reference key="IBUIHighlightedTitleColor" ref="478640625"/>
 						<object class="NSColor" key="IBUINormalTitleColor">
 							<int key="NSColorSpace">1</int>
