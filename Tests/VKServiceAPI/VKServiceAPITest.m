@@ -21,9 +21,9 @@
 -(void) testGetAccessToken{
     NSString *password = [@"password" stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSString *clientID = [@"2848091" stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    NSString *client_secret = [@"" stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    NSString *username = [@"" stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    NSString *userPassword = [@""  stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString *client_secret = [@"wbim5pRU1CHfFpZytzbD" stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString *username = [@"denis.tarazanov@gmail.com" stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString *userPassword = [@"_Gu^iL@D"  stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSString *scope = [@"messages" stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 
     NSString *urlString = [NSString stringWithFormat:@"https://api.vk.com/oauth/token?grant_type=%@&client_id=%@&client_secret=%@&username=%@&password=%@&scope=%@"
@@ -37,19 +37,14 @@
 	[request setDelegate:self];
 
 	[request startSynchronous];
-
-	NSLog(@"response string %@",[request responseString]);
 }
 
 - (void)requestFinished:(ASIHTTPRequest *)aRequest {
 
-	//[self notify:kGHUnitWaitStatusSuccess];
 	NSLog(@"response string %@",[aRequest responseString]);
-
-	GHAssertTrue(NO,@"Request Finished");
 }
 
--(void) requestDidFail:(id) aRequest{
+-(void)requestDidFail:(id) aRequest{
 
 	GHAssertTrue(NO,@"Request failted");
 }
