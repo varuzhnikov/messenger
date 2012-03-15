@@ -16,6 +16,7 @@ static NSString *const QUERY_PARAM_NAME = @"query";
 static NSString *const QUERY_PARAM_VALUE = @"ios";
 static NSString *const ANOTHER_PARAM_NAME = @"anotherParam";
 static NSString *const ANOTHER_PARAM_VALUE = @"anotherValue";
+static NSString *const PARAM_NAME_WITH_WHITE_SPACE = @"param_with_white_space";
 
 @interface VKRequestTest : GHTestCase {
     VKRequest *request;

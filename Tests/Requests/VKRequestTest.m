@@ -34,7 +34,7 @@
 - (void)test_Should_Add_Parameter_With_Name_And_Value {
     [request setGetParameterWithName:QUERY_PARAM_NAME andValue:QUERY_PARAM_VALUE];
 
-    GHAssertEqualStrings([request getParameterWithName:QUERY_PARAM_NAME], QUERY_PARAM_VALUE, @"should add para,eter with name and value");
+    GHAssertEqualStrings([request getParameterWithName:QUERY_PARAM_NAME], QUERY_PARAM_VALUE, @"should add parameter with name and value");
 }
 
 - (void)test_Should_Insert_Delimiter_Between_Params {
@@ -46,7 +46,14 @@
     ];
     NSLog(@"expected string: %@", expectedString);
     GHAssertEqualStrings([request.url absoluteString], expectedString, @"should insert delimeter between params");
+}
 
+- (void)test_Should_Correct_Encode_Params_Value {
+    [request setGetParameterWithName:PARAM_NAME_WITH_WHITE_SPACE andValue:@"param with white space"];
+
+    NSString *expectedString = [NSString stringWithFormat:@"%@?%@=%@", URL_STRING, PARAM_NAME_WITH_WHITE_SPACE, @"param%20with%20white%20space"];
+    NSLog(@"expected string: %@", expectedString);
+    GHAssertEqualStrings([request.url absoluteString], expectedString, @"should correct encode params value");
 }
 
 - (void)tearDown {

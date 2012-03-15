@@ -73,7 +73,9 @@
     [resultURL appendString:GET_PARAMETERS_DELIMETER];
 
     for (NSString *name in [GETParameters allKeys]) {
-        [resultURL appendString:[NSString stringWithFormat:@"%@=%@", name, [GETParameters objectForKey:name]]];
+        NSString *paramValue =[GETParameters objectForKey:name];
+        NSString *encodedParamValue = [paramValue stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+        [resultURL appendString:[NSString stringWithFormat:@"%@=%@", name, encodedParamValue]];
         [resultURL appendString:HTTP_GET_PARAMS_DELIMETER];
     }
     [self removeLastHttpGETDelimiter:resultURL];
