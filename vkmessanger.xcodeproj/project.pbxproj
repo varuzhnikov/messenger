@@ -105,14 +105,8 @@
 		B1F98BE3150F945E0044B465 /* OxICObjectDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F98BE3150F945E0044B463 /* OxICObjectDefinition.m */; };
 		B1F98BE3150F945E0044B468 /* OxICPersistentStoreCoordinatorFactoryObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F98BE3150F945E0044B467 /* OxICPersistentStoreCoordinatorFactoryObject.m */; };
 		B1F98BE3150F945E0044B469 /* OxICPersistentStoreCoordinatorFactoryObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F98BE3150F945E0044B467 /* OxICPersistentStoreCoordinatorFactoryObject.m */; };
-		B1F98BE3150F945E0044B46C /* OxICThreadLocalProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F98BE3150F945E0044B46B /* OxICThreadLocalProxy.m */; };
-		B1F98BE3150F945E0044B46D /* OxICThreadLocalProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F98BE3150F945E0044B46B /* OxICThreadLocalProxy.m */; };
-		B1F98BE3150F945E0044B470 /* OxICThreadLocalProxyFactoryObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F98BE3150F945E0044B46F /* OxICThreadLocalProxyFactoryObject.m */; };
-		B1F98BE3150F945E0044B471 /* OxICThreadLocalProxyFactoryObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F98BE3150F945E0044B46F /* OxICThreadLocalProxyFactoryObject.m */; };
 		B1F98BE3150F945E0044B474 /* OxICViewControllerFactoryObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F98BE3150F945E0044B473 /* OxICViewControllerFactoryObject.m */; };
 		B1F98BE3150F945E0044B475 /* OxICViewControllerFactoryObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F98BE3150F945E0044B473 /* OxICViewControllerFactoryObject.m */; };
-		B1F98BE3150F945E0044B478 /* OxICXmlContainerBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F98BE3150F945E0044B477 /* OxICXmlContainerBuilder.m */; };
-		B1F98BE3150F945E0044B479 /* OxICXmlContainerBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F98BE3150F945E0044B477 /* OxICXmlContainerBuilder.m */; };
 		B1F98BE3150F945E0044B480 /* OxICPropertyDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F98BE3150F945E0044B47F /* OxICPropertyDescriptor.m */; };
 		B1F98BE3150F945E0044B481 /* OxICPropertyDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F98BE3150F945E0044B47F /* OxICPropertyDescriptor.m */; };
 		B1F98BE3150F945E0044B487 /* OxICSimpleClassWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F98BE3150F945E0044B486 /* OxICSimpleClassWrapper.m */; };
@@ -237,14 +231,8 @@
 		B1F98BE3150F945E0044B463 /* OxICObjectDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OxICObjectDefinition.m; sourceTree = "<group>"; };
 		B1F98BE3150F945E0044B466 /* OxICPersistentStoreCoordinatorFactoryObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OxICPersistentStoreCoordinatorFactoryObject.h; sourceTree = "<group>"; };
 		B1F98BE3150F945E0044B467 /* OxICPersistentStoreCoordinatorFactoryObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OxICPersistentStoreCoordinatorFactoryObject.m; sourceTree = "<group>"; };
-		B1F98BE3150F945E0044B46A /* OxICThreadLocalProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OxICThreadLocalProxy.h; sourceTree = "<group>"; };
-		B1F98BE3150F945E0044B46B /* OxICThreadLocalProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OxICThreadLocalProxy.m; sourceTree = "<group>"; };
-		B1F98BE3150F945E0044B46E /* OxICThreadLocalProxyFactoryObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OxICThreadLocalProxyFactoryObject.h; sourceTree = "<group>"; };
-		B1F98BE3150F945E0044B46F /* OxICThreadLocalProxyFactoryObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OxICThreadLocalProxyFactoryObject.m; sourceTree = "<group>"; };
 		B1F98BE3150F945E0044B472 /* OxICViewControllerFactoryObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OxICViewControllerFactoryObject.h; sourceTree = "<group>"; };
 		B1F98BE3150F945E0044B473 /* OxICViewControllerFactoryObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OxICViewControllerFactoryObject.m; sourceTree = "<group>"; };
-		B1F98BE3150F945E0044B476 /* OxICXmlContainerBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OxICXmlContainerBuilder.h; sourceTree = "<group>"; };
-		B1F98BE3150F945E0044B477 /* OxICXmlContainerBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OxICXmlContainerBuilder.m; sourceTree = "<group>"; };
 		B1F98BE3150F945E0044B47C /* OxICClassWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OxICClassWrapper.h; sourceTree = "<group>"; };
 		B1F98BE3150F945E0044B47D /* OxICObjectWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OxICObjectWrapper.h; sourceTree = "<group>"; };
 		B1F98BE3150F945E0044B47E /* OxICPropertyDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OxICPropertyDescriptor.h; sourceTree = "<group>"; };
@@ -501,14 +489,8 @@
 		B1F98BE3150F945E0044B447 /* Container */ = {
 			isa = PBXGroup;
 			children = (
-				B1F98BE3150F945E0044B477 /* OxICXmlContainerBuilder.m */,
-				B1F98BE3150F945E0044B476 /* OxICXmlContainerBuilder.h */,
 				B1F98BE3150F945E0044B473 /* OxICViewControllerFactoryObject.m */,
 				B1F98BE3150F945E0044B472 /* OxICViewControllerFactoryObject.h */,
-				B1F98BE3150F945E0044B46F /* OxICThreadLocalProxyFactoryObject.m */,
-				B1F98BE3150F945E0044B46E /* OxICThreadLocalProxyFactoryObject.h */,
-				B1F98BE3150F945E0044B46B /* OxICThreadLocalProxy.m */,
-				B1F98BE3150F945E0044B46A /* OxICThreadLocalProxy.h */,
 				B1F98BE3150F945E0044B467 /* OxICPersistentStoreCoordinatorFactoryObject.m */,
 				B1F98BE3150F945E0044B466 /* OxICPersistentStoreCoordinatorFactoryObject.h */,
 				B1F98BE3150F945E0044B463 /* OxICObjectDefinition.m */,
@@ -747,10 +729,7 @@
 				B1F98BE3150F945E0044B460 /* OxICNibFactoryObject.m in Sources */,
 				B1F98BE3150F945E0044B464 /* OxICObjectDefinition.m in Sources */,
 				B1F98BE3150F945E0044B468 /* OxICPersistentStoreCoordinatorFactoryObject.m in Sources */,
-				B1F98BE3150F945E0044B46C /* OxICThreadLocalProxy.m in Sources */,
-				B1F98BE3150F945E0044B470 /* OxICThreadLocalProxyFactoryObject.m in Sources */,
 				B1F98BE3150F945E0044B474 /* OxICViewControllerFactoryObject.m in Sources */,
-				B1F98BE3150F945E0044B478 /* OxICXmlContainerBuilder.m in Sources */,
 				B1F98BE3150F945E0044B480 /* OxICPropertyDescriptor.m in Sources */,
 				B1F98BE3150F945E0044B487 /* OxICSimpleClassWrapper.m in Sources */,
 				B1F98BE3150F945E0044B48B /* OxICSimpleObjectWrapper.m in Sources */,
@@ -795,10 +774,7 @@
 				B1F98BE3150F945E0044B461 /* OxICNibFactoryObject.m in Sources */,
 				B1F98BE3150F945E0044B465 /* OxICObjectDefinition.m in Sources */,
 				B1F98BE3150F945E0044B469 /* OxICPersistentStoreCoordinatorFactoryObject.m in Sources */,
-				B1F98BE3150F945E0044B46D /* OxICThreadLocalProxy.m in Sources */,
-				B1F98BE3150F945E0044B471 /* OxICThreadLocalProxyFactoryObject.m in Sources */,
 				B1F98BE3150F945E0044B475 /* OxICViewControllerFactoryObject.m in Sources */,
-				B1F98BE3150F945E0044B479 /* OxICXmlContainerBuilder.m in Sources */,
 				B1F98BE3150F945E0044B481 /* OxICPropertyDescriptor.m in Sources */,
 				B1F98BE3150F945E0044B488 /* OxICSimpleClassWrapper.m in Sources */,
 				B1F98BE3150F945E0044B48C /* OxICSimpleObjectWrapper.m in Sources */,
@@ -850,20 +826,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_UNUSED_PARAMETER = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "";
 				"HEADER_SEARCH_PATHS[arch=*]" = "";
@@ -873,6 +858,7 @@
 					"-all_load",
 					"-lxml2",
 				);
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
 			};
@@ -882,14 +868,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Flexis ZAO";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Flexis ZAO";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_UNUSED_PARAMETER = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
@@ -901,6 +896,7 @@
 				);
 				PROVISIONING_PROFILE = "2BE7349A-262D-406B-8EEE-E2F3A8C9D1F0";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2BE7349A-262D-406B-8EEE-E2F3A8C9D1F0";
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
 				VALIDATE_PRODUCT = YES;

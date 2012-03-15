@@ -9,9 +9,9 @@
 #import "VKAppDelegate.h"
 
 #import "Controllers/VKLoginViewController.h"
-#import "OxICXmlContainerBuilder.h"
 #import "OxICSimpleWrapperFactory.h"
 #import "ServiceExecutor.h"
+#import "OxICContainer.h"
 
 @implementation VKAppDelegate {
 @private
