@@ -1,12 +1,14 @@
 //
-//  Created by Vitaliy Ruzhnikov on 15.03.12.
+//  Created by Vitaliy Ruzhnikov on 16.03.12.
 //
 //
 //
 
 
-#import <Foundation/Foundation.h>
+@class VKRequest;
 
+@protocol VKServiceAPI
+- (void)sendRequest:(VKRequest *)request;
 
-@interface VKServiceAPI : NSObject
+@property(nonatomic, retain) NSString *token;
 @end

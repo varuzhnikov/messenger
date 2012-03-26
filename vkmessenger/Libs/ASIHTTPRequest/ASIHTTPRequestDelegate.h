@@ -17,8 +17,8 @@
 - (void)requestStarted:(ASIHTTPRequest *)request;
 - (void)request:(ASIHTTPRequest *)request didReceiveResponseHeaders:(NSDictionary *)responseHeaders;
 - (void)request:(ASIHTTPRequest *)request willRedirectToURL:(NSURL *)newURL;
-- (void)requestFinished:(ASIHTTPRequest *)request;
-- (void)requestFailed:(ASIHTTPRequest *)request;
+- (void)requestFinished:(id)request;
+- (void)requestFailed:(id)request;
 - (void)requestRedirected:(ASIHTTPRequest *)request;
 
 // When a delegate implements this method, it is expected to process all incoming data itself

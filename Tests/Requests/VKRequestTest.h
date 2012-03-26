@@ -8,7 +8,8 @@
 
 
 
-#import <GHUnitIOS/GHTestCase.h>
+#import <SenTestingKit/SenTestingKit.h>
+#import "VKRequestDelegate.h"
 
 @class VKRequest;
 static NSString *const URL_STRING = @"http://google.com";
@@ -18,7 +19,12 @@ static NSString *const ANOTHER_PARAM_NAME = @"anotherParam";
 static NSString *const ANOTHER_PARAM_VALUE = @"anotherValue";
 static NSString *const PARAM_NAME_WITH_WHITE_SPACE = @"param_with_white_space";
 
-@interface VKRequestTest : GHTestCase {
+@interface VKRequestTest : SenTestCase <VKRequestDelegate> {
     VKRequest *request;
+    BOOL requestFinished;
+    BOOL requestFailed;
 }
+
+@property(nonatomic, copy) NSString *responseString;
+
 @end

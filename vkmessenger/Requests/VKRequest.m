@@ -6,6 +6,8 @@
 
 
 #import "VKRequest.h"
+#import "VKRequestDelegate.h"
+#import "ASIHTTPRequest.h"
 
 
 @interface VKRequest ()
@@ -25,10 +27,15 @@
 @private
     NSString *_urlString;
     NSMutableDictionary *GETParameters;
+    id <VKRequestDelegate> _delegate;
+    NSString *_responseString;
 }
 
 
 @synthesize urlString = _urlString;
+@synthesize delegate = _delegate;
+@synthesize responseString = _responseString;
+
 
 - (id)initWithUrlString:(NSString *)urlString {
     self = [super init];
@@ -46,6 +53,8 @@
     [_urlString release];
     [GETParameters release];
     GETParameters = nil;
+    [_delegate release];
+    [_responseString release];
     [super dealloc];
 }
 
@@ -59,11 +68,11 @@
 
 - (NSURL *)url {
     NSMutableString *resultURL = [NSMutableString stringWithString:self.urlString];
-    
+
     if ([self hasNotGETParams]) {
         return [NSURL URLWithString:self.urlString];
     }
-    
+
     [self addAllGETParamsTo:resultURL];
 
     return [NSURL URLWithString:resultURL];
@@ -73,7 +82,7 @@
     [resultURL appendString:GET_PARAMETERS_DELIMETER];
 
     for (NSString *name in [GETParameters allKeys]) {
-        NSString *paramValue =[GETParameters objectForKey:name];
+        NSString *paramValue = [GETParameters objectForKey:name];
         NSString *encodedParamValue = [paramValue stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
         [resultURL appendString:[NSString stringWithFormat:@"%@=%@", name, encodedParamValue]];
         [resultURL appendString:HTTP_GET_PARAMS_DELIMETER];
@@ -89,6 +98,20 @@
 
 - (BOOL)hasNotGETParams {
     return [GETParameters count] == 0;
+}
+
+- (void)requestFailed:(id)request {
+    if ([request respondsToSelector:@selector(responseString)]) {
+        self.responseString = [request responseString];
+    }
+    [self.delegate requestFailed:self];
+}
+
+- (void)requestFinished:(id)request {
+    if ([request respondsToSelector:@selector(responseString)]) {
+        self.responseString = [request responseString];
+    }
+    [self.delegate requestFinished:self];
 }
 
 @end

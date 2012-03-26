@@ -7,6 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B11E6BBE151F6B2900012E29 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B11E6BBD151F6B2900012E29 /* SenTestingKit.framework */; };
+		B11E6BBF151F6B2900012E29 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF6DC150BD81300007A33 /* UIKit.framework */; };
+		B11E6BC0151F6B2900012E29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF6DE150BD81300007A33 /* Foundation.framework */; };
+		B11E6BC6151F6B2900012E29 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B11E6BC4151F6B2900012E29 /* InfoPlist.strings */; };
+		B11E6BCF151F6BA200012E29 /* VKLoginRequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58570 /* VKLoginRequestTest.m */; };
+		B11E6BD0151F6BA200012E29 /* VKRequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C66A15126051001E6AA2 /* VKRequestTest.m */; };
+		B11E6BD1151F6BAD00012E29 /* VKRequestFactoryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58586 /* VKRequestFactoryTest.m */; };
+		B11E6BD2151F6BAD00012E29 /* VKAuthenticatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58578 /* VKAuthenticatorTest.m */; };
+		B11E6BD4151F6BBC00012E29 /* VKServiceAPIStub.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B5857F /* VKServiceAPIStub.m */; };
+		B11E6BD6151F6BC000012E29 /* VKTestContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B5857C /* VKTestContainer.m */; };
+		B11E6BD8151F6BD400012E29 /* VKRequestFactoryImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58583 /* VKRequestFactoryImpl.m */; };
+		B11E6BD9151F6BD400012E29 /* VKAuthenticator.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58574 /* VKAuthenticator.m */; };
+		B11E6BDB151F6BE100012E29 /* VKLoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B5856C /* VKLoginRequest.m */; };
+		B11E6BDC151F6BE100012E29 /* VKRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C6221512603F001E6AA2 /* VKRequest.m */; };
+		B11E6BDD151F6DC600012E29 /* OxICContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C5E31512603F001E6AA2 /* OxICContainer.m */; };
+		B11E6BDE151F6DC600012E29 /* OxICDefaultFactoryObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C5E61512603F001E6AA2 /* OxICDefaultFactoryObject.m */; };
+		B11E6BDF151F6DC600012E29 /* OxICLazyProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C5E91512603F001E6AA2 /* OxICLazyProxy.m */; };
+		B11E6BE0151F6DC600012E29 /* OxICLazyProxyFactoryObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C5EB1512603F001E6AA2 /* OxICLazyProxyFactoryObject.m */; };
+		B11E6BE3151F6DC600012E29 /* OxICObjectDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C5F11512603F001E6AA2 /* OxICObjectDefinition.m */; };
+		B11E6BE6151F6E5C00012E29 /* OxICSimpleClassWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C6001512603F001E6AA2 /* OxICSimpleClassWrapper.m */; };
+		B11E6BE7151F6E7000012E29 /* OxICPropertyDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C5FB1512603F001E6AA2 /* OxICPropertyDescriptor.m */; };
+		B11E6BE8151F6E7C00012E29 /* OxICSimpleWrapperFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C6041512603F001E6AA2 /* OxICSimpleWrapperFactory.m */; };
+		B11E6BE9151F6E8C00012E29 /* OxICSimpleObjectWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C6021512603F001E6AA2 /* OxICSimpleObjectWrapper.m */; };
 		B12BEA0D151089FE006B2592 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B5856B /* libxml2.dylib */; };
 		B12BEA0E15108A06006B2592 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B5856B /* libxml2.dylib */; };
 		B12BEA1015108A61006B2592 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12BEA0F15108A61006B2592 /* CoreData.framework */; };
@@ -15,6 +38,8 @@
 		B1A89BCF150E2E680068BD8C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF79D150BDF0500007A33 /* libz.dylib */; };
 		B1A89BD0150E2E8B0068BD8C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF79B150BDEF300007A33 /* MobileCoreServices.framework */; };
 		B1A89BD1150E2E950068BD8C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF799150BDEEB00007A33 /* SystemConfiguration.framework */; };
+		B1A9CC561513CA8000014DD9 /* VKTestContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B5857C /* VKTestContainer.m */; };
+		B1A9CC661515E22500014DD9 /* VKRequestFactoryImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58583 /* VKRequestFactoryImpl.m */; };
 		B1CCF6DD150BD81300007A33 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF6DC150BD81300007A33 /* UIKit.framework */; };
 		B1CCF6DF150BD81300007A33 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF6DE150BD81300007A33 /* Foundation.framework */; };
 		B1CCF6E1150BD81300007A33 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF6E0150BD81300007A33 /* CoreGraphics.framework */; };
@@ -75,7 +100,7 @@
 		B1D4C6601512603F001E6AA2 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1D4C6271512603F001E6AA2 /* second@2x.png */; };
 		B1D4C6611512603F001E6AA2 /* VKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C62A1512603F001E6AA2 /* VKAppDelegate.m */; };
 		B1D4C6621512603F001E6AA2 /* vkmessenger-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1D4C62B1512603F001E6AA2 /* vkmessenger-Info.plist */; };
-		B1D4C6631512603F001E6AA2 /* VKServiceAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C62F1512603F001E6AA2 /* VKServiceAPI.m */; };
+		B1D4C6631512603F001E6AA2 /* VKServiceAPIImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C62F1512603F001E6AA2 /* VKServiceAPIImpl.m */; };
 		B1D4C67115126051001E6AA2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1D4C66515126051001E6AA2 /* InfoPlist.strings */; };
 		B1D4C67415126051001E6AA2 /* RunTests.sh in Resources */ = {isa = PBXBuildFile; fileRef = B1D4C66B15126051001E6AA2 /* RunTests.sh */; };
 		B1D4C67515126051001E6AA2 /* Tests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1D4C66C15126051001E6AA2 /* Tests-Info.plist */; };
@@ -113,14 +138,41 @@
 		B1D4C6EB15126720001E6AA2 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C61C1512603F001E6AA2 /* SBJsonUTF8Stream.m */; };
 		B1D4C6EC15126720001E6AA2 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C61E1512603F001E6AA2 /* SBJsonWriter.m */; };
 		B1D4C6ED15126731001E6AA2 /* VKRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C6221512603F001E6AA2 /* VKRequest.m */; };
-		B1D4C6EE15126737001E6AA2 /* VKServiceAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C62F1512603F001E6AA2 /* VKServiceAPI.m */; };
+		B1D4C6EE15126737001E6AA2 /* VKServiceAPIImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C62F1512603F001E6AA2 /* VKServiceAPIImpl.m */; };
 		B1D4C6EF15126747001E6AA2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C66715126051001E6AA2 /* main.m */; };
 		B1D4C6F015126751001E6AA2 /* VKServiceAPITest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C67015126051001E6AA2 /* VKServiceAPITest.m */; };
 		B1D4C6F115126756001E6AA2 /* VKRequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C66A15126051001E6AA2 /* VKRequestTest.m */; };
 		B1D4C6F215126778001E6AA2 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1D4C5DF1512603F001E6AA2 /* GHUnitIOS.framework */; };
+		B1E6CBC4151084F000B5856D /* VKLoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B5856C /* VKLoginRequest.m */; };
+		B1E6CBC4151084F000B5856E /* VKLoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B5856C /* VKLoginRequest.m */; };
+		B1E6CBC4151084F000B58571 /* VKLoginRequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58570 /* VKLoginRequestTest.m */; };
+		B1E6CBC4151084F000B58575 /* VKAuthenticator.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58574 /* VKAuthenticator.m */; };
+		B1E6CBC4151084F000B58576 /* VKAuthenticator.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58574 /* VKAuthenticator.m */; };
+		B1E6CBC4151084F000B58579 /* VKAuthenticatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58578 /* VKAuthenticatorTest.m */; };
+		B1E6CBC4151084F000B58580 /* VKServiceAPIStub.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B5857F /* VKServiceAPIStub.m */; };
+		B1E6CBC4151084F000B58584 /* VKRequestFactoryImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58583 /* VKRequestFactoryImpl.m */; };
+		B1E6CBC4151084F000B58587 /* VKRequestFactoryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58586 /* VKRequestFactoryTest.m */; };
+		B1E6CBC4151084F000B58590 /* VKRequestFactoryStub.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B5858F /* VKRequestFactoryStub.m */; };
+		B1E6CBC4151084F000B58592 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C6181512603F001E6AA2 /* SBJsonStreamWriterState.m */; };
+		B1E6CBC4151084F000B58593 /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C6161512603F001E6AA2 /* SBJsonStreamWriterAccumulator.m */; };
+		B1E6CBC4151084F000B58594 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C61A1512603F001E6AA2 /* SBJsonTokeniser.m */; };
+		B1E6CBC4151084F000B58595 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C61E1512603F001E6AA2 /* SBJsonWriter.m */; };
+		B1E6CBC4151084F000B58596 /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C6121512603F001E6AA2 /* SBJsonStreamParserState.m */; };
+		B1E6CBC4151084F000B58597 /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C6141512603F001E6AA2 /* SBJsonStreamWriter.m */; };
+		B1E6CBC4151084F000B58598 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C61C1512603F001E6AA2 /* SBJsonUTF8Stream.m */; };
+		B1E6CBC4151084F000B58599 /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C6101512603F001E6AA2 /* SBJsonStreamParserAdapter.m */; };
+		B1E6CBC4151084F000B5859A /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C60E1512603F001E6AA2 /* SBJsonStreamParserAccumulator.m */; };
+		B1E6CBC4151084F000B5859B /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C60C1512603F001E6AA2 /* SBJsonStreamParser.m */; };
+		B1E6CBC4151084F000B5859C /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C60A1512603F001E6AA2 /* SBJsonParser.m */; };
+		B1E6CBC4151084F000B5859D /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C6071512603F001E6AA2 /* NSObject+SBJson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B11E6BBC151F6B2900012E29 /* UnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B11E6BBD151F6B2900012E29 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		B11E6BC3151F6B2900012E29 /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
+		B11E6BC5151F6B2900012E29 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B11E6BCA151F6B2900012E29 /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
 		B12BEA0F15108A61006B2592 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		B1CCF6D8150BD81300007A33 /* vkmessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vkmessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1CCF6DC150BD81300007A33 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -262,8 +314,8 @@
 		B1D4C62A1512603F001E6AA2 /* VKAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKAppDelegate.m; sourceTree = "<group>"; };
 		B1D4C62B1512603F001E6AA2 /* vkmessenger-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "vkmessenger-Info.plist"; sourceTree = "<group>"; };
 		B1D4C62C1512603F001E6AA2 /* vkmessenger-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "vkmessenger-Prefix.pch"; sourceTree = "<group>"; };
-		B1D4C62E1512603F001E6AA2 /* VKServiceAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKServiceAPI.h; sourceTree = "<group>"; };
-		B1D4C62F1512603F001E6AA2 /* VKServiceAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKServiceAPI.m; sourceTree = "<group>"; };
+		B1D4C62E1512603F001E6AA2 /* VKServiceAPIImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKServiceAPIImpl.h; sourceTree = "<group>"; };
+		B1D4C62F1512603F001E6AA2 /* VKServiceAPIImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKServiceAPIImpl.m; sourceTree = "<group>"; };
 		B1D4C66615126051001E6AA2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B1D4C66715126051001E6AA2 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B1D4C66915126051001E6AA2 /* VKRequestTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKRequestTest.h; sourceTree = "<group>"; };
@@ -274,9 +326,40 @@
 		B1D4C66F15126051001E6AA2 /* VKServiceAPITest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKServiceAPITest.h; sourceTree = "<group>"; };
 		B1D4C67015126051001E6AA2 /* VKServiceAPITest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKServiceAPITest.m; sourceTree = "<group>"; };
 		B1E6CBC4151084F000B5856B /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		B1E6CBC4151084F000B5856C /* VKLoginRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKLoginRequest.m; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B5856F /* VKLoginRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKLoginRequest.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B58570 /* VKLoginRequestTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKLoginRequestTest.m; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B58572 /* VKLoginRequestTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKLoginRequestTest.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B58573 /* VKRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKRequestDelegate.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B58574 /* VKAuthenticator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKAuthenticator.m; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B58577 /* VKAuthenticator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKAuthenticator.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B58578 /* VKAuthenticatorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKAuthenticatorTest.m; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B5857A /* VKAuthenticatorTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKAuthenticatorTest.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B5857C /* VKTestContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKTestContainer.m; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B5857E /* VKTestContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKTestContainer.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B5857F /* VKServiceAPIStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKServiceAPIStub.m; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B58581 /* VKServiceAPIStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKServiceAPIStub.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B58582 /* VKServiceAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKServiceAPI.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B58583 /* VKRequestFactoryImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKRequestFactoryImpl.m; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B58585 /* VKRequestFactoryImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKRequestFactoryImpl.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B58586 /* VKRequestFactoryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKRequestFactoryTest.m; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B58588 /* VKRequestFactoryTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKRequestFactoryTest.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B58589 /* VKRequestFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKRequestFactory.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B5858F /* VKRequestFactoryStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKRequestFactoryStub.m; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B58591 /* VKRequestFactoryStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKRequestFactoryStub.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B11E6BB8151F6B2900012E29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B11E6BBE151F6B2900012E29 /* SenTestingKit.framework in Frameworks */,
+				B11E6BBF151F6B2900012E29 /* UIKit.framework in Frameworks */,
+				B11E6BC0151F6B2900012E29 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B1CCF6D5150BD81300007A33 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -313,6 +396,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B11E6BC1151F6B2900012E29 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				B11E6BC2151F6B2900012E29 /* Supporting Files */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		B11E6BC2151F6B2900012E29 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B11E6BC3151F6B2900012E29 /* UnitTests-Info.plist */,
+				B11E6BC4151F6B2900012E29 /* InfoPlist.strings */,
+				B11E6BCA151F6B2900012E29 /* UnitTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		B1CCF6CD150BD81200007A33 = {
 			isa = PBXGroup;
 			children = (
@@ -325,6 +426,7 @@
 				B1CCF799150BDEEB00007A33 /* SystemConfiguration.framework */,
 				B1CCF797150BDEE000007A33 /* CFNetwork.framework */,
 				B1CCF758150BDDF100007A33 /* SBJSON */,
+				B11E6BC1151F6B2900012E29 /* UnitTests */,
 				B1CCF6DB150BD81300007A33 /* Frameworks */,
 				B1CCF6D9150BD81300007A33 /* Products */,
 			);
@@ -335,6 +437,7 @@
 			children = (
 				B1CCF6D8150BD81300007A33 /* vkmessenger.app */,
 				B1CCF73E150BD93600007A33 /* Tests.app */,
+				B11E6BBC151F6B2900012E29 /* UnitTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -345,6 +448,7 @@
 				B1CCF6DC150BD81300007A33 /* UIKit.framework */,
 				B1CCF6DE150BD81300007A33 /* Foundation.framework */,
 				B1CCF6E0150BD81300007A33 /* CoreGraphics.framework */,
+				B11E6BBD151F6B2900012E29 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -581,6 +685,8 @@
 		B1D4C6201512603F001E6AA2 /* Requests */ = {
 			isa = PBXGroup;
 			children = (
+				B1E6CBC4151084F000B5856F /* VKLoginRequest.h */,
+				B1E6CBC4151084F000B5856C /* VKLoginRequest.m */,
 				B1D4C6211512603F001E6AA2 /* VKRequest.h */,
 				B1D4C6221512603F001E6AA2 /* VKRequest.m */,
 			);
@@ -601,8 +707,13 @@
 		B1D4C62D1512603F001E6AA2 /* VKServiceAPI */ = {
 			isa = PBXGroup;
 			children = (
-				B1D4C62E1512603F001E6AA2 /* VKServiceAPI.h */,
-				B1D4C62F1512603F001E6AA2 /* VKServiceAPI.m */,
+				B1E6CBC4151084F000B58585 /* VKRequestFactoryImpl.h */,
+				B1E6CBC4151084F000B58583 /* VKRequestFactoryImpl.m */,
+				B1E6CBC4151084F000B58582 /* VKServiceAPI.h */,
+				B1E6CBC4151084F000B58577 /* VKAuthenticator.h */,
+				B1E6CBC4151084F000B58574 /* VKAuthenticator.m */,
+				B1D4C62E1512603F001E6AA2 /* VKServiceAPIImpl.h */,
+				B1D4C62F1512603F001E6AA2 /* VKServiceAPIImpl.m */,
 			);
 			path = VKServiceAPI;
 			sourceTree = "<group>";
@@ -617,6 +728,7 @@
 				B1D4C66C15126051001E6AA2 /* Tests-Info.plist */,
 				B1D4C66D15126051001E6AA2 /* Tests-Prefix.pch */,
 				B1D4C66E15126051001E6AA2 /* VKServiceAPI */,
+				B1E6CBC4151084F000B5857B /* Container */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -624,6 +736,9 @@
 		B1D4C66815126051001E6AA2 /* Requests */ = {
 			isa = PBXGroup;
 			children = (
+				B1E6CBC4151084F000B58573 /* VKRequestDelegate.h */,
+				B1E6CBC4151084F000B58572 /* VKLoginRequestTest.h */,
+				B1E6CBC4151084F000B58570 /* VKLoginRequestTest.m */,
 				B1D4C66915126051001E6AA2 /* VKRequestTest.h */,
 				B1D4C66A15126051001E6AA2 /* VKRequestTest.m */,
 			);
@@ -633,15 +748,59 @@
 		B1D4C66E15126051001E6AA2 /* VKServiceAPI */ = {
 			isa = PBXGroup;
 			children = (
+				B1E6CBC4151084F000B58589 /* VKRequestFactory.h */,
+				B1E6CBC4151084F000B58588 /* VKRequestFactoryTest.h */,
+				B1E6CBC4151084F000B58586 /* VKRequestFactoryTest.m */,
+				B1E6CBC4151084F000B5857A /* VKAuthenticatorTest.h */,
+				B1E6CBC4151084F000B58578 /* VKAuthenticatorTest.m */,
 				B1D4C66F15126051001E6AA2 /* VKServiceAPITest.h */,
 				B1D4C67015126051001E6AA2 /* VKServiceAPITest.m */,
+				B1E6CBC4151084F000B5858E /* stubs */,
 			);
 			path = VKServiceAPI;
+			sourceTree = "<group>";
+		};
+		B1E6CBC4151084F000B5857B /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				B1E6CBC4151084F000B5857E /* VKTestContainer.h */,
+				B1E6CBC4151084F000B5857C /* VKTestContainer.m */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		B1E6CBC4151084F000B5858E /* stubs */ = {
+			isa = PBXGroup;
+			children = (
+				B1E6CBC4151084F000B58591 /* VKRequestFactoryStub.h */,
+				B1E6CBC4151084F000B5858F /* VKRequestFactoryStub.m */,
+				B1E6CBC4151084F000B5857F /* VKServiceAPIStub.m */,
+				B1E6CBC4151084F000B58581 /* VKServiceAPIStub.h */,
+			);
+			path = stubs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B11E6BBB151F6B2900012E29 /* UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B11E6BCD151F6B2900012E29 /* Build configuration list for PBXNativeTarget "UnitTests" */;
+			buildPhases = (
+				B11E6BB7151F6B2900012E29 /* Sources */,
+				B11E6BB8151F6B2900012E29 /* Frameworks */,
+				B11E6BB9151F6B2900012E29 /* Resources */,
+				B11E6BBA151F6B2900012E29 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnitTests;
+			productName = UnitTests;
+			productReference = B11E6BBC151F6B2900012E29 /* UnitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		B1CCF6D7150BD81300007A33 /* vkmessenger */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1CCF704150BD81300007A33 /* Build configuration list for PBXNativeTarget "vkmessenger" */;
@@ -700,11 +859,20 @@
 			targets = (
 				B1CCF6D7150BD81300007A33 /* vkmessenger */,
 				B1CCF73D150BD93600007A33 /* Tests */,
+				B11E6BBB151F6B2900012E29 /* UnitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B11E6BB9151F6B2900012E29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B11E6BC6151F6B2900012E29 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B1CCF6D6150BD81300007A33 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -747,9 +915,61 @@
 			shellPath = /bin/sh;
 			shellScript = "sh Tests/RunTests.sh";
 		};
+		B11E6BBA151F6B2900012E29 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B11E6BB7151F6B2900012E29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B11E6BCF151F6BA200012E29 /* VKLoginRequestTest.m in Sources */,
+				B11E6BD0151F6BA200012E29 /* VKRequestTest.m in Sources */,
+				B11E6BD1151F6BAD00012E29 /* VKRequestFactoryTest.m in Sources */,
+				B11E6BD2151F6BAD00012E29 /* VKAuthenticatorTest.m in Sources */,
+				B11E6BD4151F6BBC00012E29 /* VKServiceAPIStub.m in Sources */,
+				B11E6BD6151F6BC000012E29 /* VKTestContainer.m in Sources */,
+				B11E6BD8151F6BD400012E29 /* VKRequestFactoryImpl.m in Sources */,
+				B11E6BD9151F6BD400012E29 /* VKAuthenticator.m in Sources */,
+				B11E6BDB151F6BE100012E29 /* VKLoginRequest.m in Sources */,
+				B11E6BDC151F6BE100012E29 /* VKRequest.m in Sources */,
+				B11E6BDD151F6DC600012E29 /* OxICContainer.m in Sources */,
+				B11E6BDE151F6DC600012E29 /* OxICDefaultFactoryObject.m in Sources */,
+				B11E6BDF151F6DC600012E29 /* OxICLazyProxy.m in Sources */,
+				B11E6BE0151F6DC600012E29 /* OxICLazyProxyFactoryObject.m in Sources */,
+				B11E6BE3151F6DC600012E29 /* OxICObjectDefinition.m in Sources */,
+				B11E6BE6151F6E5C00012E29 /* OxICSimpleClassWrapper.m in Sources */,
+				B11E6BE7151F6E7000012E29 /* OxICPropertyDescriptor.m in Sources */,
+				B11E6BE8151F6E7C00012E29 /* OxICSimpleWrapperFactory.m in Sources */,
+				B11E6BE9151F6E8C00012E29 /* OxICSimpleObjectWrapper.m in Sources */,
+				B1E6CBC4151084F000B58590 /* VKRequestFactoryStub.m in Sources */,
+				B1E6CBC4151084F000B58592 /* SBJsonStreamWriterState.m in Sources */,
+				B1E6CBC4151084F000B58593 /* SBJsonStreamWriterAccumulator.m in Sources */,
+				B1E6CBC4151084F000B58594 /* SBJsonTokeniser.m in Sources */,
+				B1E6CBC4151084F000B58595 /* SBJsonWriter.m in Sources */,
+				B1E6CBC4151084F000B58596 /* SBJsonStreamParserState.m in Sources */,
+				B1E6CBC4151084F000B58597 /* SBJsonStreamWriter.m in Sources */,
+				B1E6CBC4151084F000B58598 /* SBJsonUTF8Stream.m in Sources */,
+				B1E6CBC4151084F000B58599 /* SBJsonStreamParserAdapter.m in Sources */,
+				B1E6CBC4151084F000B5859A /* SBJsonStreamParserAccumulator.m in Sources */,
+				B1E6CBC4151084F000B5859B /* SBJsonStreamParser.m in Sources */,
+				B1E6CBC4151084F000B5859C /* SBJsonParser.m in Sources */,
+				B1E6CBC4151084F000B5859D /* NSObject+SBJson.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B1CCF6D4150BD81300007A33 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -795,7 +1015,10 @@
 				B1D4C65B1512603F001E6AA2 /* main.m in Sources */,
 				B1D4C65C1512603F001E6AA2 /* VKRequest.m in Sources */,
 				B1D4C6611512603F001E6AA2 /* VKAppDelegate.m in Sources */,
-				B1D4C6631512603F001E6AA2 /* VKServiceAPI.m in Sources */,
+				B1D4C6631512603F001E6AA2 /* VKServiceAPIImpl.m in Sources */,
+				B1E6CBC4151084F000B5856D /* VKLoginRequest.m in Sources */,
+				B1E6CBC4151084F000B58575 /* VKAuthenticator.m in Sources */,
+				B1E6CBC4151084F000B58584 /* VKRequestFactoryImpl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -837,16 +1060,32 @@
 				B1D4C6EB15126720001E6AA2 /* SBJsonUTF8Stream.m in Sources */,
 				B1D4C6EC15126720001E6AA2 /* SBJsonWriter.m in Sources */,
 				B1D4C6ED15126731001E6AA2 /* VKRequest.m in Sources */,
-				B1D4C6EE15126737001E6AA2 /* VKServiceAPI.m in Sources */,
+				B1D4C6EE15126737001E6AA2 /* VKServiceAPIImpl.m in Sources */,
 				B1D4C6EF15126747001E6AA2 /* main.m in Sources */,
 				B1D4C6F015126751001E6AA2 /* VKServiceAPITest.m in Sources */,
 				B1D4C6F115126756001E6AA2 /* VKRequestTest.m in Sources */,
+				B1E6CBC4151084F000B5856E /* VKLoginRequest.m in Sources */,
+				B1E6CBC4151084F000B58571 /* VKLoginRequestTest.m in Sources */,
+				B1E6CBC4151084F000B58576 /* VKAuthenticator.m in Sources */,
+				B1E6CBC4151084F000B58579 /* VKAuthenticatorTest.m in Sources */,
+				B1E6CBC4151084F000B58580 /* VKServiceAPIStub.m in Sources */,
+				B1A9CC561513CA8000014DD9 /* VKTestContainer.m in Sources */,
+				B1E6CBC4151084F000B58587 /* VKRequestFactoryTest.m in Sources */,
+				B1A9CC661515E22500014DD9 /* VKRequestFactoryImpl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		B11E6BC4151F6B2900012E29 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B11E6BC5151F6B2900012E29 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		B1D4C5B51512603F001E6AA2 /* VKLoginViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -876,6 +1115,43 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B11E6BCB151F6B2900012E29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UnitTests/UnitTests-Prefix.pch";
+				INFOPLIST_FILE = "UnitTests/UnitTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		B11E6BCC151F6B2900012E29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UnitTests/UnitTests-Prefix.pch";
+				INFOPLIST_FILE = "UnitTests/UnitTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		B1CCF702150BD81300007A33 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1019,6 +1295,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B11E6BCD151F6B2900012E29 /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B11E6BCB151F6B2900012E29 /* Debug */,
+				B11E6BCC151F6B2900012E29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		B1CCF6D2150BD81200007A33 /* Build configuration list for PBXProject "vkmessenger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
