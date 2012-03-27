@@ -91,7 +91,9 @@
     STAssertEqualObjects(request.responseString, [self responseString], @"should get response string after http request failed");
 }
 
+- (void)test_Should_Parse_Response_String_And_Find_Error {
 
+}
 
 - (void)requestFinished:(VKRequest *)aRequest {
     requestFinished = YES;
