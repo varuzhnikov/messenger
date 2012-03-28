@@ -7,9 +7,11 @@
 
 @class VKRequest;
 
-@protocol VKRequestDelegate<NSObject>
+@protocol VKRequestDelegate <NSObject>
 
 - (void)requestFailed:(VKRequest *)request;
 
 - (void)requestFinished:(VKRequest *)request;
+
+- (void)responseHasError:(NSError *)error;
 @end

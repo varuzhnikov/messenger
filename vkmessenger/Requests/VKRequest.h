@@ -28,6 +28,8 @@ static NSString *const HTTP_GET_PARAMS_DELIMETER = @"&";
 
 - (void)requestFinished:(id)request;
 
+- (void)parse;
+
 @property(readonly) NSURL* url;
 @property(nonatomic, retain) id<VKRequestDelegate> delegate;
 @property(nonatomic, copy) NSString *responseString;
