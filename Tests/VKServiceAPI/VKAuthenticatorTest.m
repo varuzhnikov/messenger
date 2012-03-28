@@ -24,7 +24,7 @@
 
 - (void)setUp {
     [super setUp];
-    self.container = [[VKTestContainer alloc] init];
+    _container = [[VKTestContainer alloc] init];
     _authenticator = [self.container getObject:@"authenticator"];
     _serviceAPI = [self.container getObject:@"serviceAPI"];
 }
@@ -46,7 +46,6 @@
     STAssertNotNil(_authenticator.serviceAPI, @"service api should not be nil");
     STAssertEqualObjects([_authenticator.serviceAPI token], @"token", @"should set token after request finished");
 }
-
 
 
 @end
