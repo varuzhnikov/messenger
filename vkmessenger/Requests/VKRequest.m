@@ -53,7 +53,6 @@
 - (void)dealloc {
     [_urlString release];
     _urlString = nil;
-    [_urlString release];
     [GETParameters release];
     GETParameters = nil;
     [_delegate release];

@@ -171,9 +171,12 @@
 		B1E6CBC4151084F000B585B6 /* VKProductionContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585AB /* VKProductionContainer.m */; };
 		B1E6CBC4151084F000B585B7 /* VKProductionContainerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585AE /* VKProductionContainerTest.m */; };
 		B1E6CBC4151084F000B585B8 /* VKLoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B5856C /* VKLoginRequest.m */; };
-		B1E6CBC4151084F000B585BD /* LoginScreenTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585BC /* LoginScreenTest.m */; };
-		B1E6CBC4151084F000B585C0 /* LoginScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585BF /* LoginScreen.m */; };
-		B1E6CBC4151084F000B585C1 /* LoginScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585BF /* LoginScreen.m */; };
+		B1E6CBC4151084F000B585BD /* VKLoginScreenTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585BC /* VKLoginScreenTest.m */; };
+		B1E6CBC4151084F000B585C0 /* VKLoginScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585BF /* VKLoginScreen.m */; };
+		B1E6CBC4151084F000B585C1 /* VKLoginScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585BF /* VKLoginScreen.m */; };
+		B1E6CBC4151084F000B585C3 /* VKLoginScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585BF /* VKLoginScreen.m */; };
+		B1E6CBC4151084F000B585C5 /* VKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C5BC1512603F001E6AA2 /* VKLoginViewController.m */; };
+		B1E6CBC4151084F000B585C6 /* VKApplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C5B91512603F001E6AA2 /* VKApplicationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -376,10 +379,11 @@
 		B1E6CBC4151084F000B585B2 /* VKProductionContainerTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKProductionContainerTestCase.m; sourceTree = "<group>"; };
 		B1E6CBC4151084F000B585B5 /* VKProductionContainerTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKProductionContainerTestCase.h; sourceTree = "<group>"; };
 		B1E6CBC4151084F000B585B9 /* VKAuthenticatorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKAuthenticatorDelegate.h; sourceTree = "<group>"; };
-		B1E6CBC4151084F000B585BC /* LoginScreenTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginScreenTest.m; sourceTree = "<group>"; };
-		B1E6CBC4151084F000B585BE /* LoginScreenTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginScreenTest.h; sourceTree = "<group>"; };
-		B1E6CBC4151084F000B585BF /* LoginScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginScreen.m; path = vkmessenger/ScreenModels/LoginScreen.m; sourceTree = SOURCE_ROOT; };
-		B1E6CBC4151084F000B585C2 /* LoginScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginScreen.h; path = vkmessenger/ScreenModels/LoginScreen.h; sourceTree = SOURCE_ROOT; };
+		B1E6CBC4151084F000B585BC /* VKLoginScreenTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKLoginScreenTest.m; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B585BE /* VKLoginScreenTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKLoginScreenTest.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B585BF /* VKLoginScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VKLoginScreen.m; path = vkmessenger/ScreenModels/VKLoginScreen.m; sourceTree = SOURCE_ROOT; };
+		B1E6CBC4151084F000B585C2 /* VKLoginScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VKLoginScreen.h; path = vkmessenger/ScreenModels/VKLoginScreen.h; sourceTree = SOURCE_ROOT; };
+		B1E6CBC4151084F000B585C4 /* VKLoginScreenDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKLoginScreenDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -897,10 +901,11 @@
 		B1E6CBC4151084F000B585BB /* ScreenModels */ = {
 			isa = PBXGroup;
 			children = (
-				B1E6CBC4151084F000B585C2 /* LoginScreen.h */,
-				B1E6CBC4151084F000B585BF /* LoginScreen.m */,
-				B1E6CBC4151084F000B585BE /* LoginScreenTest.h */,
-				B1E6CBC4151084F000B585BC /* LoginScreenTest.m */,
+				B1E6CBC4151084F000B585C4 /* VKLoginScreenDelegate.h */,
+				B1E6CBC4151084F000B585C2 /* VKLoginScreen.h */,
+				B1E6CBC4151084F000B585BF /* VKLoginScreen.m */,
+				B1E6CBC4151084F000B585BE /* VKLoginScreenTest.h */,
+				B1E6CBC4151084F000B585BC /* VKLoginScreenTest.m */,
 			);
 			path = ScreenModels;
 			sourceTree = "<group>";
@@ -1096,8 +1101,8 @@
 				B1E6CBC4151084F000B5859C /* SBJsonParser.m in Sources */,
 				B1E6CBC4151084F000B5859D /* NSObject+SBJson.m in Sources */,
 				B1E6CBC4151084F000B585A5 /* VKTestContainerTestCase.m in Sources */,
-				B1E6CBC4151084F000B585BD /* LoginScreenTest.m in Sources */,
-				B1E6CBC4151084F000B585C1 /* LoginScreen.m in Sources */,
+				B1E6CBC4151084F000B585BD /* VKLoginScreenTest.m in Sources */,
+				B1E6CBC4151084F000B585C1 /* VKLoginScreen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1151,7 +1156,7 @@
 				B1E6CBC4151084F000B58575 /* VKAuthenticator.m in Sources */,
 				B1E6CBC4151084F000B58584 /* VKRequestFactoryImpl.m in Sources */,
 				B1E6CBC4151084F000B585AC /* VKProductionContainer.m in Sources */,
-				B1E6CBC4151084F000B585C0 /* LoginScreen.m in Sources */,
+				B1E6CBC4151084F000B585C0 /* VKLoginScreen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1203,6 +1208,9 @@
 				B1E6CBC4151084F000B585B6 /* VKProductionContainer.m in Sources */,
 				B1E6CBC4151084F000B585B7 /* VKProductionContainerTest.m in Sources */,
 				B1E6CBC4151084F000B585B8 /* VKLoginRequest.m in Sources */,
+				B1E6CBC4151084F000B585C3 /* VKLoginScreen.m in Sources */,
+				B1E6CBC4151084F000B585C5 /* VKLoginViewController.m in Sources */,
+				B1E6CBC4151084F000B585C6 /* VKApplicationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1325,6 +1333,7 @@
 					"-ObjC",
 					"-all_load",
 					"-force_load",
+					"$(SRCROOT)/vkmessenger/Libs/OCMock/libOCMock.a",
 				);
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
@@ -1361,6 +1370,7 @@
 					"-ObjC",
 					"-all_load",
 					"-force_load",
+					"$(SRCROOT)/vkmessenger/Libs/OCMock/libOCMock.a",
 				);
 				PROVISIONING_PROFILE = "2BE7349A-262D-406B-8EEE-E2F3A8C9D1F0";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2BE7349A-262D-406B-8EEE-E2F3A8C9D1F0";

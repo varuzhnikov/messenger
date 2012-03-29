@@ -11,6 +11,7 @@
 #import "VKAuthenticator.h"
 #import "VKRequestFactoryImpl.h"
 #import "VKServiceAPIStub.h"
+#import "VKLoginScreen.h"
 
 
 @implementation VKTestContainer {
@@ -22,6 +23,7 @@
         [self addDefinitionFromClassName:NSStringFromClass([VKServiceAPIStub class])];
         [self addDefinitionFromClassName:NSStringFromClass([VKAuthenticator class])];
         [self addDefinitionFromClassName:NSStringFromClass([VKRequestFactoryImpl class])];
+        [self addDefinitionFromClassName:NSStringFromClass([VKLoginScreen class])];
     }
 
     return self;

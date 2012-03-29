@@ -10,6 +10,8 @@
 #import "VKAuthenticator.h"
 #import "VKRequestFactoryImpl.h"
 #import "OxICSimpleWrapperFactory.h"
+#import "VKLoginScreen.h"
+#import "VKLoginViewController.h"
 
 
 @implementation VKProductionContainer {
@@ -21,6 +23,8 @@
         [self addDefinitionFromClassName:NSStringFromClass([VKAuthenticator class])];
         [self addDefinitionFromClassName:NSStringFromClass([VKServiceAPIImpl class])];
         [self addDefinitionFromClassName:NSStringFromClass([VKRequestFactoryImpl class])];
+        [self addDefinitionFromClassName:NSStringFromClass([VKLoginScreen class])];
+        [self addDefinitionFromClassName:NSStringFromClass([VKLoginViewController class])];
     }
 
     return self;

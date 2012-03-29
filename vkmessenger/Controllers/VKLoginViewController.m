@@ -8,8 +8,34 @@
 
 #import "VKLoginViewController.h"
 #import "VKApplicationController.h"
+#import "OxICContainer.h"
+#import "VKLoginScreen.h"
 
-@implementation VKLoginViewController
+@implementation VKLoginViewController {
+@private
+    VKLoginScreen *_loginScreen;
+    UIActivityIndicatorView *_spinner;
+}
+
+IoCName(loginViewController)
+IoCSingleton
+
+IoCInject(loginScreen, loginScreen)
+@synthesize loginScreen = _loginScreen;
+@synthesize passwordTextField = _passwordTextField;
+@synthesize loginTextField = _loginTextField;
+@synthesize spinner = _spinner;
+
+
+- (id)init {
+    self = [self initWithNibName:NSStringFromClass([VKLoginViewController class]) bundle:nil];
+    if (self) {
+
+    }
+
+    return self;
+}
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -17,6 +43,12 @@
         // Custom initialization
     }
     return self;
+}
+
+- (void)setLoginScreen:(VKLoginScreen *)aLoginScreen {
+    [_loginScreen release];
+    _loginScreen = [aLoginScreen retain];
+    _loginScreen.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,6 +66,9 @@
 }
 
 - (void)viewDidUnload {
+    [self setLoginTextField:nil];
+    [self setPasswordTextField:nil];
+    self.spinner = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -45,10 +80,33 @@
 }
 
 - (IBAction)loginButtonDidPress:(id)sender {
+    NSLog(@"username :%@", self.loginTextField.text);
+    NSLog(@"password :%@", self.passwordTextField.text);
+    [self.loginScreen enteredLogin:self.loginTextField.text andPassword:self.passwordTextField.text];
+}
+
+- (void)enterInApplication {
     VKApplicationController *vkApplicationController = [[VKApplicationController alloc] initWithNibName:@"VKApplicationController" bundle:nil];
     self.view.window.rootViewController = vkApplicationController;
     [self.view removeFromSuperview];
     [vkApplicationController release];
+}
+
+- (void)stopWait {
+   [self.spinner stopAnimating];
+}
+
+- (void)startWait {
+   [self.spinner startAnimating];
+}
+
+- (void)dealloc {
+    [_loginScreen release];
+    _loginScreen = nil;
+    self.loginTextField = nil;
+    self.passwordTextField = nil;
+    self.spinner = nil;
+    [super dealloc];
 }
 
 

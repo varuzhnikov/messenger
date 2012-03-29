@@ -12,10 +12,11 @@
 #import "OxICSimpleWrapperFactory.h"
 #import "ServiceExecutor.h"
 #import "OxICContainer.h"
+#import "VKProductionContainer.h"
 
 @implementation VKAppDelegate {
 @private
-    OxICContainer *_container;
+    VKProductionContainer *_container;
 }
 
 
@@ -31,32 +32,19 @@
 
 - (void)buildContainerFromCodeAutoInject {
 
-    OxICSimpleWrapperFactory *wrapperFactory = [[OxICSimpleWrapperFactory alloc] init];
-    OxICContainer *autoInjectContainer = [[OxICContainer alloc] initWithWrapperFactory:wrapperFactory];
+    VKProductionContainer *autoInjectContainer = [[VKProductionContainer alloc] init];
     self.container = autoInjectContainer;
 
     [autoInjectContainer release];
-    [wrapperFactory release];
-
-    [self.container addDefinitionFromClassName:@"ExampleServiceImpl"];
-
-    [self.container addDefinitionFromClassName:@"ServiceExecutorImpl"];
 }
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-    UIViewController *loginViewController = [[[VKLoginViewController alloc] initWithNibName:@"VKLoginViewController" bundle:nil] autorelease];
-
     [self buildContainerFromCodeAutoInject];
 
-    //call to factory
-    // theExecutor: ServiceExecutorImpl2
-    // theService: ExampleServiceImpl1
-    id <ServiceExecutor> executorFromCodeAutoInject = [self.container getObject:@"theExecutor"];
+    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    UIViewController *loginViewController =  [self.container getObject:@"loginViewController"];
 
-    // this executor has an ExampleServiceImpl1 in service property.
-    [executorFromCodeAutoInject executeService];
 
     self.window.rootViewController = loginViewController;
     [self.window makeKeyAndVisible];
