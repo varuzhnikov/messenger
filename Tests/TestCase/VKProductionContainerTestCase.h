@@ -7,11 +7,12 @@
 
 #import <Foundation/Foundation.h>
 #import <SenTestingKit/SenTestingKit.h>
+#import <GHUnitIOS/GHTestCase.h>
 
 @class VKProductionContainer;
 
 
-@interface VKProductionContainerTestCase : SenTestCase
+@interface VKProductionContainerTestCase : GHTestCase
 
 @property(nonatomic, retain) VKProductionContainer *container;
 
