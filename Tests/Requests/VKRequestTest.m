@@ -16,13 +16,16 @@
 
 @private
     NSString *_responseString;
+    NSError *_responseError;
 }
 @synthesize responseString = _responseString;
+@synthesize responseError = _responseError;
 
 
 - (void)setUp {
     [super setUp];
     request = [[VKRequest alloc] initWithUrlString:URL_STRING];
+    [request setDelegate:self];
 }
 
 - (void)test_Should_Create_Request_With_Url_String {
@@ -64,35 +67,45 @@
 }
 
 - (void)test_Should_Call_Delegate_After_ASI_Http_Finished_Request {
-    [request setDelegate:self];
     [request requestFinished:nil];
 
     STAssertTrue(requestFinished, @"should call delegate after asi http request finished");
 }
 
 - (void)test_Should_Call_Delegate_After_ASI_Http_Failed_Request {
-    [request setDelegate:self];
     [request requestFailed:nil];
 
     STAssertTrue(requestFinished, @"should call delegate after asi http request finished");
 }
 
 - (void)test_Should_Get_Response_String_After_Http_Request_Finished {
-    [request setDelegate:self];
     [request requestFinished:self];
 
     STAssertEqualObjects(request.responseString, [self responseString], @"should get response string after http request finished");
 }
 
 - (void)test_Should_Get_Response_String_After_Http_Request_Failed {
-    [request setDelegate:self];
     [request requestFailed:self];
 
     STAssertEqualObjects(request.responseString, [self responseString], @"should get response string after http request failed");
 }
 
-- (void)test_Should_Parse_Response_String_And_Find_Error {
+- (void)test_Should_Call_responseHasError_On_Delegate_If_Response_String_Has_Error {
+    request.responseString = JSON_WITH_ERROR;
 
+    STAssertNotNil(self.responseError, @"should call responseHasError on delegate if response string has error");
+}
+
+- (void)test_Should_Parse_Response_String_And_Find_Error {
+    request.responseString = JSON_WITH_ERROR;
+
+    STAssertEqualObjects([self.responseError localizedDescription], TEST_ERROR_MESSAGE, @"should parse response string and call responseHasError");
+}
+
+- (void)test_Should_Not_Find_Error_While_Parsing_Empty_Response {
+    request.responseString = @"";
+
+    STAssertNil(self.responseError, @"should not find error while parsing empty response");
 }
 
 - (void)requestFinished:(VKRequest *)aRequest {
@@ -103,9 +116,15 @@
     requestFinished = YES;
 }
 
+- (void)responseHasError:(NSError *)error {
+    NSLog(@"Error %@", error);
+    self.responseError = error;
+}
+
 - (void)tearDown {
     [super tearDown];
     [request release];
+    self.responseError = nil;
 }
 
 - (NSString *)responseString {

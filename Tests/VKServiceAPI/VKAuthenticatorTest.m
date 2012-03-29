@@ -20,8 +20,6 @@
 @synthesize container = _container;
 
 
-
-
 - (void)setUp {
     [super setUp];
     _container = [[VKTestContainer alloc] init];
@@ -37,14 +35,29 @@
 
 - (void)test_Service_Api_Should_Get_Empty_Token_After_Failed_Login {
     [_authenticator loginWithUsername:@"" andPassword:@""];
+
     STAssertEqualObjects(_serviceAPI.token, @"", @"service api should get empty token if login failed");
 }
 
 - (void)test_Authenticator_Should_Set_Token_After_Request_Finished {
     [_authenticator loginWithUsername:@"username" andPassword:@"password"];
 
-    STAssertNotNil(_authenticator.serviceAPI, @"service api should not be nil");
-    STAssertEqualObjects([_authenticator.serviceAPI token], @"token", @"should set token after request finished");
+    STAssertEqualObjects([_authenticator.serviceAPI token], @"token_from_server", @"should set token after request finished");
+}
+
+- (void)test_Authenticator_Should_Notify_Delegate_After_Successful_Login {
+    _authenticator.delegate = self;
+    [_authenticator loginWithUsername:@"username" andPassword:@"password"];
+
+    STAssertTrue(loginFinished, @"authenticator should notify delegate after successful login");
+}
+
+- (void)test_Authenticator_Should_Notify_Error_Notifier_After_Failed_Login {
+
+}
+
+- (void)loginFinished {
+    loginFinished = YES;
 }
 
 

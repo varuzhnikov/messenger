@@ -8,8 +8,17 @@
 
 
 
-@interface VKLoginViewController : UIViewController
+#import "VKLoginScreenDelegate.h"
+@class VKLoginScreen;
+
+@interface VKLoginViewController : UIViewController<VKLoginScreenDelegate>
 
 -(IBAction)loginButtonDidPress:(id)sender;
+
+@property(nonatomic, retain) VKLoginScreen *loginScreen;
+@property (retain, nonatomic) IBOutlet UITextField *passwordTextField;
+@property (retain, nonatomic) IBOutlet UITextField *loginTextField;
+@property (retain, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
+
 
 @end

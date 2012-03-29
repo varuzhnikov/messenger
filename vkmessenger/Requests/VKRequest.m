@@ -8,10 +8,13 @@
 #import "VKRequest.h"
 #import "VKRequestDelegate.h"
 #import "ASIHTTPRequest.h"
+#import "SBJson.h"
 
 
 @interface VKRequest ()
 @property(nonatomic, readonly) NSString *urlString;
+
+- (void)replaceResponseString:(NSString *)aResponseString;
 
 - (void)addAllGETParamsTo:(NSMutableString *)resultURL;
 
@@ -50,7 +53,6 @@
 - (void)dealloc {
     [_urlString release];
     _urlString = nil;
-    [_urlString release];
     [GETParameters release];
     GETParameters = nil;
     [_delegate release];
@@ -64,6 +66,29 @@
 
 - (NSString *)getParameterWithName:(NSString *)name {
     return [GETParameters objectForKey:name];
+}
+
+- (void)setResponseString:(NSString *)aResponseString {
+    [self replaceResponseString:aResponseString];
+    id JSONValue = [_responseString JSONValue];
+    NSString *errorDescription = [JSONValue objectForKey:@"error"];
+    if (errorDescription != nil) {
+        NSDictionary *errorDetails = [NSDictionary dictionaryWithObject:errorDescription forKey:NSLocalizedDescriptionKey];
+        NSError *error = [NSError errorWithDomain:@"ru.vkmessanger" code:100 userInfo:errorDetails];
+        [self.delegate responseHasError:error];
+    } else {
+        [self parse];
+    }
+}
+
+- (void)replaceResponseString:(NSString *)aResponseString {
+    [_responseString release];
+    _responseString = nil;
+    _responseString = [aResponseString retain];
+}
+
+- (void)parse {
+
 }
 
 - (NSURL *)url {
@@ -103,6 +128,7 @@
 - (void)requestFailed:(id)request {
     if ([request respondsToSelector:@selector(responseString)]) {
         self.responseString = [request responseString];
+        NSLog(@"request failed with response: %@", self.responseString);
     }
     [self.delegate requestFailed:self];
 }
@@ -110,6 +136,7 @@
 - (void)requestFinished:(id)request {
     if ([request respondsToSelector:@selector(responseString)]) {
         self.responseString = [request responseString];
+        NSLog(@"request finished with response: %@", self.responseString);
     }
     [self.delegate requestFinished:self];
 }

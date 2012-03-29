@@ -18,16 +18,19 @@
 }
 @synthesize token = _token;
 
+
+IoCName(serviceAPI)
+IoCSingleton
+IoCLazy
+
 - (void)sendRequest:(VKRequest *)request {
     ASIHTTPRequest *asiHttpRequest = [ASIHTTPRequest requestWithURL:request.url];
+
+    NSLog(@"send request by url: %@", [request.url absoluteString]);
 
     [asiHttpRequest setDelegate:request];
 
     [asiHttpRequest startSynchronous];
-}
-
-- (NSString *)token {
-    return nil;
 }
 
 - (void)dealloc {
