@@ -35,7 +35,7 @@
 		B12BEA1015108A61006B2592 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12BEA0F15108A61006B2592 /* CoreData.framework */; };
 		B12BEA1115108A68006B2592 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12BEA0F15108A61006B2592 /* CoreData.framework */; };
 		B15244AA1520D34F0047D185 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B11E6BBD151F6B2900012E29 /* SenTestingKit.framework */; };
-		B17DB6B515243C2D00AAB172 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B17DB6B415243C2D00AAB172 /* libOCMock.a */; };
+		B15558761524759A00D55AB9 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B17DB6B415243C2D00AAB172 /* libOCMock.a */; };
 		B17DB6C115243C5000AAB172 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B17DB6C015243C5000AAB172 /* libOCMock.a */; };
 		B1A89BCD150E2E5D0068BD8C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF797150BDEE000007A33 /* CFNetwork.framework */; };
 		B1A89BCF150E2E680068BD8C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF79D150BDF0500007A33 /* libz.dylib */; };
@@ -391,8 +391,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B17DB6B515243C2D00AAB172 /* libOCMock.a in Frameworks */,
 				B11E6BBE151F6B2900012E29 /* SenTestingKit.framework in Frameworks */,
+				B15558761524759A00D55AB9 /* libOCMock.a in Frameworks */,
 				B11E6BBF151F6B2900012E29 /* UIKit.framework in Frameworks */,
 				B11E6BC0151F6B2900012E29 /* Foundation.framework in Frameworks */,
 			);
