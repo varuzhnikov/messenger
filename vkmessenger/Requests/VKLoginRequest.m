@@ -11,7 +11,11 @@
 
 @implementation VKLoginRequest {
 
+@private
+    NSString *_token;
 }
+@synthesize token = _token;
+
 
 - (id)init {
     self = [super initWithUrlString:GET_TOKEN_URL];
@@ -53,13 +57,15 @@
     [self setGetParameterWithName:PASSWORD_PARAM_NAME andValue:password];
 }
 
-- (NSString *)token {
-    return @"token";
-}
-
 - (void)dealloc {
+    [_token release];
+    _token = nil;
     [super dealloc];
 }
 
+- (void)parse {
+    id jsonValue = [self.responseString JSONValue];
+    _token = [[jsonValue objectForKey:TOKEN_PARAM_NAME] retain];
+}
 
 @end

@@ -32,11 +32,11 @@
     STAssertEqualObjects([[loginRequest url] absoluteString], expectedString, @"should create login request with login and password");
 }
 
-//- (void)test_Should_Parse_Token_From_Response_String {
-//    request.responseString = @"{\"token\":\"token_from_server\"}";
-//
-//    STAssertEqualObjects(request.token, @"token_from_server", @"should parse token from response string");
-//}
+- (void)test_Should_Parse_Token_From_Response_String {
+    request.responseString = @"{\"access_token\":\"token_from_server\"}";
+
+    STAssertEqualObjects(request.token, @"token_from_server", @"should parse token from response string");
+}
 
 
 

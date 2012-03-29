@@ -10,6 +10,7 @@
 #import "VKRequestDelegate.h"
 
 @protocol VKServiceAPI;
+@protocol VKAuthenticatorDelegate;
 
 
 @interface VKAuthenticator : NSObject <VKRequestDelegate>
@@ -18,6 +19,8 @@
 @property(nonatomic, retain) id<VKRequestFactory> requestFactory;
 @property(nonatomic, retain) VKRequest *loginRequest;
 
+
+@property(nonatomic, retain) id<VKAuthenticatorDelegate> delegate;
 
 - (void)loginWithUsername:(NSString *)userName andPassword:(NSString *)password;
 @end

@@ -1,35 +1,34 @@
 //
-//  Created by Vitaliy Ruzhnikov on 16.03.12.
+//  Created by Vitaliy Ruzhnikov on 27.03.12.
 //
 //
 //
 
 
-#import <objc/runtime.h>
-#import "VKTestContainer.h"
-#import "OxICSimpleWrapperFactory.h"
+#import "VKProductionContainer.h"
+#import "VKServiceAPIImpl.h"
 #import "VKAuthenticator.h"
 #import "VKRequestFactoryImpl.h"
-#import "VKServiceAPIStub.h"
+#import "OxICSimpleWrapperFactory.h"
 #import "VKLoginScreen.h"
+#import "VKLoginViewController.h"
 
 
-@implementation VKTestContainer {
+@implementation VKProductionContainer {
 
 }
 - (id)init {
     self = [super initWithWrapperFactory:[[[OxICSimpleWrapperFactory alloc] init] autorelease]];
     if (self) {
-        [self addDefinitionFromClassName:NSStringFromClass([VKServiceAPIStub class])];
         [self addDefinitionFromClassName:NSStringFromClass([VKAuthenticator class])];
+        [self addDefinitionFromClassName:NSStringFromClass([VKServiceAPIImpl class])];
         [self addDefinitionFromClassName:NSStringFromClass([VKRequestFactoryImpl class])];
         [self addDefinitionFromClassName:NSStringFromClass([VKLoginScreen class])];
+        [self addDefinitionFromClassName:NSStringFromClass([VKLoginViewController class])];
     }
 
     return self;
 }
-
-
 
 
 @end

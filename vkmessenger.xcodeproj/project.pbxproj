@@ -34,12 +34,10 @@
 		B12BEA0E15108A06006B2592 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B5856B /* libxml2.dylib */; };
 		B12BEA1015108A61006B2592 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12BEA0F15108A61006B2592 /* CoreData.framework */; };
 		B12BEA1115108A68006B2592 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12BEA0F15108A61006B2592 /* CoreData.framework */; };
-		B15244AA1520D34F0047D185 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B11E6BBD151F6B2900012E29 /* SenTestingKit.framework */; };
 		B1A89BCD150E2E5D0068BD8C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF797150BDEE000007A33 /* CFNetwork.framework */; };
 		B1A89BCF150E2E680068BD8C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF79D150BDF0500007A33 /* libz.dylib */; };
 		B1A89BD0150E2E8B0068BD8C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF79B150BDEF300007A33 /* MobileCoreServices.framework */; };
 		B1A89BD1150E2E950068BD8C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF799150BDEEB00007A33 /* SystemConfiguration.framework */; };
-		B1A9CC561513CA8000014DD9 /* VKTestContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B5857C /* VKTestContainer.m */; };
 		B1A9CC661515E22500014DD9 /* VKRequestFactoryImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58583 /* VKRequestFactoryImpl.m */; };
 		B1CCF6DD150BD81300007A33 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF6DC150BD81300007A33 /* UIKit.framework */; };
 		B1CCF6DF150BD81300007A33 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF6DE150BD81300007A33 /* Foundation.framework */; };
@@ -141,18 +139,12 @@
 		B1D4C6ED15126731001E6AA2 /* VKRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C6221512603F001E6AA2 /* VKRequest.m */; };
 		B1D4C6EE15126737001E6AA2 /* VKServiceAPIImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C62F1512603F001E6AA2 /* VKServiceAPIImpl.m */; };
 		B1D4C6EF15126747001E6AA2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C66715126051001E6AA2 /* main.m */; };
-		B1D4C6F015126751001E6AA2 /* VKServiceAPITest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C67015126051001E6AA2 /* VKServiceAPITest.m */; };
-		B1D4C6F115126756001E6AA2 /* VKRequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C66A15126051001E6AA2 /* VKRequestTest.m */; };
+		B1D4C6F015126751001E6AA2 /* VKAuthenticatorIntegrationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C67015126051001E6AA2 /* VKAuthenticatorIntegrationTest.m */; };
 		B1D4C6F215126778001E6AA2 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1D4C5DF1512603F001E6AA2 /* GHUnitIOS.framework */; };
 		B1E6CBC4151084F000B5856D /* VKLoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B5856C /* VKLoginRequest.m */; };
-		B1E6CBC4151084F000B5856E /* VKLoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B5856C /* VKLoginRequest.m */; };
-		B1E6CBC4151084F000B58571 /* VKLoginRequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58570 /* VKLoginRequestTest.m */; };
 		B1E6CBC4151084F000B58575 /* VKAuthenticator.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58574 /* VKAuthenticator.m */; };
 		B1E6CBC4151084F000B58576 /* VKAuthenticator.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58574 /* VKAuthenticator.m */; };
-		B1E6CBC4151084F000B58579 /* VKAuthenticatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58578 /* VKAuthenticatorTest.m */; };
-		B1E6CBC4151084F000B58580 /* VKServiceAPIStub.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B5857F /* VKServiceAPIStub.m */; };
 		B1E6CBC4151084F000B58584 /* VKRequestFactoryImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58583 /* VKRequestFactoryImpl.m */; };
-		B1E6CBC4151084F000B58587 /* VKRequestFactoryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58586 /* VKRequestFactoryTest.m */; };
 		B1E6CBC4151084F000B58590 /* VKRequestFactoryStub.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B5858F /* VKRequestFactoryStub.m */; };
 		B1E6CBC4151084F000B58592 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C6181512603F001E6AA2 /* SBJsonStreamWriterState.m */; };
 		B1E6CBC4151084F000B58593 /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C6161512603F001E6AA2 /* SBJsonStreamWriterAccumulator.m */; };
@@ -166,6 +158,22 @@
 		B1E6CBC4151084F000B5859B /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C60C1512603F001E6AA2 /* SBJsonStreamParser.m */; };
 		B1E6CBC4151084F000B5859C /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C60A1512603F001E6AA2 /* SBJsonParser.m */; };
 		B1E6CBC4151084F000B5859D /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C6071512603F001E6AA2 /* NSObject+SBJson.m */; };
+		B1E6CBC4151084F000B585A0 /* VKErrorCodes.h in Resources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B5859F /* VKErrorCodes.h */; };
+		B1E6CBC4151084F000B585A1 /* VKErrorCodes.h in Resources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B5859F /* VKErrorCodes.h */; };
+		B1E6CBC4151084F000B585A2 /* VKErrorCodes.h in Resources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B5859F /* VKErrorCodes.h */; };
+		B1E6CBC4151084F000B585A5 /* VKTestContainerTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585A3 /* VKTestContainerTestCase.m */; };
+		B1E6CBC4151084F000B585A8 /* VKAsyncTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585A7 /* VKAsyncTestCase.m */; };
+		B1E6CBC4151084F000B585AC /* VKProductionContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585AB /* VKProductionContainer.m */; };
+		B1E6CBC4151084F000B585B3 /* VKProductionContainerTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585B2 /* VKProductionContainerTestCase.m */; };
+		B1E6CBC4151084F000B585B6 /* VKProductionContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585AB /* VKProductionContainer.m */; };
+		B1E6CBC4151084F000B585B7 /* VKProductionContainerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585AE /* VKProductionContainerTest.m */; };
+		B1E6CBC4151084F000B585B8 /* VKLoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B5856C /* VKLoginRequest.m */; };
+		B1E6CBC4151084F000B585BD /* VKLoginScreenTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585BC /* VKLoginScreenTest.m */; };
+		B1E6CBC4151084F000B585C0 /* VKLoginScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585BF /* VKLoginScreen.m */; };
+		B1E6CBC4151084F000B585C1 /* VKLoginScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585BF /* VKLoginScreen.m */; };
+		B1E6CBC4151084F000B585C3 /* VKLoginScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585BF /* VKLoginScreen.m */; };
+		B1E6CBC4151084F000B585C5 /* VKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C5BC1512603F001E6AA2 /* VKLoginViewController.m */; };
+		B1E6CBC4151084F000B585C6 /* VKApplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C5B91512603F001E6AA2 /* VKApplicationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -175,6 +183,13 @@
 		B11E6BC5151F6B2900012E29 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B11E6BCA151F6B2900012E29 /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
 		B12BEA0F15108A61006B2592 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B15558771524764A00D55AB9 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
+		B17DB6BA15243C5000AAB172 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		B17DB6BB15243C5000AAB172 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
+		B17DB6BC15243C5000AAB172 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
+		B17DB6BD15243C5000AAB172 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
+		B17DB6BE15243C5000AAB172 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
+		B17DB6BF15243C5000AAB172 /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
 		B1CCF6D8150BD81300007A33 /* vkmessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vkmessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1CCF6DC150BD81300007A33 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B1CCF6DE150BD81300007A33 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -324,8 +339,8 @@
 		B1D4C66B15126051001E6AA2 /* RunTests.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = RunTests.sh; sourceTree = "<group>"; };
 		B1D4C66C15126051001E6AA2 /* Tests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		B1D4C66D15126051001E6AA2 /* Tests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		B1D4C66F15126051001E6AA2 /* VKServiceAPITest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKServiceAPITest.h; sourceTree = "<group>"; };
-		B1D4C67015126051001E6AA2 /* VKServiceAPITest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKServiceAPITest.m; sourceTree = "<group>"; };
+		B1D4C66F15126051001E6AA2 /* VKAuthenticatorIntegrationTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKAuthenticatorIntegrationTest.h; sourceTree = "<group>"; };
+		B1D4C67015126051001E6AA2 /* VKAuthenticatorIntegrationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKAuthenticatorIntegrationTest.m; sourceTree = "<group>"; };
 		B1E6CBC4151084F000B5856B /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		B1E6CBC4151084F000B5856C /* VKLoginRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKLoginRequest.m; sourceTree = "<group>"; };
 		B1E6CBC4151084F000B5856F /* VKLoginRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKLoginRequest.h; sourceTree = "<group>"; };
@@ -348,6 +363,23 @@
 		B1E6CBC4151084F000B58589 /* VKRequestFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKRequestFactory.h; sourceTree = "<group>"; };
 		B1E6CBC4151084F000B5858F /* VKRequestFactoryStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKRequestFactoryStub.m; sourceTree = "<group>"; };
 		B1E6CBC4151084F000B58591 /* VKRequestFactoryStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKRequestFactoryStub.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B5859F /* VKErrorCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VKErrorCodes.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B585A3 /* VKTestContainerTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKTestContainerTestCase.m; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B585A6 /* VKTestContainerTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKTestContainerTestCase.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B585A7 /* VKAsyncTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKAsyncTestCase.m; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B585A9 /* VKAsyncTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKAsyncTestCase.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B585AB /* VKProductionContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKProductionContainer.m; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B585AD /* VKProductionContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKProductionContainer.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B585AE /* VKProductionContainerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKProductionContainerTest.m; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B585B0 /* VKProductionContainerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKProductionContainerTest.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B585B2 /* VKProductionContainerTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKProductionContainerTestCase.m; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B585B5 /* VKProductionContainerTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKProductionContainerTestCase.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B585B9 /* VKAuthenticatorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKAuthenticatorDelegate.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B585BC /* VKLoginScreenTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKLoginScreenTest.m; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B585BE /* VKLoginScreenTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKLoginScreenTest.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B585BF /* VKLoginScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VKLoginScreen.m; path = vkmessenger/ScreenModels/VKLoginScreen.m; sourceTree = SOURCE_ROOT; };
+		B1E6CBC4151084F000B585C2 /* VKLoginScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VKLoginScreen.h; path = vkmessenger/ScreenModels/VKLoginScreen.h; sourceTree = SOURCE_ROOT; };
+		B1E6CBC4151084F000B585C4 /* VKLoginScreenDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKLoginScreenDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -381,7 +413,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B15244AA1520D34F0047D185 /* SenTestingKit.framework in Frameworks */,
 				B1D4C6F215126778001E6AA2 /* GHUnitIOS.framework in Frameworks */,
 				B12BEA1115108A68006B2592 /* CoreData.framework in Frameworks */,
 				B12BEA0E15108A06006B2592 /* libxml2.dylib in Frameworks */,
@@ -414,6 +445,37 @@
 				B11E6BCA151F6B2900012E29 /* UnitTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B17DB6B715243C5000AAB172 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				B15558771524764A00D55AB9 /* libOCMock.a */,
+				B17DB6B815243C5000AAB172 /* Headers */,
+			);
+			name = OCMock;
+			path = ../../../../../../Users/nep/Projects/messanger/vkmessenger/Libs/OCMock;
+			sourceTree = "<group>";
+		};
+		B17DB6B815243C5000AAB172 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				B17DB6B915243C5000AAB172 /* OCMock */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		B17DB6B915243C5000AAB172 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				B17DB6BA15243C5000AAB172 /* NSNotificationCenter+OCMAdditions.h */,
+				B17DB6BB15243C5000AAB172 /* OCMArg.h */,
+				B17DB6BC15243C5000AAB172 /* OCMConstraint.h */,
+				B17DB6BD15243C5000AAB172 /* OCMock.h */,
+				B17DB6BE15243C5000AAB172 /* OCMockObject.h */,
+				B17DB6BF15243C5000AAB172 /* OCMockRecorder.h */,
+			);
+			path = OCMock;
 			sourceTree = "<group>";
 		};
 		B1CCF6CD150BD81200007A33 = {
@@ -491,6 +553,7 @@
 		B1D4C5B31512603F001E6AA2 /* vkmessenger */ = {
 			isa = PBXGroup;
 			children = (
+				B1E6CBC4151084F000B585B9 /* VKAuthenticatorDelegate.h */,
 				B1D4C5B41512603F001E6AA2 /* Controllers */,
 				B1D4C5BE1512603F001E6AA2 /* Localizable.strings */,
 				B1D4C5C01512603F001E6AA2 /* ExampleIoC */,
@@ -503,6 +566,9 @@
 				B1D4C62B1512603F001E6AA2 /* vkmessenger-Info.plist */,
 				B1D4C62C1512603F001E6AA2 /* vkmessenger-Prefix.pch */,
 				B1D4C62D1512603F001E6AA2 /* VKServiceAPI */,
+				B1E6CBC4151084F000B5859E /* Errors */,
+				B1E6CBC4151084F000B585AA /* Container */,
+				B1E6CBC4151084F000B585BA /* ScreenModels */,
 			);
 			path = vkmessenger;
 			sourceTree = "<group>";
@@ -537,6 +603,7 @@
 		B1D4C5C71512603F001E6AA2 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				B17DB6B715243C5000AAB172 /* OCMock */,
 				B1D4C5C81512603F001E6AA2 /* ASIHTTPRequest */,
 				B1D4C5DF1512603F001E6AA2 /* GHUnitIOS.framework */,
 				B1D4C5E01512603F001E6AA2 /* Oxen */,
@@ -731,6 +798,8 @@
 				B1D4C66D15126051001E6AA2 /* Tests-Prefix.pch */,
 				B1D4C66E15126051001E6AA2 /* VKServiceAPI */,
 				B1E6CBC4151084F000B5857B /* Container */,
+				B1E6CBC4151084F000B585B1 /* TestCase */,
+				B1E6CBC4151084F000B585BB /* ScreenModels */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -755,8 +824,8 @@
 				B1E6CBC4151084F000B58586 /* VKRequestFactoryTest.m */,
 				B1E6CBC4151084F000B5857A /* VKAuthenticatorTest.h */,
 				B1E6CBC4151084F000B58578 /* VKAuthenticatorTest.m */,
-				B1D4C66F15126051001E6AA2 /* VKServiceAPITest.h */,
-				B1D4C67015126051001E6AA2 /* VKServiceAPITest.m */,
+				B1D4C66F15126051001E6AA2 /* VKAuthenticatorIntegrationTest.h */,
+				B1D4C67015126051001E6AA2 /* VKAuthenticatorIntegrationTest.m */,
 				B1E6CBC4151084F000B5858E /* stubs */,
 			);
 			path = VKServiceAPI;
@@ -765,6 +834,8 @@
 		B1E6CBC4151084F000B5857B /* Container */ = {
 			isa = PBXGroup;
 			children = (
+				B1E6CBC4151084F000B585B0 /* VKProductionContainerTest.h */,
+				B1E6CBC4151084F000B585AE /* VKProductionContainerTest.m */,
 				B1E6CBC4151084F000B5857E /* VKTestContainer.h */,
 				B1E6CBC4151084F000B5857C /* VKTestContainer.m */,
 			);
@@ -780,6 +851,55 @@
 				B1E6CBC4151084F000B58581 /* VKServiceAPIStub.h */,
 			);
 			path = stubs;
+			sourceTree = "<group>";
+		};
+		B1E6CBC4151084F000B5859E /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				B1E6CBC4151084F000B5859F /* VKErrorCodes.h */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		B1E6CBC4151084F000B585AA /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				B1E6CBC4151084F000B585AD /* VKProductionContainer.h */,
+				B1E6CBC4151084F000B585AB /* VKProductionContainer.m */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		B1E6CBC4151084F000B585B1 /* TestCase */ = {
+			isa = PBXGroup;
+			children = (
+				B1E6CBC4151084F000B585B5 /* VKProductionContainerTestCase.h */,
+				B1E6CBC4151084F000B585B2 /* VKProductionContainerTestCase.m */,
+				B1E6CBC4151084F000B585A3 /* VKTestContainerTestCase.m */,
+				B1E6CBC4151084F000B585A6 /* VKTestContainerTestCase.h */,
+				B1E6CBC4151084F000B585A7 /* VKAsyncTestCase.m */,
+				B1E6CBC4151084F000B585A9 /* VKAsyncTestCase.h */,
+			);
+			path = TestCase;
+			sourceTree = "<group>";
+		};
+		B1E6CBC4151084F000B585BA /* ScreenModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ScreenModels;
+			sourceTree = "<group>";
+		};
+		B1E6CBC4151084F000B585BB /* ScreenModels */ = {
+			isa = PBXGroup;
+			children = (
+				B1E6CBC4151084F000B585C4 /* VKLoginScreenDelegate.h */,
+				B1E6CBC4151084F000B585C2 /* VKLoginScreen.h */,
+				B1E6CBC4151084F000B585BF /* VKLoginScreen.m */,
+				B1E6CBC4151084F000B585BE /* VKLoginScreenTest.h */,
+				B1E6CBC4151084F000B585BC /* VKLoginScreenTest.m */,
+			);
+			path = ScreenModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -872,6 +992,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B11E6BC6151F6B2900012E29 /* InfoPlist.strings in Resources */,
+				B1E6CBC4151084F000B585A2 /* VKErrorCodes.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -891,6 +1012,7 @@
 				B1D4C67115126051001E6AA2 /* InfoPlist.strings in Resources */,
 				B1D4C67415126051001E6AA2 /* RunTests.sh in Resources */,
 				B1D4C67515126051001E6AA2 /* Tests-Info.plist in Resources */,
+				B1E6CBC4151084F000B585A0 /* VKErrorCodes.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -898,6 +1020,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1E6CBC4151084F000B585A1 /* VKErrorCodes.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -969,6 +1092,9 @@
 				B1E6CBC4151084F000B5859B /* SBJsonStreamParser.m in Sources */,
 				B1E6CBC4151084F000B5859C /* SBJsonParser.m in Sources */,
 				B1E6CBC4151084F000B5859D /* NSObject+SBJson.m in Sources */,
+				B1E6CBC4151084F000B585A5 /* VKTestContainerTestCase.m in Sources */,
+				B1E6CBC4151084F000B585BD /* VKLoginScreenTest.m in Sources */,
+				B1E6CBC4151084F000B585C1 /* VKLoginScreen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1021,6 +1147,8 @@
 				B1E6CBC4151084F000B5856D /* VKLoginRequest.m in Sources */,
 				B1E6CBC4151084F000B58575 /* VKAuthenticator.m in Sources */,
 				B1E6CBC4151084F000B58584 /* VKRequestFactoryImpl.m in Sources */,
+				B1E6CBC4151084F000B585AC /* VKProductionContainer.m in Sources */,
+				B1E6CBC4151084F000B585C0 /* VKLoginScreen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1064,16 +1192,17 @@
 				B1D4C6ED15126731001E6AA2 /* VKRequest.m in Sources */,
 				B1D4C6EE15126737001E6AA2 /* VKServiceAPIImpl.m in Sources */,
 				B1D4C6EF15126747001E6AA2 /* main.m in Sources */,
-				B1D4C6F015126751001E6AA2 /* VKServiceAPITest.m in Sources */,
-				B1D4C6F115126756001E6AA2 /* VKRequestTest.m in Sources */,
-				B1E6CBC4151084F000B5856E /* VKLoginRequest.m in Sources */,
-				B1E6CBC4151084F000B58571 /* VKLoginRequestTest.m in Sources */,
+				B1D4C6F015126751001E6AA2 /* VKAuthenticatorIntegrationTest.m in Sources */,
 				B1E6CBC4151084F000B58576 /* VKAuthenticator.m in Sources */,
-				B1E6CBC4151084F000B58579 /* VKAuthenticatorTest.m in Sources */,
-				B1E6CBC4151084F000B58580 /* VKServiceAPIStub.m in Sources */,
-				B1A9CC561513CA8000014DD9 /* VKTestContainer.m in Sources */,
-				B1E6CBC4151084F000B58587 /* VKRequestFactoryTest.m in Sources */,
 				B1A9CC661515E22500014DD9 /* VKRequestFactoryImpl.m in Sources */,
+				B1E6CBC4151084F000B585A8 /* VKAsyncTestCase.m in Sources */,
+				B1E6CBC4151084F000B585B3 /* VKProductionContainerTestCase.m in Sources */,
+				B1E6CBC4151084F000B585B6 /* VKProductionContainer.m in Sources */,
+				B1E6CBC4151084F000B585B7 /* VKProductionContainerTest.m in Sources */,
+				B1E6CBC4151084F000B585B8 /* VKLoginRequest.m in Sources */,
+				B1E6CBC4151084F000B585C3 /* VKLoginScreen.m in Sources */,
+				B1E6CBC4151084F000B585C5 /* VKLoginViewController.m in Sources */,
+				B1E6CBC4151084F000B585C6 /* VKApplicationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1127,8 +1256,13 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UnitTests/UnitTests-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "UnitTests/UnitTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/nep/Projects/messanger/vkmessenger/Libs/OCMock,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_AFTER_BUILD = YES;
 				WRAPPER_EXTENSION = octest;
@@ -1146,8 +1280,13 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UnitTests/UnitTests-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "UnitTests/UnitTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/nep/Projects/messanger/vkmessenger/Libs/OCMock,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_AFTER_BUILD = YES;
 				WRAPPER_EXTENSION = octest;
@@ -1185,11 +1324,12 @@
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
-					"-lxml2",
+					"-force_load",
+					"\"$(SRCROOT)/vkmessenger/Libs/OCMock/libOCMock.a\"",
 				);
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
-				USER_HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/vkmessenger/Libs/OCMock/Headers/**";
 			};
 			name = Debug;
 		};
@@ -1221,13 +1361,14 @@
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
-					"-lxml2",
+					"-force_load",
+					"\"$(SRCROOT)/vkmessenger/Libs/OCMock/libOCMock.a\"",
 				);
 				PROVISIONING_PROFILE = "2BE7349A-262D-406B-8EEE-E2F3A8C9D1F0";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2BE7349A-262D-406B-8EEE-E2F3A8C9D1F0";
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
-				USER_HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/vkmessenger/Libs/OCMock/Headers/**";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1242,6 +1383,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "vkmessenger/vkmessenger-Prefix.pch";
 				INFOPLIST_FILE = "vkmessenger/vkmessenger-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/nep/Projects/messanger/vkmessenger/Libs/OCMock,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1257,6 +1402,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "vkmessenger/vkmessenger-Prefix.pch";
 				INFOPLIST_FILE = "vkmessenger/vkmessenger-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/nep/Projects/messanger/vkmessenger/Libs/OCMock,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -27,6 +27,7 @@ IoCLazy
     NSLog(@"username :%@", loginRequest.login);
     NSLog(@"password :%@", loginRequest.password);
     if (([loginRequest.login isEqualToString:@"username"]) && ([loginRequest.password isEqualToString:@"password"])) {
+        loginRequest.responseString = [NSString stringWithFormat:@"{\"%@\":\"token_from_server\"}", TOKEN_PARAM_NAME];
         [request requestFinished:nil];
     } else {
         self.token = @"";

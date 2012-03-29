@@ -9,10 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @class OxICContainer;
+@class VKProductionContainer;
 
 @interface VKAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (nonatomic, retain) OxICContainer *container;
+@property (nonatomic, retain) VKProductionContainer *container;
 
 @end
