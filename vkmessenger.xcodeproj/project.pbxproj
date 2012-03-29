@@ -35,7 +35,6 @@
 		B12BEA1015108A61006B2592 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12BEA0F15108A61006B2592 /* CoreData.framework */; };
 		B12BEA1115108A68006B2592 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12BEA0F15108A61006B2592 /* CoreData.framework */; };
 		B15244AA1520D34F0047D185 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B11E6BBD151F6B2900012E29 /* SenTestingKit.framework */; };
-		B15558781524764A00D55AB9 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B15558771524764A00D55AB9 /* libOCMock.a */; };
 		B1A89BCD150E2E5D0068BD8C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF797150BDEE000007A33 /* CFNetwork.framework */; };
 		B1A89BCF150E2E680068BD8C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF79D150BDF0500007A33 /* libz.dylib */; };
 		B1A89BD0150E2E8B0068BD8C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF79B150BDEF300007A33 /* MobileCoreServices.framework */; };
@@ -392,7 +391,6 @@
 				B11E6BBE151F6B2900012E29 /* SenTestingKit.framework in Frameworks */,
 				B11E6BBF151F6B2900012E29 /* UIKit.framework in Frameworks */,
 				B11E6BC0151F6B2900012E29 /* Foundation.framework in Frameworks */,
-				B15558781524764A00D55AB9 /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
