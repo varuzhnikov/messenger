@@ -1,7 +1,7 @@
 <project name="vkmessanger" default="integration" xmlns="">
     <property file="build.properties" />
 
-    <target name="integration" depends="unit-tests,integration-tests,build"/>
+    <target name="integration" depends="unit-tests,integration-tests"/>
 
 
     <target name="build">
