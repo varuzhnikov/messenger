@@ -35,8 +35,7 @@
 		B12BEA1015108A61006B2592 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12BEA0F15108A61006B2592 /* CoreData.framework */; };
 		B12BEA1115108A68006B2592 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12BEA0F15108A61006B2592 /* CoreData.framework */; };
 		B15244AA1520D34F0047D185 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B11E6BBD151F6B2900012E29 /* SenTestingKit.framework */; };
-		B15558761524759A00D55AB9 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B17DB6B415243C2D00AAB172 /* libOCMock.a */; };
-		B17DB6C115243C5000AAB172 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B17DB6C015243C5000AAB172 /* libOCMock.a */; };
+		B15558781524764A00D55AB9 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B15558771524764A00D55AB9 /* libOCMock.a */; };
 		B1A89BCD150E2E5D0068BD8C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF797150BDEE000007A33 /* CFNetwork.framework */; };
 		B1A89BCF150E2E680068BD8C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF79D150BDF0500007A33 /* libz.dylib */; };
 		B1A89BD0150E2E8B0068BD8C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF79B150BDEF300007A33 /* MobileCoreServices.framework */; };
@@ -186,14 +185,13 @@
 		B11E6BC5151F6B2900012E29 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B11E6BCA151F6B2900012E29 /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
 		B12BEA0F15108A61006B2592 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		B17DB6B415243C2D00AAB172 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = ../../../../Users/nep/Projects/messanger/vkmessenger/Libs/OCMock/libOCMock.a; sourceTree = "<group>"; };
+		B15558771524764A00D55AB9 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
 		B17DB6BA15243C5000AAB172 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
 		B17DB6BB15243C5000AAB172 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
 		B17DB6BC15243C5000AAB172 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
 		B17DB6BD15243C5000AAB172 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
 		B17DB6BE15243C5000AAB172 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
 		B17DB6BF15243C5000AAB172 /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
-		B17DB6C015243C5000AAB172 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
 		B1CCF6D8150BD81300007A33 /* vkmessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vkmessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1CCF6DC150BD81300007A33 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B1CCF6DE150BD81300007A33 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -392,9 +390,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B11E6BBE151F6B2900012E29 /* SenTestingKit.framework in Frameworks */,
-				B15558761524759A00D55AB9 /* libOCMock.a in Frameworks */,
 				B11E6BBF151F6B2900012E29 /* UIKit.framework in Frameworks */,
 				B11E6BC0151F6B2900012E29 /* Foundation.framework in Frameworks */,
+				B15558781524764A00D55AB9 /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,7 +409,6 @@
 				B1CCF6DD150BD81300007A33 /* UIKit.framework in Frameworks */,
 				B1CCF6DF150BD81300007A33 /* Foundation.framework in Frameworks */,
 				B1CCF6E1150BD81300007A33 /* CoreGraphics.framework in Frameworks */,
-				B17DB6C115243C5000AAB172 /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,8 +454,8 @@
 		B17DB6B715243C5000AAB172 /* OCMock */ = {
 			isa = PBXGroup;
 			children = (
+				B15558771524764A00D55AB9 /* libOCMock.a */,
 				B17DB6B815243C5000AAB172 /* Headers */,
-				B17DB6C015243C5000AAB172 /* libOCMock.a */,
 			);
 			name = OCMock;
 			path = ../../../../../../Users/nep/Projects/messanger/vkmessenger/Libs/OCMock;
@@ -488,7 +485,6 @@
 		B1CCF6CD150BD81200007A33 = {
 			isa = PBXGroup;
 			children = (
-				B17DB6B415243C2D00AAB172 /* libOCMock.a */,
 				B1D4C66415126051001E6AA2 /* Tests */,
 				B1D4C5B31512603F001E6AA2 /* vkmessenger */,
 				B12BEA0F15108A61006B2592 /* CoreData.framework */,
