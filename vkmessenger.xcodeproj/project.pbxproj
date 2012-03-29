@@ -1329,11 +1329,11 @@
 					"-ObjC",
 					"-all_load",
 					"-force_load",
-					"$(SRCROOT)/vkmessenger/Libs/OCMock/libOCMock.a",
+					"\"$(SRCROOT)/vkmessenger/Libs/OCMock/libOCMock.a\"",
 				);
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
-				USER_HEADER_SEARCH_PATHS = "/usr/include/libxml2/** $(SRCROOT)/vkmessenger/Libs/OCMock/Headers/**";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/vkmessenger/Libs/OCMock/Headers/**";
 			};
 			name = Debug;
 		};
@@ -1366,13 +1366,13 @@
 					"-ObjC",
 					"-all_load",
 					"-force_load",
-					"$(SRCROOT)/vkmessenger/Libs/OCMock/libOCMock.a",
+					"\"$(SRCROOT)/vkmessenger/Libs/OCMock/libOCMock.a\"",
 				);
 				PROVISIONING_PROFILE = "2BE7349A-262D-406B-8EEE-E2F3A8C9D1F0";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2BE7349A-262D-406B-8EEE-E2F3A8C9D1F0";
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
-				USER_HEADER_SEARCH_PATHS = "/usr/include/libxml2/** $(SRCROOT)/vkmessenger/Libs/OCMock/Headers/**";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/vkmessenger/Libs/OCMock/Headers/**";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
