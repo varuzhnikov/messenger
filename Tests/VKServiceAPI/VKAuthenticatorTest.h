@@ -13,11 +13,16 @@
 @class VKTestContainer;
 @class VKServiceAPIImpl;
 @class VKAuthenticator;
+@protocol VKErrorNotifier;
+@class VKErrorNotifierStub;
+
 
 @interface VKAuthenticatorTest : VKTestContainerTestCase<VKAuthenticatorDelegate> {
     VKServiceAPIImpl *_serviceAPI;
     VKAuthenticator *_authenticator;
+    VKErrorNotifierStub *_errorNotifier;
     BOOL loginFinished;
+    BOOL loginFailed;
 }
 
 
