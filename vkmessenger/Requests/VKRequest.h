@@ -12,6 +12,8 @@
 
 static NSString *const GET_PARAMETERS_DELIMETER = @"?";
 static NSString *const HTTP_GET_PARAMS_DELIMETER = @"&";
+static NSString *const ERROR_DESCRIPTION_KEY = @"error_description";
+static NSString *const ERROR_KEY = @"error";
 
 
 @interface VKRequest : NSObject<ASIHTTPRequestDelegate>
@@ -35,4 +37,5 @@ static NSString *const HTTP_GET_PARAMS_DELIMETER = @"&";
 @property(nonatomic, copy) NSString *responseString;
 
 
+@property(nonatomic, retain) NSError *responseError;
 @end

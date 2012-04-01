@@ -38,6 +38,7 @@
 @synthesize urlString = _urlString;
 @synthesize delegate = _delegate;
 @synthesize responseString = _responseString;
+@synthesize responseError = _responseError;
 
 
 - (id)initWithUrlString:(NSString *)urlString {
@@ -57,6 +58,7 @@
     GETParameters = nil;
     [_delegate release];
     [_responseString release];
+    [_responseError release];
     [super dealloc];
 }
 
@@ -71,11 +73,14 @@
 - (void)setResponseString:(NSString *)aResponseString {
     [self replaceResponseString:aResponseString];
     id JSONValue = [_responseString JSONValue];
-    NSString *errorDescription = [JSONValue objectForKey:@"error"];
-    if (errorDescription != nil) {
-        NSDictionary *errorDetails = [NSDictionary dictionaryWithObject:errorDescription forKey:NSLocalizedDescriptionKey];
+    NSString *errorKey = [JSONValue objectForKey:ERROR_KEY];
+    if (errorKey != nil) {
+        NSMutableDictionary *errorDetails = [NSMutableDictionary dictionaryWithObject:errorKey forKey:ERROR_KEY];
+
+        [errorDetails setObject:[JSONValue objectForKey:ERROR_DESCRIPTION_KEY] forKey:NSLocalizedDescriptionKey];
+
         NSError *error = [NSError errorWithDomain:@"ru.vkmessanger" code:100 userInfo:errorDetails];
-        [self.delegate responseHasError:error];
+        self.responseError = error;
     } else {
         [self parse];
     }
@@ -129,16 +134,18 @@
     if ([request respondsToSelector:@selector(responseString)]) {
         self.responseString = [request responseString];
         NSLog(@"request failed with response: %@", self.responseString);
+
+        [self.delegate requestFailed:self];
     }
-    [self.delegate requestFailed:self];
 }
 
 - (void)requestFinished:(id)request {
     if ([request respondsToSelector:@selector(responseString)]) {
         self.responseString = [request responseString];
         NSLog(@"request finished with response: %@", self.responseString);
+
+        [self.delegate requestFinished:self];
     }
-    [self.delegate requestFinished:self];
 }
 
 @end

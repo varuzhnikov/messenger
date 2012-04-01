@@ -13,5 +13,4 @@
 
 - (void)requestFinished:(VKRequest *)request;
 
-- (void)responseHasError:(NSError *)error;
 @end

@@ -14,6 +14,7 @@
 @class ASIHTTPRequest;
 @class VKAuthenticator;
 @protocol VKServiceAPI;
+@class VKErrorNotifierStub;
 
 
 @interface VKAuthenticatorIntegrationTest : VKAsyncTestCase<VKAuthenticatorDelegate>  {
@@ -21,7 +22,6 @@
 
     VKAuthenticator *_authenticator;
     id<VKServiceAPI> _serviceAPI;
-    BOOL loginFinished;
 }
 
 @end

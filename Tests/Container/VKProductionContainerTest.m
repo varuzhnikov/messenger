@@ -13,6 +13,7 @@
 #import "VKProductionContainer.h"
 #import "VKLoginScreen.h"
 #import "VKLoginViewController.h"
+#import "VKErrorNotifier.h"
 
 
 @implementation VKProductionContainerTest {
@@ -32,6 +33,7 @@
     VKAuthenticator *authenticator = [self.container getObject:@"authenticator"];//String initialization.
     GHAssertNotNil(authenticator, @"should return authenticator from container");
     GHAssertNotNil(authenticator.serviceAPI, @"property service api should be initialized");
+    GHAssertNotNil(authenticator.errorNotifier, @"property error notifier should be initialized");
 }
 
 - (void)test_Service_Api_Should_Be_Initialized {
@@ -50,6 +52,12 @@
     VKLoginViewController *loginViewController = [self.container getObject:@"loginViewController"];
     GHAssertNotNil(loginViewController, @"loginViewController should be initialized");
     GHAssertNotNil(loginViewController.loginScreen, @"property loginScreen should be initialized");
+}
+
+- (void)test_Error_Notifier_Should_Be_Initialized {
+    id<VKErrorNotifier> errorNotifier = [self.container getObject:@"errorNotifier"];
+
+    GHAssertNotNil(errorNotifier, @"error notifier should be initialized");
 }
 
 

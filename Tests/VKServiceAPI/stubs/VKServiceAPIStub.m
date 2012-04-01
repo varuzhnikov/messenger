@@ -8,6 +8,8 @@
 #import "VKServiceAPIStub.h"
 #import "OxICContainer.h"
 #import "VKLoginRequest.h"
+#import "VKTestConstants.h"
+#import "HttpRequestStub.h"
 
 
 @implementation VKServiceAPIStub {
@@ -26,10 +28,14 @@ IoCLazy
     VKLoginRequest *loginRequest = (VKLoginRequest *) request;
     NSLog(@"username :%@", loginRequest.login);
     NSLog(@"password :%@", loginRequest.password);
+    HttpRequestStub *httpRequestStub = [[[HttpRequestStub alloc] init] autorelease];
     if (([loginRequest.login isEqualToString:@"username"]) && ([loginRequest.password isEqualToString:@"password"])) {
-        loginRequest.responseString = [NSString stringWithFormat:@"{\"%@\":\"token_from_server\"}", TOKEN_PARAM_NAME];
-        [request requestFinished:nil];
+
+        httpRequestStub.responseString = [NSString stringWithFormat:@"{\"%@\":\"token_from_server\"}", TOKEN_PARAM_NAME];
+        [request requestFinished:httpRequestStub];
     } else {
+        httpRequestStub.responseString = [NSString stringWithFormat:JSON_WITH_ERROR, TOKEN_PARAM_NAME];
+        [request requestFailed:httpRequestStub];
         self.token = @"";
     }
 }

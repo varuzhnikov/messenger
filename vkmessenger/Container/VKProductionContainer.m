@@ -12,6 +12,7 @@
 #import "OxICSimpleWrapperFactory.h"
 #import "VKLoginScreen.h"
 #import "VKLoginViewController.h"
+#import "VKErrorNotifierImpl.h"
 
 
 @implementation VKProductionContainer {
@@ -25,6 +26,7 @@
         [self addDefinitionFromClassName:NSStringFromClass([VKRequestFactoryImpl class])];
         [self addDefinitionFromClassName:NSStringFromClass([VKLoginScreen class])];
         [self addDefinitionFromClassName:NSStringFromClass([VKLoginViewController class])];
+        [self addDefinitionFromClassName:NSStringFromClass([VKErrorNotifierImpl class])];
     }
 
     return self;

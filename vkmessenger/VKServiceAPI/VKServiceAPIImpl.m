@@ -30,7 +30,7 @@ IoCLazy
 
     [asiHttpRequest setDelegate:request];
 
-    [asiHttpRequest startSynchronous];
+    [asiHttpRequest startAsynchronous];
 }
 
 - (void)dealloc {
