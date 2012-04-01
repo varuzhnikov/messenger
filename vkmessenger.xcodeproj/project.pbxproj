@@ -174,6 +174,11 @@
 		B1E6CBC4151084F000B585C3 /* VKLoginScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585BF /* VKLoginScreen.m */; };
 		B1E6CBC4151084F000B585C5 /* VKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C5BC1512603F001E6AA2 /* VKLoginViewController.m */; };
 		B1E6CBC4151084F000B585C6 /* VKApplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C5B91512603F001E6AA2 /* VKApplicationController.m */; };
+		B1E6CBC4151084F000B585CF /* HttpRequestStub.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585CE /* HttpRequestStub.m */; };
+		B1E6CBC4151084F000B585D3 /* VKErrorNotifierStub.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585D2 /* VKErrorNotifierStub.m */; };
+		B1E6CBC4151084F000B585D5 /* VKErrorNotifierImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585D4 /* VKErrorNotifierImpl.m */; };
+		B1E6CBC4151084F000B585D6 /* VKErrorNotifierImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585D4 /* VKErrorNotifierImpl.m */; };
+		B1E6CBC4151084F000B585D9 /* VKErrorNotifierStub.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585D2 /* VKErrorNotifierStub.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -380,6 +385,14 @@
 		B1E6CBC4151084F000B585BF /* VKLoginScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VKLoginScreen.m; path = vkmessenger/ScreenModels/VKLoginScreen.m; sourceTree = SOURCE_ROOT; };
 		B1E6CBC4151084F000B585C2 /* VKLoginScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VKLoginScreen.h; path = vkmessenger/ScreenModels/VKLoginScreen.h; sourceTree = SOURCE_ROOT; };
 		B1E6CBC4151084F000B585C4 /* VKLoginScreenDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKLoginScreenDelegate.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B585CD /* VKTestConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKTestConstants.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B585CE /* HttpRequestStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequestStub.m; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B585D0 /* HttpRequestStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequestStub.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B585D1 /* VKErrorNotifierStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKErrorNotifierStub.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B585D2 /* VKErrorNotifierStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKErrorNotifierStub.m; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B585D4 /* VKErrorNotifierImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKErrorNotifierImpl.m; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B585D7 /* VKErrorNotifierImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKErrorNotifierImpl.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B585D8 /* VKErrorNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKErrorNotifier.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -566,7 +579,7 @@
 				B1D4C62B1512603F001E6AA2 /* vkmessenger-Info.plist */,
 				B1D4C62C1512603F001E6AA2 /* vkmessenger-Prefix.pch */,
 				B1D4C62D1512603F001E6AA2 /* VKServiceAPI */,
-				B1E6CBC4151084F000B5859E /* Errors */,
+				B1E6CBC4151084F000B5859E /* ErrorHandling */,
 				B1E6CBC4151084F000B585AA /* Container */,
 				B1E6CBC4151084F000B585BA /* ScreenModels */,
 			);
@@ -800,6 +813,8 @@
 				B1E6CBC4151084F000B5857B /* Container */,
 				B1E6CBC4151084F000B585B1 /* TestCase */,
 				B1E6CBC4151084F000B585BB /* ScreenModels */,
+				B1E6CBC4151084F000B585C7 /* ErrorHandling */,
+				B1E6CBC4151084F000B585CC /* Constants */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -807,6 +822,8 @@
 		B1D4C66815126051001E6AA2 /* Requests */ = {
 			isa = PBXGroup;
 			children = (
+				B1E6CBC4151084F000B585D0 /* HttpRequestStub.h */,
+				B1E6CBC4151084F000B585CE /* HttpRequestStub.m */,
 				B1E6CBC4151084F000B58573 /* VKRequestDelegate.h */,
 				B1E6CBC4151084F000B58572 /* VKLoginRequestTest.h */,
 				B1E6CBC4151084F000B58570 /* VKLoginRequestTest.m */,
@@ -853,12 +870,15 @@
 			path = stubs;
 			sourceTree = "<group>";
 		};
-		B1E6CBC4151084F000B5859E /* Errors */ = {
+		B1E6CBC4151084F000B5859E /* ErrorHandling */ = {
 			isa = PBXGroup;
 			children = (
+				B1E6CBC4151084F000B585D8 /* VKErrorNotifier.h */,
+				B1E6CBC4151084F000B585D7 /* VKErrorNotifierImpl.h */,
+				B1E6CBC4151084F000B585D4 /* VKErrorNotifierImpl.m */,
 				B1E6CBC4151084F000B5859F /* VKErrorCodes.h */,
 			);
-			path = Errors;
+			path = ErrorHandling;
 			sourceTree = "<group>";
 		};
 		B1E6CBC4151084F000B585AA /* Container */ = {
@@ -900,6 +920,23 @@
 				B1E6CBC4151084F000B585BC /* VKLoginScreenTest.m */,
 			);
 			path = ScreenModels;
+			sourceTree = "<group>";
+		};
+		B1E6CBC4151084F000B585C7 /* ErrorHandling */ = {
+			isa = PBXGroup;
+			children = (
+				B1E6CBC4151084F000B585D2 /* VKErrorNotifierStub.m */,
+				B1E6CBC4151084F000B585D1 /* VKErrorNotifierStub.h */,
+			);
+			path = ErrorHandling;
+			sourceTree = "<group>";
+		};
+		B1E6CBC4151084F000B585CC /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				B1E6CBC4151084F000B585CD /* VKTestConstants.h */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1095,6 +1132,8 @@
 				B1E6CBC4151084F000B585A5 /* VKTestContainerTestCase.m in Sources */,
 				B1E6CBC4151084F000B585BD /* VKLoginScreenTest.m in Sources */,
 				B1E6CBC4151084F000B585C1 /* VKLoginScreen.m in Sources */,
+				B1E6CBC4151084F000B585CF /* HttpRequestStub.m in Sources */,
+				B1E6CBC4151084F000B585D3 /* VKErrorNotifierStub.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1149,6 +1188,7 @@
 				B1E6CBC4151084F000B58584 /* VKRequestFactoryImpl.m in Sources */,
 				B1E6CBC4151084F000B585AC /* VKProductionContainer.m in Sources */,
 				B1E6CBC4151084F000B585C0 /* VKLoginScreen.m in Sources */,
+				B1E6CBC4151084F000B585D5 /* VKErrorNotifierImpl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1203,6 +1243,8 @@
 				B1E6CBC4151084F000B585C3 /* VKLoginScreen.m in Sources */,
 				B1E6CBC4151084F000B585C5 /* VKLoginViewController.m in Sources */,
 				B1E6CBC4151084F000B585C6 /* VKApplicationController.m in Sources */,
+				B1E6CBC4151084F000B585D6 /* VKErrorNotifierImpl.m in Sources */,
+				B1E6CBC4151084F000B585D9 /* VKErrorNotifierStub.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

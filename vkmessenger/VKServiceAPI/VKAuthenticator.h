@@ -11,16 +11,19 @@
 
 @protocol VKServiceAPI;
 @protocol VKAuthenticatorDelegate;
+@protocol VKErrorNotifier;
 
 
 @interface VKAuthenticator : NSObject <VKRequestDelegate>
 
-@property(nonatomic, retain) id<VKServiceAPI>  serviceAPI;
-@property(nonatomic, retain) id<VKRequestFactory> requestFactory;
+@property(nonatomic, retain) id <VKServiceAPI> serviceAPI;
+@property(nonatomic, retain) id <VKRequestFactory> requestFactory;
+@property(nonatomic, retain) id <VKErrorNotifier> errorNotifier;
+
 @property(nonatomic, retain) VKRequest *loginRequest;
 
 
-@property(nonatomic, retain) id<VKAuthenticatorDelegate> delegate;
+@property(nonatomic, retain) id <VKAuthenticatorDelegate> delegate;
 
 - (void)loginWithUsername:(NSString *)userName andPassword:(NSString *)password;
 @end

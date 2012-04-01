@@ -13,6 +13,8 @@
 #import "OxICContainer.h"
 #import "VKProductionContainer.h"
 #import "VKServiceAPI.h"
+#import "VKTestConstants.h"
+#import "VKErrorNotifierStub.h"
 
 
 @implementation VKAuthenticatorIntegrationTest {
@@ -22,7 +24,9 @@
 - (void)setUp {
     [super setUp];
     _authenticator = [self.container getObject:@"authenticator"];
+    _authenticator.errorNotifier = nil;
     _serviceAPI = [self.container getObject:@"serviceAPI"];
+    _authenticator.delegate = self;
 }
 
 - (void)tearDown {
@@ -31,15 +35,24 @@
 }
 
 - (void)test_Should_Get_Access_Token_From_Server {
-    _authenticator.delegate = self;
     [_authenticator loginWithUsername:@"denis.tarazanov@gmail.com" andPassword:@"_Gu^iL@D"];
+}
+
+- (void)test_Should_Failed_Login_With_Wrong_Requisites {
+
+    [_authenticator loginWithUsername:CORRECT_USERNAME andPassword:WRONG_PASSWORD];
 }
 
 - (void)loginFinished {
     NSLog(@"Login finished");
-    loginFinished = YES;
     NSLog(@"serviceAPI token %@, ", _serviceAPI.token);
     GHAssertTrue(_serviceAPI.token.length > 0, @"should get nonempty token from server");
 }
+
+- (void)loginFailed {
+    NSLog(@"Login failed");
+    GHAssertNil(_serviceAPI.token, @"token should be nil after failed login");
+}
+
 
 @end

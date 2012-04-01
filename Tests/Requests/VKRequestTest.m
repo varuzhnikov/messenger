@@ -5,11 +5,10 @@
 //
 
 
-#import <objc/runtime.h>
 #import "VKRequestTest.h"
 #import "VKRequest.h"
-#import "ASIHTTPRequest.h"
-#import "SBJson.h"
+#import "VKTestConstants.h"
+#import "HttpRequestStub.h"
 
 
 @implementation VKRequestTest {
@@ -17,15 +16,27 @@
 @private
     NSString *_responseString;
     NSError *_responseError;
+    HttpRequestStub *_httpRequestStub;
 }
 @synthesize responseString = _responseString;
 @synthesize responseError = _responseError;
+@synthesize httpRequestStub = _httpRequestStub;
 
 
 - (void)setUp {
     [super setUp];
     request = [[VKRequest alloc] initWithUrlString:URL_STRING];
+    _httpRequestStub = [[HttpRequestStub alloc] init];
+
     [request setDelegate:self];
+}
+
+- (void)tearDown {
+    [super tearDown];
+    [request release];
+    self.responseError = nil;
+    self.httpRequestStub = nil;
+    self.responseString = nil;
 }
 
 - (void)test_Should_Create_Request_With_Url_String {
@@ -66,16 +77,16 @@
     STAssertEqualObjects([request.url absoluteString], expectedString, @"should correct encode params value");
 }
 
-- (void)test_Should_Call_Delegate_After_ASI_Http_Finished_Request {
-    [request requestFinished:nil];
+- (void)test_Should_Call_Request_Finished_On_Delegate_After_Finished_Request_Without_Errors {
+    [request requestFinished:self.httpRequestStub];
 
     STAssertTrue(requestFinished, @"should call delegate after asi http request finished");
 }
 
-- (void)test_Should_Call_Delegate_After_ASI_Http_Failed_Request {
-    [request requestFailed:nil];
+- (void)test_Should_Call_Request_Failed_On_Delegate_After_Failed_Http_Request {
+    [request requestFailed:self.httpRequestStub];
 
-    STAssertTrue(requestFinished, @"should call delegate after asi http request finished");
+    STAssertTrue(requestFailed, @"should call delegate after asi http request finished");
 }
 
 - (void)test_Should_Get_Response_String_After_Http_Request_Finished {
@@ -90,17 +101,25 @@
     STAssertEqualObjects(request.responseString, [self responseString], @"should get response string after http request failed");
 }
 
-- (void)test_Should_Call_responseHasError_On_Delegate_If_Response_String_Has_Error {
+- (void)test_Should_Parse_Error_From_Json_After_Setting_Response_String_With_Error {
     request.responseString = JSON_WITH_ERROR;
 
-    STAssertNotNil(self.responseError, @"should call responseHasError on delegate if response string has error");
+    STAssertNotNil(request.responseError, @"should parse error from json after setting response string with error");
 }
 
-- (void)test_Should_Parse_Response_String_And_Find_Error {
+- (void)test_Should_Parse_Response_String_With_Error_And_Find_Error_Key {
     request.responseString = JSON_WITH_ERROR;
 
-    STAssertEqualObjects([self.responseError localizedDescription], TEST_ERROR_MESSAGE, @"should parse response string and call responseHasError");
+    NSDictionary *errorDetails = request.responseError.userInfo;
+    STAssertEqualObjects([errorDetails objectForKey:ERROR_KEY], @"invalid_client", @"should parse error key");
 }
+
+- (void)test_Should_Parse_Error_Description_From_Response_String_With_Error {
+    request.responseString = JSON_WITH_ERROR;
+
+    STAssertEqualObjects([request.responseError localizedDescription], TEST_ERROR_MESSAGE, @"should parse response string and call responseHasError");
+}
+
 
 - (void)test_Should_Not_Find_Error_While_Parsing_Empty_Response {
     request.responseString = @"";
@@ -108,23 +127,14 @@
     STAssertNil(self.responseError, @"should not find error while parsing empty response");
 }
 
+
+
 - (void)requestFinished:(VKRequest *)aRequest {
     requestFinished = YES;
 }
 
 - (void)requestFailed:(VKRequest *)aRequest {
-    requestFinished = YES;
-}
-
-- (void)responseHasError:(NSError *)error {
-    NSLog(@"Error %@", error);
-    self.responseError = error;
-}
-
-- (void)tearDown {
-    [super tearDown];
-    [request release];
-    self.responseError = nil;
+    requestFailed = YES;
 }
 
 - (NSString *)responseString {

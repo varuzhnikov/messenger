@@ -12,7 +12,10 @@
 
 
 @interface VKLoginScreen ()
-- (void)setWaiting:(BOOL)isWaiting;
+- (void)startWait;
+
+- (void)stopWait;
+
 
 @end
 
@@ -39,18 +42,35 @@ IoCInject(authenticator, authenticator)
     _authenticator.delegate = self;
 }
 
+
 - (void)enteredLogin:(NSString *)login andPassword:(NSString *)password {
-    [self setWaiting:YES];
+    [self startWait];
+
+
     [self.authenticator loginWithUsername:login andPassword:password];
 }
 
+- (void)startWait {
+    _isWaiting = YES;
+
+    [self.delegate startWait];
+}
+
+
 - (void)loginFinished {
-    [self setWaiting:NO];
+    [self stopWait];
+
     [self.delegate enterInApplication];
 }
 
-- (void)setWaiting:(BOOL)isWaiting {
-    _isWaiting = isWaiting;
+- (void)stopWait {
+    _isWaiting = NO;
+
+    [self.delegate stopWait];
+}
+
+- (void)loginFailed {
+    _isWaiting = NO;
     if (_isWaiting) {
         [self.delegate startWait];
     } else {

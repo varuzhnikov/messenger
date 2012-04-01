@@ -9,4 +9,6 @@
 
 - (void)loginFinished;
 
+- (void)loginFailed;
+
 @end
