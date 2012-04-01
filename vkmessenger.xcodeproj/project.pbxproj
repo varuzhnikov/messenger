@@ -10,6 +10,13 @@
 		4032B64915286DC800CB463D /* Header.png in Resources */ = {isa = PBXBuildFile; fileRef = 4032B64515286DC800CB463D /* Header.png */; };
 		4032B64A15286DC800CB463D /* Header@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4032B64615286DC800CB463D /* Header@2x.png */; };
 		4032B6D21528C2D300CB463D /* VKLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1D4C5B51512603F001E6AA2 /* VKLoginViewController.xib */; };
+		4032B6D41528C43000CB463D /* Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4032B6D31528C43000CB463D /* Background@2x.png */; };
+		4032B6D91528C89200CB463D /* LoginButton_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 4032B6D51528C89100CB463D /* LoginButton_pressed.png */; };
+		4032B6DA1528C89200CB463D /* LoginButton_pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4032B6D61528C89100CB463D /* LoginButton_pressed@2x.png */; };
+		4032B6DB1528C89200CB463D /* LoginButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 4032B6D71528C89200CB463D /* LoginButton.png */; };
+		4032B6DC1528C89200CB463D /* LoginButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4032B6D81528C89200CB463D /* LoginButton@2x.png */; };
+		40D72B041528CF48006EF45E /* RegButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 40D72B021528CF48006EF45E /* RegButton.png */; };
+		40D72B051528CF48006EF45E /* RegButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40D72B031528CF48006EF45E /* RegButton@2x.png */; };
 		B11E6BBE151F6B2900012E29 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B11E6BBD151F6B2900012E29 /* SenTestingKit.framework */; };
 		B11E6BBF151F6B2900012E29 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF6DC150BD81300007A33 /* UIKit.framework */; };
 		B11E6BC0151F6B2900012E29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF6DE150BD81300007A33 /* Foundation.framework */; };
@@ -184,6 +191,13 @@
 /* Begin PBXFileReference section */
 		4032B64515286DC800CB463D /* Header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Header.png; sourceTree = "<group>"; };
 		4032B64615286DC800CB463D /* Header@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Header@2x.png"; sourceTree = "<group>"; };
+		4032B6D31528C43000CB463D /* Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background@2x.png"; sourceTree = "<group>"; };
+		4032B6D51528C89100CB463D /* LoginButton_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginButton_pressed.png; sourceTree = "<group>"; };
+		4032B6D61528C89100CB463D /* LoginButton_pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginButton_pressed@2x.png"; sourceTree = "<group>"; };
+		4032B6D71528C89200CB463D /* LoginButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginButton.png; sourceTree = "<group>"; };
+		4032B6D81528C89200CB463D /* LoginButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginButton@2x.png"; sourceTree = "<group>"; };
+		40D72B021528CF48006EF45E /* RegButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RegButton.png; sourceTree = "<group>"; };
+		40D72B031528CF48006EF45E /* RegButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RegButton@2x.png"; sourceTree = "<group>"; };
 		B11E6BBC151F6B2900012E29 /* UnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B11E6BBD151F6B2900012E29 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		B11E6BC3151F6B2900012E29 /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
@@ -237,7 +251,7 @@
 		B1D4C5BA1512603F001E6AA2 /* VKApplicationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VKApplicationController.xib; sourceTree = "<group>"; };
 		B1D4C5BB1512603F001E6AA2 /* VKLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKLoginViewController.h; sourceTree = "<group>"; };
 		B1D4C5BC1512603F001E6AA2 /* VKLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKLoginViewController.m; sourceTree = "<group>"; };
-		B1D4C5BD1512603F001E6AA2 /* VKWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VKWindow.xib; sourceTree = "<group>"; };
+		B1D4C5BD1512603F001E6AA2 /* VKWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VKWindow.xib; path = Controllers/VKWindow.xib; sourceTree = "<group>"; };
 		B1D4C5BF1512603F001E6AA2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B1D4C5C11512603F001E6AA2 /* ExampleService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleService.h; sourceTree = "<group>"; };
 		B1D4C5C21512603F001E6AA2 /* ExampleServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleServiceImpl.h; sourceTree = "<group>"; };
@@ -446,6 +460,13 @@
 		4032B64415286DC800CB463D /* from vk */ = {
 			isa = PBXGroup;
 			children = (
+				40D72B021528CF48006EF45E /* RegButton.png */,
+				40D72B031528CF48006EF45E /* RegButton@2x.png */,
+				4032B6D51528C89100CB463D /* LoginButton_pressed.png */,
+				4032B6D61528C89100CB463D /* LoginButton_pressed@2x.png */,
+				4032B6D71528C89200CB463D /* LoginButton.png */,
+				4032B6D81528C89200CB463D /* LoginButton@2x.png */,
+				4032B6D31528C43000CB463D /* Background@2x.png */,
 				4032B64515286DC800CB463D /* Header.png */,
 				4032B64615286DC800CB463D /* Header@2x.png */,
 			);
@@ -577,6 +598,9 @@
 			isa = PBXGroup;
 			children = (
 				B1E6CBC4151084F000B585B9 /* VKAuthenticatorDelegate.h */,
+				B1D4C5BD1512603F001E6AA2 /* VKWindow.xib */,
+				B1D4C6291512603F001E6AA2 /* VKAppDelegate.h */,
+				B1D4C62A1512603F001E6AA2 /* VKAppDelegate.m */,
 				B1D4C5B41512603F001E6AA2 /* Controllers */,
 				B1D4C5BE1512603F001E6AA2 /* Localizable.strings */,
 				B1D4C5C01512603F001E6AA2 /* ExampleIoC */,
@@ -584,8 +608,6 @@
 				B1D4C61F1512603F001E6AA2 /* main.m */,
 				B1D4C6201512603F001E6AA2 /* Requests */,
 				B1D4C6231512603F001E6AA2 /* Resources */,
-				B1D4C6291512603F001E6AA2 /* VKAppDelegate.h */,
-				B1D4C62A1512603F001E6AA2 /* VKAppDelegate.m */,
 				B1D4C62B1512603F001E6AA2 /* vkmessenger-Info.plist */,
 				B1D4C62C1512603F001E6AA2 /* vkmessenger-Prefix.pch */,
 				B1D4C62D1512603F001E6AA2 /* VKServiceAPI */,
@@ -599,13 +621,12 @@
 		B1D4C5B41512603F001E6AA2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B1D4C5B51512603F001E6AA2 /* VKLoginViewController.xib */,
 				B1D4C5B81512603F001E6AA2 /* VKApplicationController.h */,
 				B1D4C5B91512603F001E6AA2 /* VKApplicationController.m */,
 				B1D4C5BA1512603F001E6AA2 /* VKApplicationController.xib */,
 				B1D4C5BB1512603F001E6AA2 /* VKLoginViewController.h */,
 				B1D4C5BC1512603F001E6AA2 /* VKLoginViewController.m */,
-				B1D4C5BD1512603F001E6AA2 /* VKWindow.xib */,
+				B1D4C5B51512603F001E6AA2 /* VKLoginViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1061,6 +1082,13 @@
 				B1E6CBC4151084F000B585A0 /* VKErrorCodes.h in Resources */,
 				4032B64915286DC800CB463D /* Header.png in Resources */,
 				4032B64A15286DC800CB463D /* Header@2x.png in Resources */,
+				4032B6D41528C43000CB463D /* Background@2x.png in Resources */,
+				4032B6D91528C89200CB463D /* LoginButton_pressed.png in Resources */,
+				4032B6DA1528C89200CB463D /* LoginButton_pressed@2x.png in Resources */,
+				4032B6DB1528C89200CB463D /* LoginButton.png in Resources */,
+				4032B6DC1528C89200CB463D /* LoginButton@2x.png in Resources */,
+				40D72B041528CF48006EF45E /* RegButton.png in Resources */,
+				40D72B051528CF48006EF45E /* RegButton@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

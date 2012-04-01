@@ -11,7 +11,7 @@
 #import "VKLoginScreenDelegate.h"
 @class VKLoginScreen;
 
-@interface VKLoginViewController : UIViewController<VKLoginScreenDelegate>
+@interface VKLoginViewController : UIViewController<VKLoginScreenDelegate, UITableViewDataSource>
 
 -(IBAction)loginButtonDidPress:(id)sender;
 
