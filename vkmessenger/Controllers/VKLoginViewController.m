@@ -109,5 +109,31 @@ IoCInject(loginScreen, loginScreen)
     [super dealloc];
 }
 
+#pragma UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 2;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView 
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    //TODO: make const
+    tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Background@2x.png"]];
+
+    NSString *kLoginViewCellIdentifier = @"login view cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kLoginViewCellIdentifier];
+    if (cell == nil) {
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kLoginViewCellIdentifier] autorelease];
+        
+        if (indexPath.row == 0) {
+            [cell addSubview:self.loginTextField];
+        } else {
+            [cell addSubview:self.passwordTextField];
+        }
+    }
+    
+    return cell;
+}
+
 
 @end

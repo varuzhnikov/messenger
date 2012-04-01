@@ -17,17 +17,22 @@
 
 @implementation VKAuthenticatorTest {
 
+@private
+    VKTestContainer *_container;
 }
+@synthesize container = _container;
 
 
 - (void)setUp {
     [super setUp];
+    _container = [[VKTestContainer alloc] init];
     _authenticator = [self.container getObject:@"authenticator"];
     _serviceAPI = [self.container getObject:@"serviceAPI"];
     _errorNotifier = [self.container getObject:@"errorNotifier"];
 }
 
 - (void)tearDown {
+    self.container = nil;
     [super tearDown];
 
 }
