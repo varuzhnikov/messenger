@@ -7,6 +7,7 @@
 //
 
 #import "MessagesListViewController.h"
+#import "ChatCell.h"
 
 @implementation MessagesListViewController
 
@@ -71,11 +72,31 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@""] autorelease];
+    ChatCell *cell = (ChatCell *) [tableView dequeueReusableCellWithIdentifier:kChatCellIdentificator];
+        
+    if (cell == nil) {
+        NSArray *views = [[NSBundle mainBundle] loadNibNamed:@"ChatCell" owner:nil options:nil];
+        
+        cell = [views objectAtIndex:0];
+        cell.lastMessageLabel.text = @"bla-lba-bla";
+    }
+
     
-    cell.textLabel.text = @"name stub";
     return cell;
 }
+
+#pragma UITableViewDelegate
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 57;
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row % 2 == 0) {
+        [(ChatCell *)cell setContainsUnreadMessages:YES];
+    }
+}
+
 
 
 

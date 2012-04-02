@@ -15,6 +15,10 @@
 		4032B6DA1528C89200CB463D /* LoginButton_pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4032B6D61528C89100CB463D /* LoginButton_pressed@2x.png */; };
 		4032B6DB1528C89200CB463D /* LoginButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 4032B6D71528C89200CB463D /* LoginButton.png */; };
 		4032B6DC1528C89200CB463D /* LoginButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4032B6D81528C89200CB463D /* LoginButton@2x.png */; };
+		40A9DD661529F4F900597955 /* ChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40A9DD641529F4F900597955 /* ChatCell.xib */; };
+		40A9DD691529F99700597955 /* Online.png in Resources */ = {isa = PBXBuildFile; fileRef = 40A9DD671529F99700597955 /* Online.png */; };
+		40A9DD6A1529F99700597955 /* Online@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40A9DD681529F99700597955 /* Online@2x.png */; };
+		40A9DD6D1529FEEB00597955 /* ChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A9DD6C1529FEEA00597955 /* ChatCell.m */; };
 		40D72B041528CF48006EF45E /* RegButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 40D72B021528CF48006EF45E /* RegButton.png */; };
 		40D72B051528CF48006EF45E /* RegButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40D72B031528CF48006EF45E /* RegButton@2x.png */; };
 		40F144431529AE0F00BA1159 /* StubController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F144411529AE0E00BA1159 /* StubController.m */; };
@@ -216,6 +220,11 @@
 		4032B6D61528C89100CB463D /* LoginButton_pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginButton_pressed@2x.png"; sourceTree = "<group>"; };
 		4032B6D71528C89200CB463D /* LoginButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginButton.png; sourceTree = "<group>"; };
 		4032B6D81528C89200CB463D /* LoginButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginButton@2x.png"; sourceTree = "<group>"; };
+		40A9DD641529F4F900597955 /* ChatCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatCell.xib; sourceTree = "<group>"; };
+		40A9DD671529F99700597955 /* Online.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Online.png; sourceTree = "<group>"; };
+		40A9DD681529F99700597955 /* Online@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Online@2x.png"; sourceTree = "<group>"; };
+		40A9DD6B1529FEEA00597955 /* ChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatCell.h; sourceTree = "<group>"; };
+		40A9DD6C1529FEEA00597955 /* ChatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatCell.m; sourceTree = "<group>"; };
 		40D72B021528CF48006EF45E /* RegButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RegButton.png; sourceTree = "<group>"; };
 		40D72B031528CF48006EF45E /* RegButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RegButton@2x.png"; sourceTree = "<group>"; };
 		40F144401529AE0E00BA1159 /* StubController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StubController.h; sourceTree = "<group>"; };
@@ -469,6 +478,8 @@
 		4032B64415286DC800CB463D /* from vk */ = {
 			isa = PBXGroup;
 			children = (
+				40A9DD671529F99700597955 /* Online.png */,
+				40A9DD681529F99700597955 /* Online@2x.png */,
 				40F1445C1529BF3C00BA1159 /* Header_Button.png */,
 				40F1445D1529BF3C00BA1159 /* Header_Button@2x.png */,
 				40F144541529B27500BA1159 /* DockMessages.png */,
@@ -502,6 +513,9 @@
 				40F1444A1529B14400BA1159 /* MessagesListViewController.h */,
 				40F1444B1529B14400BA1159 /* MessagesListViewController.m */,
 				40F1444C1529B14400BA1159 /* MessagesListViewController.xib */,
+				40A9DD641529F4F900597955 /* ChatCell.xib */,
+				40A9DD6B1529FEEA00597955 /* ChatCell.h */,
+				40A9DD6C1529FEEA00597955 /* ChatCell.m */,
 			);
 			name = Messages;
 			sourceTree = "<group>";
@@ -1190,6 +1204,9 @@
 				40F144591529B27500BA1159 /* DockMessages@2x.png in Resources */,
 				40F1445E1529BF3C00BA1159 /* Header_Button.png in Resources */,
 				40F144611529BF3C00BA1159 /* Header_Button@2x.png in Resources */,
+				40A9DD661529F4F900597955 /* ChatCell.xib in Resources */,
+				40A9DD691529F99700597955 /* Online.png in Resources */,
+				40A9DD6A1529F99700597955 /* Online@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1339,6 +1356,7 @@
 				B1E6CBC4151084F000B585DF /* VKAbstractRequestSender.m in Sources */,
 				B1E6CBC4151084F000B585E4 /* VKContainer.m in Sources */,
 				B1E6CBC4151084F000B585E8 /* VKIntegrationTestContainer.m in Sources */,
+				40A9DD6D1529FEEB00597955 /* ChatCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
