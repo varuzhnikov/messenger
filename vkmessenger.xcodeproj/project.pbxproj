@@ -17,6 +17,16 @@
 		4032B6DC1528C89200CB463D /* LoginButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4032B6D81528C89200CB463D /* LoginButton@2x.png */; };
 		40D72B041528CF48006EF45E /* RegButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 40D72B021528CF48006EF45E /* RegButton.png */; };
 		40D72B051528CF48006EF45E /* RegButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40D72B031528CF48006EF45E /* RegButton@2x.png */; };
+		40F144431529AE0F00BA1159 /* StubController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F144411529AE0E00BA1159 /* StubController.m */; };
+		40F144441529AE0F00BA1159 /* StubController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40F144421529AE0E00BA1159 /* StubController.xib */; };
+		40F1444D1529B14400BA1159 /* MessagesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F1444B1529B14400BA1159 /* MessagesListViewController.m */; };
+		40F1444E1529B14400BA1159 /* MessagesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F1444B1529B14400BA1159 /* MessagesListViewController.m */; };
+		40F1444F1529B14400BA1159 /* MessagesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F1444B1529B14400BA1159 /* MessagesListViewController.m */; };
+		40F144501529B14400BA1159 /* MessagesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40F1444C1529B14400BA1159 /* MessagesListViewController.xib */; };
+		40F144511529B14400BA1159 /* MessagesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40F1444C1529B14400BA1159 /* MessagesListViewController.xib */; };
+		40F144521529B14400BA1159 /* MessagesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40F1444C1529B14400BA1159 /* MessagesListViewController.xib */; };
+		40F144561529B27500BA1159 /* DockMessages.png in Resources */ = {isa = PBXBuildFile; fileRef = 40F144541529B27500BA1159 /* DockMessages.png */; };
+		40F144591529B27500BA1159 /* DockMessages@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40F144551529B27500BA1159 /* DockMessages@2x.png */; };
 		B11E6BBE151F6B2900012E29 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B11E6BBD151F6B2900012E29 /* SenTestingKit.framework */; };
 		B11E6BBF151F6B2900012E29 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF6DC150BD81300007A33 /* UIKit.framework */; };
 		B11E6BC0151F6B2900012E29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF6DE150BD81300007A33 /* Foundation.framework */; };
@@ -194,6 +204,14 @@
 		4032B6D81528C89200CB463D /* LoginButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginButton@2x.png"; sourceTree = "<group>"; };
 		40D72B021528CF48006EF45E /* RegButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RegButton.png; sourceTree = "<group>"; };
 		40D72B031528CF48006EF45E /* RegButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RegButton@2x.png"; sourceTree = "<group>"; };
+		40F144401529AE0E00BA1159 /* StubController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StubController.h; sourceTree = "<group>"; };
+		40F144411529AE0E00BA1159 /* StubController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StubController.m; sourceTree = "<group>"; };
+		40F144421529AE0E00BA1159 /* StubController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StubController.xib; sourceTree = "<group>"; };
+		40F1444A1529B14400BA1159 /* MessagesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagesListViewController.h; sourceTree = "<group>"; };
+		40F1444B1529B14400BA1159 /* MessagesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagesListViewController.m; sourceTree = "<group>"; };
+		40F1444C1529B14400BA1159 /* MessagesListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessagesListViewController.xib; sourceTree = "<group>"; };
+		40F144541529B27500BA1159 /* DockMessages.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DockMessages.png; sourceTree = "<group>"; };
+		40F144551529B27500BA1159 /* DockMessages@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DockMessages@2x.png"; sourceTree = "<group>"; };
 		B11E6BBC151F6B2900012E29 /* UnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B11E6BBD151F6B2900012E29 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		B11E6BC3151F6B2900012E29 /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
@@ -427,6 +445,8 @@
 		4032B64415286DC800CB463D /* from vk */ = {
 			isa = PBXGroup;
 			children = (
+				40F144541529B27500BA1159 /* DockMessages.png */,
+				40F144551529B27500BA1159 /* DockMessages@2x.png */,
 				40D72B021528CF48006EF45E /* RegButton.png */,
 				40D72B031528CF48006EF45E /* RegButton@2x.png */,
 				4032B6D51528C89100CB463D /* LoginButton_pressed.png */,
@@ -598,6 +618,12 @@
 				B1D4C5BB1512603F001E6AA2 /* VKLoginViewController.h */,
 				B1D4C5BC1512603F001E6AA2 /* VKLoginViewController.m */,
 				B1D4C5B51512603F001E6AA2 /* VKLoginViewController.xib */,
+				40F144401529AE0E00BA1159 /* StubController.h */,
+				40F144411529AE0E00BA1159 /* StubController.m */,
+				40F144421529AE0E00BA1159 /* StubController.xib */,
+				40F1444A1529B14400BA1159 /* MessagesListViewController.h */,
+				40F1444B1529B14400BA1159 /* MessagesListViewController.m */,
+				40F1444C1529B14400BA1159 /* MessagesListViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1074,6 +1100,7 @@
 			files = (
 				B11E6BC6151F6B2900012E29 /* InfoPlist.strings in Resources */,
 				B1E6CBC4151084F000B585A2 /* VKErrorCodes.h in Resources */,
+				40F144521529B14400BA1159 /* MessagesListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1097,6 +1124,10 @@
 				4032B6DC1528C89200CB463D /* LoginButton@2x.png in Resources */,
 				40D72B041528CF48006EF45E /* RegButton.png in Resources */,
 				40D72B051528CF48006EF45E /* RegButton@2x.png in Resources */,
+				40F144441529AE0F00BA1159 /* StubController.xib in Resources */,
+				40F144501529B14400BA1159 /* MessagesListViewController.xib in Resources */,
+				40F144561529B27500BA1159 /* DockMessages.png in Resources */,
+				40F144591529B27500BA1159 /* DockMessages@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1105,6 +1136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1E6CBC4151084F000B585A1 /* VKErrorCodes.h in Resources */,
+				40F144511529B14400BA1159 /* MessagesListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1181,6 +1213,7 @@
 				B1D597571529A5060094A536 /* SBJsonTokeniser.m in Sources */,
 				B1D5975A1529A5060094A536 /* SBJsonUTF8Stream.m in Sources */,
 				B1D5975D1529A5060094A536 /* SBJsonWriter.m in Sources */,
+				40F1444F1529B14400BA1159 /* MessagesListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1236,6 +1269,8 @@
 				B1D597551529A5060094A536 /* SBJsonTokeniser.m in Sources */,
 				B1D597581529A5060094A536 /* SBJsonUTF8Stream.m in Sources */,
 				B1D5975B1529A5060094A536 /* SBJsonWriter.m in Sources */,
+				40F144431529AE0F00BA1159 /* StubController.m in Sources */,
+				40F1444D1529B14400BA1159 /* MessagesListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1292,6 +1327,7 @@
 				B1D597561529A5060094A536 /* SBJsonTokeniser.m in Sources */,
 				B1D597591529A5060094A536 /* SBJsonUTF8Stream.m in Sources */,
 				B1D5975C1529A5060094A536 /* SBJsonWriter.m in Sources */,
+				40F1444E1529B14400BA1159 /* MessagesListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
