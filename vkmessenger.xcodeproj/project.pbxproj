@@ -486,6 +486,26 @@
 			path = "from vk";
 			sourceTree = "<group>";
 		};
+		40A9DD5D1529F24D00597955 /* Login And Register */ = {
+			isa = PBXGroup;
+			children = (
+				B1D4C5BB1512603F001E6AA2 /* VKLoginViewController.h */,
+				B1D4C5BC1512603F001E6AA2 /* VKLoginViewController.m */,
+				B1D4C5B51512603F001E6AA2 /* VKLoginViewController.xib */,
+			);
+			name = "Login And Register";
+			sourceTree = "<group>";
+		};
+		40A9DD5F1529F26F00597955 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				40F1444A1529B14400BA1159 /* MessagesListViewController.h */,
+				40F1444B1529B14400BA1159 /* MessagesListViewController.m */,
+				40F1444C1529B14400BA1159 /* MessagesListViewController.xib */,
+			);
+			name = Messages;
+			sourceTree = "<group>";
+		};
 		B11E6BC1151F6B2900012E29 /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -638,18 +658,14 @@
 		B1D4C5B41512603F001E6AA2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				40A9DD5F1529F26F00597955 /* Messages */,
+				40A9DD5D1529F24D00597955 /* Login And Register */,
 				B1D4C5B81512603F001E6AA2 /* VKApplicationController.h */,
 				B1D4C5B91512603F001E6AA2 /* VKApplicationController.m */,
 				B1D4C5BA1512603F001E6AA2 /* VKApplicationController.xib */,
-				B1D4C5BB1512603F001E6AA2 /* VKLoginViewController.h */,
-				B1D4C5BC1512603F001E6AA2 /* VKLoginViewController.m */,
-				B1D4C5B51512603F001E6AA2 /* VKLoginViewController.xib */,
 				40F144401529AE0E00BA1159 /* StubController.h */,
 				40F144411529AE0E00BA1159 /* StubController.m */,
 				40F144421529AE0E00BA1159 /* StubController.xib */,
-				40F1444A1529B14400BA1159 /* MessagesListViewController.h */,
-				40F1444B1529B14400BA1159 /* MessagesListViewController.m */,
-				40F1444C1529B14400BA1159 /* MessagesListViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
