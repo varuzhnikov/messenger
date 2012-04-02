@@ -9,7 +9,7 @@
 #import "VKAuthenticator.h"
 #import "OxICContainer.h"
 #import "VKTestContainer.h"
-#import "VKServiceAPI.h"
+#import "VKRequestSender.h"
 #import "VKProductionContainer.h"
 #import "VKLoginScreen.h"
 #import "VKLoginViewController.h"
@@ -37,7 +37,7 @@
 }
 
 - (void)test_Service_Api_Should_Be_Initialized {
-    id <VKServiceAPI> serviceAPI = [self.container getObject:@"serviceAPI"];
+    id <VKRequestSender> serviceAPI = [self.container getObject:@"serviceAPI"];
 
     GHAssertNotNil(serviceAPI, @"service api should be initialized");
 }

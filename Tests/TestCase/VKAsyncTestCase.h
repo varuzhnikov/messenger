@@ -10,11 +10,12 @@
 
 @class VKTestContainer;
 @class VKProductionContainer;
+@class VKIntegrationTestContainer;
 
 
 @interface VKAsyncTestCase : GHAsyncTestCase
 
-@property(nonatomic, retain) VKProductionContainer *container;
+@property(nonatomic, retain) VKIntegrationTestContainer *container;
 
 
 @end

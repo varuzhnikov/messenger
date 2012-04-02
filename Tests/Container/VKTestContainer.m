@@ -10,7 +10,7 @@
 #import "OxICSimpleWrapperFactory.h"
 #import "VKAuthenticator.h"
 #import "VKRequestFactoryImpl.h"
-#import "VKServiceAPIStub.h"
+#import "VKRequestSenderStub.h"
 #import "VKLoginScreen.h"
 #import "VKErrorNotifierStub.h"
 
@@ -21,7 +21,7 @@
 - (id)init {
     self = [super initWithWrapperFactory:[[[OxICSimpleWrapperFactory alloc] init] autorelease]];
     if (self) {
-        [self addDefinitionFromClassName:NSStringFromClass([VKServiceAPIStub class])];
+        [self addDefinitionFromClassName:NSStringFromClass([VKRequestSenderStub class])];
         [self addDefinitionFromClassName:NSStringFromClass([VKAuthenticator class])];
         [self addDefinitionFromClassName:NSStringFromClass([VKRequestFactoryImpl class])];
         [self addDefinitionFromClassName:NSStringFromClass([VKLoginScreen class])];

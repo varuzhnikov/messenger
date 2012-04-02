@@ -7,7 +7,7 @@
 
 #import "VKAuthenticator.h"
 #import "OxICContainer.h"
-#import "VKServiceAPIImpl.h"
+#import "VKAsyncRequestSender.h"
 #import "VKRequest.h"
 #import "VKLoginRequest.h"
 #import "VKAuthenticatorDelegate.h"

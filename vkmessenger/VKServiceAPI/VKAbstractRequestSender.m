@@ -1,27 +1,21 @@
 //
-//  Created by Vitaliy Ruzhnikov on 15.03.12.
+//  Created by Vitaliy Ruzhnikov on 02.04.12.
 //
 //
 //
 
 
-#import "VKServiceAPIImpl.h"
+#import "VKAbstractRequestSender.h"
 #import "VKRequest.h"
 #import "ASIHTTPRequest.h"
-#import "OxICContainer.h"
 
 
-@implementation VKServiceAPIImpl {
-
+@implementation VKAbstractRequestSender {
 @private
     id _token;
 }
+
 @synthesize token = _token;
-
-
-IoCName(serviceAPI)
-IoCSingleton
-IoCLazy
 
 - (void)sendRequest:(VKRequest *)request {
     ASIHTTPRequest *asiHttpRequest = [ASIHTTPRequest requestWithURL:request.url];
@@ -30,12 +24,16 @@ IoCLazy
 
     [asiHttpRequest setDelegate:request];
 
-    [asiHttpRequest startAsynchronous];
+    [self startRequest:asiHttpRequest];
+}
+
+- (void)startRequest:(ASIHTTPRequest *)asiHttpRequest {
 }
 
 - (void)dealloc {
     [_token release];
     [super dealloc];
 }
+
 
 @end

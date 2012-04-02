@@ -11,14 +11,14 @@
 #import "VKAuthenticatorDelegate.h"
 
 @class VKTestContainer;
-@class VKServiceAPIImpl;
+@class VKAsyncRequestSender;
 @class VKAuthenticator;
 @protocol VKErrorNotifier;
 @class VKErrorNotifierStub;
 
 
 @interface VKAuthenticatorTest : VKTestContainerTestCase<VKAuthenticatorDelegate> {
-    VKServiceAPIImpl *_serviceAPI;
+    VKAsyncRequestSender *_serviceAPI;
     VKAuthenticator *_authenticator;
     VKErrorNotifierStub *_errorNotifier;
     BOOL loginFinished;

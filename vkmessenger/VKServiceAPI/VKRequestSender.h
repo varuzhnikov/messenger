@@ -7,7 +7,7 @@
 
 @class VKRequest;
 
-@protocol VKServiceAPI
+@protocol VKRequestSender
 - (void)sendRequest:(VKRequest *)request;
 
 @property(nonatomic, retain) NSString *token;
