@@ -7,7 +7,8 @@
 
 #import <Foundation/Foundation.h>
 #import "OxICContainer.h"
+#import "VKContainer.h"
 
 
-@interface VKProductionContainer : OxICContainer
+@interface VKProductionContainer : VKContainer
 @end

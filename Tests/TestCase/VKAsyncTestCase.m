@@ -8,19 +8,20 @@
 #import "VKAsyncTestCase.h"
 #import "VKTestContainer.h"
 #import "VKProductionContainer.h"
+#import "VKIntegrationTestContainer.h"
 
 
 @implementation VKAsyncTestCase {
 
 @private
-    VKProductionContainer *_container;
+    VKIntegrationTestContainer *_container;
 }
 @synthesize container = _container;
 
 
 - (void)setUp {
     [super setUp];
-    self.container = [[[VKProductionContainer alloc] init] autorelease];
+    self.container = [[[VKIntegrationTestContainer alloc] init] autorelease];
 }
 
 - (void)tearDown {

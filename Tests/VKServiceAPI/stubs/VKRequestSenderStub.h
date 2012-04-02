@@ -6,10 +6,10 @@
 
 
 #import <Foundation/Foundation.h>
-#import "VKServiceAPI.h"
+#import "VKRequestSender.h"
 
 static NSString *const TEST_TOKEN = @"test_token";
 
 
-@interface VKServiceAPIStub : NSObject<VKServiceAPI>
+@interface VKRequestSenderStub : NSObject<VKRequestSender>
 @end

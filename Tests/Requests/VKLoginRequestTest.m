@@ -19,14 +19,14 @@
 }
 
 - (void)test_Should_Create_Login_Request_With_Correct_Url {
-    NSString *expectedString = [NSString stringWithFormat:@"%@?scope=messages&grant_type=password&client_secret=wbim5pRU1CHfFpZytzbD&client_id=2848091", GET_TOKEN_URL];
+    NSString *expectedString = [NSString stringWithFormat:@"%@?scope=messages,friends&grant_type=password&client_secret=wbim5pRU1CHfFpZytzbD&client_id=2848091", GET_TOKEN_URL];
     STAssertEqualObjects([request.url absoluteString], expectedString, @"should create login request with correct url");
 }
 
 - (void)test_Should_Create_Login_Request_With_Login_And_Password_Filled_And_All_Other_Params {
     VKLoginRequest *loginRequest = [[[VKLoginRequest alloc] initWithLogin:TEST_LOGIN andPassword:TEST_PASSWORD] autorelease];
 
-    NSString *expectedString = [NSString stringWithFormat:@"%@?%@=%@&scope=messages&grant_type=password&%@=%@&client_secret=wbim5pRU1CHfFpZytzbD&client_id=2848091", GET_TOKEN_URL, @"password", TEST_PASSWORD,
+    NSString *expectedString = [NSString stringWithFormat:@"%@?%@=%@&scope=messages,friends&grant_type=password&%@=%@&client_secret=wbim5pRU1CHfFpZytzbD&client_id=2848091", GET_TOKEN_URL, @"password", TEST_PASSWORD,
                     USERNAME_PARAM_NAME, TEST_LOGIN
     ];
     STAssertEqualObjects([[loginRequest url] absoluteString], expectedString, @"should create login request with login and password");

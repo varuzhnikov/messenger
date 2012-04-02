@@ -7,7 +7,7 @@
 
 #import "VKAuthenticatorTest.h"
 #import "VKTestContainer.h"
-#import "VKServiceAPIImpl.h"
+#import "VKAsyncRequestSender.h"
 #import "VKAuthenticator.h"
 #import "VKRequest.h"
 #import "VKErrorNotifier.h"

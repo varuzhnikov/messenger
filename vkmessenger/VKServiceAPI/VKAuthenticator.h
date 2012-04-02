@@ -9,14 +9,14 @@
 #import "VKRequestFactory.h"
 #import "VKRequestDelegate.h"
 
-@protocol VKServiceAPI;
+@protocol VKRequestSender;
 @protocol VKAuthenticatorDelegate;
 @protocol VKErrorNotifier;
 
 
 @interface VKAuthenticator : NSObject <VKRequestDelegate>
 
-@property(nonatomic, retain) id <VKServiceAPI> serviceAPI;
+@property(nonatomic, retain) id <VKRequestSender> serviceAPI;
 @property(nonatomic, retain) id <VKRequestFactory> requestFactory;
 @property(nonatomic, retain) id <VKErrorNotifier> errorNotifier;
 

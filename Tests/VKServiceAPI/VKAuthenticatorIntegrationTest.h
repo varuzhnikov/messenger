@@ -13,7 +13,7 @@
 
 @class ASIHTTPRequest;
 @class VKAuthenticator;
-@protocol VKServiceAPI;
+@protocol VKRequestSender;
 @class VKErrorNotifierStub;
 
 
@@ -21,7 +21,7 @@
     VKRequest *_request;
 
     VKAuthenticator *_authenticator;
-    id<VKServiceAPI> _serviceAPI;
+    id<VKRequestSender> _serviceAPI;
 }
 
 @end

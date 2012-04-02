@@ -23,7 +23,7 @@
         [self setGetParameterWithName:GRANT_TYPE_PARAM_NAME andValue:@"password"];
         [self setGetParameterWithName:CLIENT_ID_PARAM_NAME andValue:@"2848091"];
         [self setGetParameterWithName:CLIENT_SECRET_PARAM_NAME andValue:@"wbim5pRU1CHfFpZytzbD"];
-        [self setGetParameterWithName:SCOPE_PARAM_NAME andValue:@"messages"];
+        [self setGetParameterWithName:SCOPE_PARAM_NAME andValue:@"messages,friends"];
     }
 
     return self;

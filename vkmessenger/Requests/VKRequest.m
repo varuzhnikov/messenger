@@ -7,12 +7,18 @@
 
 #import "VKRequest.h"
 #import "VKRequestDelegate.h"
-#import "ASIHTTPRequest.h"
 #import "SBJson.h"
 
 
 @interface VKRequest ()
 @property(nonatomic, readonly) NSString *urlString;
+
+- (BOOL)isErrorInResponse;
+
+- (void)parseErrorFromResponse;
+
+
+- (BOOL)isErrorDescriptionPresent;
 
 - (void)replaceResponseString:(NSString *)aResponseString;
 
@@ -71,20 +77,41 @@
 }
 
 - (void)setResponseString:(NSString *)aResponseString {
+    NSLog(@"Response from server :%@", aResponseString);
     [self replaceResponseString:aResponseString];
-    id JSONValue = [_responseString JSONValue];
-    NSString *errorKey = [JSONValue objectForKey:ERROR_KEY];
-    if (errorKey != nil) {
-        NSMutableDictionary *errorDetails = [NSMutableDictionary dictionaryWithObject:errorKey forKey:ERROR_KEY];
-
-        [errorDetails setObject:[JSONValue objectForKey:ERROR_DESCRIPTION_KEY] forKey:NSLocalizedDescriptionKey];
-
-        NSError *error = [NSError errorWithDomain:@"ru.vkmessanger" code:100 userInfo:errorDetails];
-        self.responseError = error;
+    if ([self isErrorInResponse]) {
+        [self parseErrorFromResponse];
     } else {
         [self parse];
     }
 }
+
+- (BOOL)isErrorInResponse {
+    id JSONValue = [_responseString JSONValue];
+    NSString *errorKey = [JSONValue objectForKey:ERROR_KEY];
+    return (errorKey != nil);
+}
+
+- (void)parseErrorFromResponse {
+    id JSONValue = [_responseString JSONValue];
+    NSString *errorKey = [JSONValue objectForKey:ERROR_KEY];
+    NSMutableDictionary *errorDetails = [NSMutableDictionary dictionaryWithObject:errorKey forKey:ERROR_KEY];
+
+    if ([self isErrorDescriptionPresent]) {
+        NSString *errorDescription = [JSONValue objectForKey:ERROR_DESCRIPTION_KEY];
+        [errorDetails setObject:errorDescription forKey:NSLocalizedDescriptionKey];
+    }
+
+    NSError *error = [NSError errorWithDomain:@"ru.vkmessanger" code:100 userInfo:errorDetails];
+    self.responseError = error;
+}
+
+- (BOOL)isErrorDescriptionPresent {
+    id JSONValue = [_responseString JSONValue];
+    NSString *errorDescription = [JSONValue objectForKey:ERROR_DESCRIPTION_KEY];
+   return errorDescription !=nil;
+}
+
 
 - (void)replaceResponseString:(NSString *)aResponseString {
     [_responseString release];

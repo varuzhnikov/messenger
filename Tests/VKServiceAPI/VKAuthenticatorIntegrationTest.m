@@ -7,14 +7,13 @@
 
 #import "VKAuthenticatorIntegrationTest.h"
 #import "ASIHTTPRequest.h"
-#import "VKServiceAPIImpl.h"
+#import "VKAsyncRequestSender.h"
 #import "VKLoginRequest.h"
 #import "VKAuthenticator.h"
 #import "OxICContainer.h"
 #import "VKProductionContainer.h"
-#import "VKServiceAPI.h"
 #import "VKTestConstants.h"
-#import "VKErrorNotifierStub.h"
+#import "VKIntegrationTestContainer.h"
 
 
 @implementation VKAuthenticatorIntegrationTest {

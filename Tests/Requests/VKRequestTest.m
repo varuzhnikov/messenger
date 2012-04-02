@@ -102,22 +102,29 @@
 }
 
 - (void)test_Should_Parse_Error_From_Json_After_Setting_Response_String_With_Error {
-    request.responseString = JSON_WITH_ERROR;
+    request.responseString = JSON_WITH_ERROR_AND_DESCRIPTION;
 
     STAssertNotNil(request.responseError, @"should parse error from json after setting response string with error");
 }
 
 - (void)test_Should_Parse_Response_String_With_Error_And_Find_Error_Key {
-    request.responseString = JSON_WITH_ERROR;
+    request.responseString = JSON_WITH_ERROR_AND_DESCRIPTION;
 
     NSDictionary *errorDetails = request.responseError.userInfo;
     STAssertEqualObjects([errorDetails objectForKey:ERROR_KEY], @"invalid_client", @"should parse error key");
 }
 
 - (void)test_Should_Parse_Error_Description_From_Response_String_With_Error {
-    request.responseString = JSON_WITH_ERROR;
+    request.responseString = JSON_WITH_ERROR_AND_DESCRIPTION;
 
     STAssertEqualObjects([request.responseError localizedDescription], TEST_ERROR_MESSAGE, @"should parse response string and call responseHasError");
+}
+
+
+- (void)test_Should_Not_Parse_Omitting_Error_Description {
+    request.responseString = JSON_WITH_ERROR;
+
+    STAssertNil([[request.responseError userInfo] objectForKey:ERROR_DESCRIPTION_KEY], @"should not parse omitting error description");
 }
 
 
