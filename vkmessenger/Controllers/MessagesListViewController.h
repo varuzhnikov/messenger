@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MessagesListViewController : UIViewController
+@interface MessagesListViewController : UIViewController <UITableViewDataSource, UISearchBarDelegate>
 
 @property (nonatomic, retain) IBOutlet UIToolbar *toolbar;
+@property (nonatomic, retain) IBOutlet UIBarButtonItem *createMessageBarButton;
 
 @end

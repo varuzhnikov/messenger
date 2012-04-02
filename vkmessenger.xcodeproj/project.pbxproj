@@ -27,6 +27,12 @@
 		40F144521529B14400BA1159 /* MessagesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40F1444C1529B14400BA1159 /* MessagesListViewController.xib */; };
 		40F144561529B27500BA1159 /* DockMessages.png in Resources */ = {isa = PBXBuildFile; fileRef = 40F144541529B27500BA1159 /* DockMessages.png */; };
 		40F144591529B27500BA1159 /* DockMessages@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40F144551529B27500BA1159 /* DockMessages@2x.png */; };
+		40F1445E1529BF3C00BA1159 /* Header_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 40F1445C1529BF3C00BA1159 /* Header_Button.png */; };
+		40F1445F1529BF3C00BA1159 /* Header_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 40F1445C1529BF3C00BA1159 /* Header_Button.png */; };
+		40F144601529BF3C00BA1159 /* Header_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 40F1445C1529BF3C00BA1159 /* Header_Button.png */; };
+		40F144611529BF3C00BA1159 /* Header_Button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40F1445D1529BF3C00BA1159 /* Header_Button@2x.png */; };
+		40F144621529BF3C00BA1159 /* Header_Button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40F1445D1529BF3C00BA1159 /* Header_Button@2x.png */; };
+		40F144631529BF3C00BA1159 /* Header_Button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40F1445D1529BF3C00BA1159 /* Header_Button@2x.png */; };
 		B11E6BBE151F6B2900012E29 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B11E6BBD151F6B2900012E29 /* SenTestingKit.framework */; };
 		B11E6BBF151F6B2900012E29 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF6DC150BD81300007A33 /* UIKit.framework */; };
 		B11E6BC0151F6B2900012E29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF6DE150BD81300007A33 /* Foundation.framework */; };
@@ -212,6 +218,8 @@
 		40F1444C1529B14400BA1159 /* MessagesListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessagesListViewController.xib; sourceTree = "<group>"; };
 		40F144541529B27500BA1159 /* DockMessages.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DockMessages.png; sourceTree = "<group>"; };
 		40F144551529B27500BA1159 /* DockMessages@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DockMessages@2x.png"; sourceTree = "<group>"; };
+		40F1445C1529BF3C00BA1159 /* Header_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Header_Button.png; sourceTree = "<group>"; };
+		40F1445D1529BF3C00BA1159 /* Header_Button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Header_Button@2x.png"; sourceTree = "<group>"; };
 		B11E6BBC151F6B2900012E29 /* UnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B11E6BBD151F6B2900012E29 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		B11E6BC3151F6B2900012E29 /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
@@ -445,6 +453,8 @@
 		4032B64415286DC800CB463D /* from vk */ = {
 			isa = PBXGroup;
 			children = (
+				40F1445C1529BF3C00BA1159 /* Header_Button.png */,
+				40F1445D1529BF3C00BA1159 /* Header_Button@2x.png */,
 				40F144541529B27500BA1159 /* DockMessages.png */,
 				40F144551529B27500BA1159 /* DockMessages@2x.png */,
 				40D72B021528CF48006EF45E /* RegButton.png */,
@@ -1101,6 +1111,8 @@
 				B11E6BC6151F6B2900012E29 /* InfoPlist.strings in Resources */,
 				B1E6CBC4151084F000B585A2 /* VKErrorCodes.h in Resources */,
 				40F144521529B14400BA1159 /* MessagesListViewController.xib in Resources */,
+				40F144601529BF3C00BA1159 /* Header_Button.png in Resources */,
+				40F144631529BF3C00BA1159 /* Header_Button@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1128,6 +1140,8 @@
 				40F144501529B14400BA1159 /* MessagesListViewController.xib in Resources */,
 				40F144561529B27500BA1159 /* DockMessages.png in Resources */,
 				40F144591529B27500BA1159 /* DockMessages@2x.png in Resources */,
+				40F1445E1529BF3C00BA1159 /* Header_Button.png in Resources */,
+				40F144611529BF3C00BA1159 /* Header_Button@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1137,6 +1151,8 @@
 			files = (
 				B1E6CBC4151084F000B585A1 /* VKErrorCodes.h in Resources */,
 				40F144511529B14400BA1159 /* MessagesListViewController.xib in Resources */,
+				40F1445F1529BF3C00BA1159 /* Header_Button.png in Resources */,
+				40F144621529BF3C00BA1159 /* Header_Button@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

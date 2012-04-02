@@ -11,6 +11,7 @@
 @implementation MessagesListViewController
 
 @synthesize toolbar;
+@synthesize createMessageBarButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,10 +32,11 @@
 
 #pragma mark - View lifecycle
 
-- (void)configToolBar {
+- (void)configureToolBar {
     NSString *kHeaderBackgroundImageName = @"Header.png";
     if([[[UIDevice currentDevice] systemVersion] intValue] >= 5) {
         [toolbar setBackgroundImage:[UIImage imageNamed:kHeaderBackgroundImageName] forToolbarPosition:UIToolbarPositionAny barMetrics:UIBarMetricsDefault];
+        [createMessageBarButton setBackgroundImage:[UIImage imageNamed:@"Header_Button.png"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     } else {
         [toolbar insertSubview:[[[UIImageView alloc] initWithImage:[UIImage imageNamed:kHeaderBackgroundImageName]] autorelease] atIndex:0];
     }
@@ -46,7 +48,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self configToolBar];
+    [self configureToolBar];
 }
 
 - (void)viewDidUnload
@@ -61,5 +63,20 @@
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+
+#pragma UITableViewDatasource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 10;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@""] autorelease];
+    
+    cell.textLabel.text = @"name stub";
+    return cell;
+}
+
+
 
 @end
