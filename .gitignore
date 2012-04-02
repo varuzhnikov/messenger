@@ -3,3 +3,4 @@ Gemfile.lock
 project.xcworkspace
 xcuserdata
 .DS_Store
+.idea
