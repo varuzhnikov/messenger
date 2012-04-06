@@ -123,6 +123,10 @@
 
 }
 
+- (NSURL *)baseUrl {
+    return [NSURL URLWithString:self.urlString];
+}
+
 - (NSURL *)url {
     NSMutableString *resultURL = [NSMutableString stringWithString:self.urlString];
 

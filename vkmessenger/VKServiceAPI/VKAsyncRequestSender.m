@@ -18,7 +18,7 @@
 }
 
 
-IoCName(serviceAPI)
+IoCName(httpRequestSender)
 IoCSingleton
 IoCLazy
 

@@ -9,7 +9,7 @@
 #import "OxICContainer.h"
 
 
-@interface VKTestContainer : OxICContainer
+@interface VKUnitTestContainer : OxICContainer
 
 
 

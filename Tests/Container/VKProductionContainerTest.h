@@ -7,7 +7,6 @@
 
 #import <Foundation/Foundation.h>
 #import <SenTestingKit/SenTestingKit.h>
-#import "VKTestContainerTestCase.h"
 #import "VKProductionContainerTestCase.h"
 
 

@@ -7,13 +7,13 @@
 
 #import <Foundation/Foundation.h>
 #import <SenTestingKit/SenTestingKit.h>
-#import "VKTestContainerTestCase.h"
+#import "VKUnitTestContainerTestCase.h"
 #import "VKLoginScreenDelegate.h"
 
 @class VKLoginScreen;
 
 
-@interface VKLoginScreenTest : VKTestContainerTestCase<VKLoginScreenDelegate> {
+@interface VKLoginScreenTest : VKUnitTestContainerTestCase <VKLoginScreenDelegate> {
     VKLoginScreen *_loginScreen;
     BOOL enteredInApplication;
     BOOL stoppedWait;

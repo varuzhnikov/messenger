@@ -26,7 +26,7 @@
 		B11E6BD1151F6BAD00012E29 /* VKRequestFactoryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58586 /* VKRequestFactoryTest.m */; };
 		B11E6BD2151F6BAD00012E29 /* VKAuthenticatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58578 /* VKAuthenticatorTest.m */; };
 		B11E6BD4151F6BBC00012E29 /* VKRequestSenderStub.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B5857F /* VKRequestSenderStub.m */; };
-		B11E6BD6151F6BC000012E29 /* VKTestContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B5857C /* VKTestContainer.m */; };
+		B11E6BD6151F6BC000012E29 /* VKUnitTestContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B5857C /* VKUnitTestContainer.m */; };
 		B11E6BD8151F6BD400012E29 /* VKRequestFactoryImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58583 /* VKRequestFactoryImpl.m */; };
 		B11E6BD9151F6BD400012E29 /* VKAuthenticator.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58574 /* VKAuthenticator.m */; };
 		B11E6BDB151F6BE100012E29 /* VKLoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B5856C /* VKLoginRequest.m */; };
@@ -164,7 +164,7 @@
 		B1E6CBC4151084F000B585A0 /* VKErrorCodes.h in Resources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B5859F /* VKErrorCodes.h */; };
 		B1E6CBC4151084F000B585A1 /* VKErrorCodes.h in Resources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B5859F /* VKErrorCodes.h */; };
 		B1E6CBC4151084F000B585A2 /* VKErrorCodes.h in Resources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B5859F /* VKErrorCodes.h */; };
-		B1E6CBC4151084F000B585A5 /* VKTestContainerTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585A3 /* VKTestContainerTestCase.m */; };
+		B1E6CBC4151084F000B585A5 /* VKUnitTestContainerTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585A3 /* VKUnitTestContainerTestCase.m */; };
 		B1E6CBC4151084F000B585A8 /* VKAsyncTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585A7 /* VKAsyncTestCase.m */; };
 		B1E6CBC4151084F000B585AC /* VKProductionContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585AB /* VKProductionContainer.m */; };
 		B1E6CBC4151084F000B585B3 /* VKProductionContainerTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585B2 /* VKProductionContainerTestCase.m */; };
@@ -190,6 +190,26 @@
 		B1E6CBC4151084F000B585E5 /* VKContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585E3 /* VKContainer.m */; };
 		B1E6CBC4151084F000B585E8 /* VKIntegrationTestContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585E7 /* VKIntegrationTestContainer.m */; };
 		B1E6CBC4151084F000B585E9 /* VKIntegrationTestContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585E7 /* VKIntegrationTestContainer.m */; };
+		B1E6CBC4151084F000B585EC /* VKContactsRequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585EB /* VKContactsRequestTest.m */; };
+		B1E6CBC4151084F000B585EF /* VKContactsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585EE /* VKContactsRequest.m */; };
+		B1E6CBC4151084F000B585F0 /* VKContactsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585EE /* VKContactsRequest.m */; };
+		B1E6CBC4151084F000B585F1 /* VKContactsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585EE /* VKContactsRequest.m */; };
+		B1E6CBC4151084F000B585F4 /* VKTokenInjectorRequestSenderDecoratorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585F3 /* VKTokenInjectorRequestSenderDecoratorTest.m */; };
+		B1E6CBC4151084F000B585F7 /* VKTokenInjectorRequestSenderDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585F6 /* VKTokenInjectorRequestSenderDecorator.m */; };
+		B1E6CBC4151084F000B585F8 /* VKTokenInjectorRequestSenderDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585F6 /* VKTokenInjectorRequestSenderDecorator.m */; };
+		B1E6CBC4151084F000B585F9 /* VKTokenInjectorRequestSenderDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585F6 /* VKTokenInjectorRequestSenderDecorator.m */; };
+		B1E6CBC4151084F000B585FD /* VKContactsRetrieverTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585FC /* VKContactsRetrieverTest.m */; };
+		B1E6CBC4151084F000B58600 /* VKContactsRetriever.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585FF /* VKContactsRetriever.m */; };
+		B1E6CBC4151084F000B58601 /* VKContactsRetriever.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585FF /* VKContactsRetriever.m */; };
+		B1E6CBC4151084F000B58602 /* VKContactsRetriever.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B585FF /* VKContactsRetriever.m */; };
+		B1E6CBC4151084F000B58606 /* VKRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58605 /* VKRequestHandler.m */; };
+		B1E6CBC4151084F000B58609 /* VKLoginRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58608 /* VKLoginRequestHandler.m */; };
+		B1E6CBC4151084F000B5860D /* VKContactsRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B5860B /* VKContactsRequestHandler.m */; };
+		B1E6CBC4151084F000B58611 /* VKContact.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58610 /* VKContact.m */; };
+		B1E6CBC4151084F000B58612 /* VKContact.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58610 /* VKContact.m */; };
+		B1E6CBC4151084F000B58613 /* VKContact.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58610 /* VKContact.m */; };
+		B1E6CBC4151084F000B58617 /* VKContactCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58616 /* VKContactCreator.m */; };
+		B1E6CBC4151084F000B5861C /* VKContactsRetrieverIntegrationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B5861B /* VKContactsRetrieverIntegrationTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -346,8 +366,8 @@
 		B1E6CBC4151084F000B58577 /* VKAuthenticator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VKAuthenticator.h; path = VKServiceAPI/VKAuthenticator.h; sourceTree = "<group>"; };
 		B1E6CBC4151084F000B58578 /* VKAuthenticatorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VKAuthenticatorTest.m; path = ../Tests/VKServiceAPI/VKAuthenticatorTest.m; sourceTree = "<group>"; };
 		B1E6CBC4151084F000B5857A /* VKAuthenticatorTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VKAuthenticatorTest.h; path = ../Tests/VKServiceAPI/VKAuthenticatorTest.h; sourceTree = "<group>"; };
-		B1E6CBC4151084F000B5857C /* VKTestContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VKTestContainer.m; path = ../Tests/Container/VKTestContainer.m; sourceTree = "<group>"; };
-		B1E6CBC4151084F000B5857E /* VKTestContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VKTestContainer.h; path = ../Tests/Container/VKTestContainer.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B5857C /* VKUnitTestContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VKUnitTestContainer.m; path = ../Tests/Container/VKUnitTestContainer.m; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B5857E /* VKUnitTestContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VKUnitTestContainer.h; path = ../Tests/Container/VKUnitTestContainer.h; sourceTree = "<group>"; };
 		B1E6CBC4151084F000B5857F /* VKRequestSenderStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKRequestSenderStub.m; sourceTree = "<group>"; };
 		B1E6CBC4151084F000B58581 /* VKRequestSenderStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKRequestSenderStub.h; sourceTree = "<group>"; };
 		B1E6CBC4151084F000B58582 /* VKRequestSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKRequestSender.h; sourceTree = "<group>"; };
@@ -359,8 +379,8 @@
 		B1E6CBC4151084F000B5858F /* VKRequestFactoryStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKRequestFactoryStub.m; sourceTree = "<group>"; };
 		B1E6CBC4151084F000B58591 /* VKRequestFactoryStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKRequestFactoryStub.h; sourceTree = "<group>"; };
 		B1E6CBC4151084F000B5859F /* VKErrorCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VKErrorCodes.h; sourceTree = "<group>"; };
-		B1E6CBC4151084F000B585A3 /* VKTestContainerTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VKTestContainerTestCase.m; path = ../Tests/TestCase/VKTestContainerTestCase.m; sourceTree = "<group>"; };
-		B1E6CBC4151084F000B585A6 /* VKTestContainerTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VKTestContainerTestCase.h; path = ../Tests/TestCase/VKTestContainerTestCase.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B585A3 /* VKUnitTestContainerTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VKUnitTestContainerTestCase.m; path = ../Tests/TestCase/VKUnitTestContainerTestCase.m; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B585A6 /* VKUnitTestContainerTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VKUnitTestContainerTestCase.h; path = ../Tests/TestCase/VKUnitTestContainerTestCase.h; sourceTree = "<group>"; };
 		B1E6CBC4151084F000B585A7 /* VKAsyncTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKAsyncTestCase.m; sourceTree = "<group>"; };
 		B1E6CBC4151084F000B585A9 /* VKAsyncTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKAsyncTestCase.h; sourceTree = "<group>"; };
 		B1E6CBC4151084F000B585AB /* VKProductionContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKProductionContainer.m; sourceTree = "<group>"; };
@@ -391,6 +411,31 @@
 		B1E6CBC4151084F000B585E6 /* VKContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKContainer.h; sourceTree = "<group>"; };
 		B1E6CBC4151084F000B585E7 /* VKIntegrationTestContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKIntegrationTestContainer.m; sourceTree = "<group>"; };
 		B1E6CBC4151084F000B585EA /* VKIntegrationTestContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKIntegrationTestContainer.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B585EB /* VKContactsRequestTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKContactsRequestTest.m; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B585ED /* VKContactsRequestTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKContactsRequestTest.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B585EE /* VKContactsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKContactsRequest.m; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B585F2 /* VKContactsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKContactsRequest.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B585F3 /* VKTokenInjectorRequestSenderDecoratorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VKTokenInjectorRequestSenderDecoratorTest.m; path = vkmessenger/VKServiceAPI/VKTokenInjectorRequestSenderDecoratorTest.m; sourceTree = SOURCE_ROOT; };
+		B1E6CBC4151084F000B585F5 /* VKTokenInjectorRequestSenderDecoratorTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VKTokenInjectorRequestSenderDecoratorTest.h; path = vkmessenger/VKServiceAPI/VKTokenInjectorRequestSenderDecoratorTest.h; sourceTree = SOURCE_ROOT; };
+		B1E6CBC4151084F000B585F6 /* VKTokenInjectorRequestSenderDecorator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VKTokenInjectorRequestSenderDecorator.m; path = VKServiceAPI/VKTokenInjectorRequestSenderDecorator.m; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B585FA /* VKTokenInjectorRequestSenderDecorator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VKTokenInjectorRequestSenderDecorator.h; path = VKServiceAPI/VKTokenInjectorRequestSenderDecorator.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B585FC /* VKContactsRetrieverTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKContactsRetrieverTest.m; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B585FE /* VKContactsRetrieverTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKContactsRetrieverTest.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B585FF /* VKContactsRetriever.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VKContactsRetriever.m; path = VKServiceAPI/VKContactsRetriever.m; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B58603 /* VKContactsRetriever.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VKContactsRetriever.h; path = VKServiceAPI/VKContactsRetriever.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B58605 /* VKRequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKRequestHandler.m; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B58607 /* VKRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKRequestHandler.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B58608 /* VKLoginRequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKLoginRequestHandler.m; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B5860A /* VKLoginRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKLoginRequestHandler.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B5860B /* VKContactsRequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKContactsRequestHandler.m; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B5860E /* VKContactsRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKContactsRequestHandler.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B58610 /* VKContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKContact.m; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B58614 /* VKContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKContact.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B58616 /* VKContactCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKContactCreator.m; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B58618 /* VKContactCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKContactCreator.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B5861A /* VKContactsRetrieverDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKContactsRetrieverDelegate.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B5861B /* VKContactsRetrieverIntegrationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKContactsRetrieverIntegrationTest.m; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B5861D /* VKContactsRetrieverIntegrationTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKContactsRetrieverIntegrationTest.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -466,6 +511,7 @@
 				B1D597651529A8390094A536 /* Services */,
 				B1D4C66815126051001E6AA2 /* Requests */,
 				B11E6BC2151F6B2900012E29 /* Supporting Files */,
+				B1E6CBC4151084F000B58615 /* Model */,
 			);
 			path = UnitTests;
 			sourceTree = "<group>";
@@ -590,6 +636,8 @@
 		B1D4C5B31512603F001E6AA2 /* vkmessenger */ = {
 			isa = PBXGroup;
 			children = (
+				B1E6CBC4151084F000B585FA /* VKTokenInjectorRequestSenderDecorator.h */,
+				B1E6CBC4151084F000B585F6 /* VKTokenInjectorRequestSenderDecorator.m */,
 				B1D5975F1529A6160094A536 /* supporting files */,
 				B1D4C5BD1512603F001E6AA2 /* VKWindow.xib */,
 				B1D4C6291512603F001E6AA2 /* VKAppDelegate.h */,
@@ -601,6 +649,7 @@
 				B1D597601529A64E0094A536 /* Services */,
 				B1E6CBC4151084F000B585AA /* Container */,
 				B1E6CBC4151084F000B585BA /* ScreenModels */,
+				B1E6CBC4151084F000B5860F /* Model */,
 			);
 			path = vkmessenger;
 			sourceTree = "<group>";
@@ -743,6 +792,8 @@
 		B1D4C6201512603F001E6AA2 /* Requests */ = {
 			isa = PBXGroup;
 			children = (
+				B1E6CBC4151084F000B585F2 /* VKContactsRequest.h */,
+				B1E6CBC4151084F000B585EE /* VKContactsRequest.m */,
 				B1E6CBC4151084F000B5856F /* VKLoginRequest.h */,
 				B1E6CBC4151084F000B5856C /* VKLoginRequest.m */,
 				B1D4C6211512603F001E6AA2 /* VKRequest.h */,
@@ -789,6 +840,8 @@
 		B1D4C66815126051001E6AA2 /* Requests */ = {
 			isa = PBXGroup;
 			children = (
+				B1E6CBC4151084F000B585ED /* VKContactsRequestTest.h */,
+				B1E6CBC4151084F000B585EB /* VKContactsRequestTest.m */,
 				B1E6CBC4151084F000B585D0 /* HttpRequestStub.h */,
 				B1E6CBC4151084F000B585CE /* HttpRequestStub.m */,
 				B1E6CBC4151084F000B58573 /* VKRequestDelegate.h */,
@@ -804,6 +857,8 @@
 		B1D4C66E15126051001E6AA2 /* RequestSender */ = {
 			isa = PBXGroup;
 			children = (
+				B1E6CBC4151084F000B585F5 /* VKTokenInjectorRequestSenderDecoratorTest.h */,
+				B1E6CBC4151084F000B585F3 /* VKTokenInjectorRequestSenderDecoratorTest.m */,
 				B1E6CBC4151084F000B58589 /* VKRequestFactory.h */,
 				B1E6CBC4151084F000B58588 /* VKRequestFactoryTest.h */,
 				B1E6CBC4151084F000B58586 /* VKRequestFactoryTest.m */,
@@ -841,6 +896,7 @@
 				B1D4C62D1512603F001E6AA2 /* RequestSender */,
 				B1E6CBC4151084F000B5859E /* ErrorHandling */,
 				B1D597611529A66A0094A536 /* Authenticator */,
+				B1E6CBC4151084F000B58619 /* ContactsRetriever */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -860,6 +916,7 @@
 			children = (
 				B1D597631529A7700094A536 /* Authenticator */,
 				B1E6CBC4151084F000B585DA /* RequestSender */,
+				B1E6CBC4151084F000B585FB /* ContactsRetriever */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -877,6 +934,8 @@
 		B1D597651529A8390094A536 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				B1E6CBC4151084F000B585FE /* VKContactsRetrieverTest.h */,
+				B1E6CBC4151084F000B585FC /* VKContactsRetrieverTest.m */,
 				B1E6CBC4151084F000B585C7 /* ErrorHandling */,
 				B1D4C66E15126051001E6AA2 /* RequestSender */,
 				B1D597661529A8420094A536 /* Authenticator */,
@@ -896,8 +955,8 @@
 		B1D597681529A8920094A536 /* Container */ = {
 			isa = PBXGroup;
 			children = (
-				B1E6CBC4151084F000B5857E /* VKTestContainer.h */,
-				B1E6CBC4151084F000B5857C /* VKTestContainer.m */,
+				B1E6CBC4151084F000B5857E /* VKUnitTestContainer.h */,
+				B1E6CBC4151084F000B5857C /* VKUnitTestContainer.m */,
 			);
 			name = Container;
 			sourceTree = "<group>";
@@ -905,8 +964,8 @@
 		B1D597691529A8D30094A536 /* Basic TestCase */ = {
 			isa = PBXGroup;
 			children = (
-				B1E6CBC4151084F000B585A3 /* VKTestContainerTestCase.m */,
-				B1E6CBC4151084F000B585A6 /* VKTestContainerTestCase.h */,
+				B1E6CBC4151084F000B585A3 /* VKUnitTestContainerTestCase.m */,
+				B1E6CBC4151084F000B585A6 /* VKUnitTestContainerTestCase.h */,
 			);
 			name = "Basic TestCase";
 			sourceTree = "<group>";
@@ -929,6 +988,7 @@
 				B1E6CBC4151084F000B5858F /* VKRequestFactoryStub.m */,
 				B1E6CBC4151084F000B5857F /* VKRequestSenderStub.m */,
 				B1E6CBC4151084F000B58581 /* VKRequestSenderStub.h */,
+				B1E6CBC4151084F000B58604 /* RequestHandlers */,
 			);
 			path = stubs;
 			sourceTree = "<group>";
@@ -1013,6 +1073,56 @@
 				B1E6CBC4151084F000B585DB /* VKSyncRequestSender.m */,
 			);
 			name = RequestSender;
+			sourceTree = "<group>";
+		};
+		B1E6CBC4151084F000B585FB /* ContactsRetriever */ = {
+			isa = PBXGroup;
+			children = (
+				B1E6CBC4151084F000B5861D /* VKContactsRetrieverIntegrationTest.h */,
+				B1E6CBC4151084F000B5861B /* VKContactsRetrieverIntegrationTest.m */,
+			);
+			name = ContactsRetriever;
+			sourceTree = "<group>";
+		};
+		B1E6CBC4151084F000B58604 /* RequestHandlers */ = {
+			isa = PBXGroup;
+			children = (
+				B1E6CBC4151084F000B5860E /* VKContactsRequestHandler.h */,
+				B1E6CBC4151084F000B5860B /* VKContactsRequestHandler.m */,
+				B1E6CBC4151084F000B5860A /* VKLoginRequestHandler.h */,
+				B1E6CBC4151084F000B58608 /* VKLoginRequestHandler.m */,
+				B1E6CBC4151084F000B58607 /* VKRequestHandler.h */,
+				B1E6CBC4151084F000B58605 /* VKRequestHandler.m */,
+			);
+			name = RequestHandlers;
+			sourceTree = "<group>";
+		};
+		B1E6CBC4151084F000B5860F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B1E6CBC4151084F000B58614 /* VKContact.h */,
+				B1E6CBC4151084F000B58610 /* VKContact.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B1E6CBC4151084F000B58615 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B1E6CBC4151084F000B58618 /* VKContactCreator.h */,
+				B1E6CBC4151084F000B58616 /* VKContactCreator.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B1E6CBC4151084F000B58619 /* ContactsRetriever */ = {
+			isa = PBXGroup;
+			children = (
+				B1E6CBC4151084F000B5861A /* VKContactsRetrieverDelegate.h */,
+				B1E6CBC4151084F000B585FF /* VKContactsRetriever.m */,
+				B1E6CBC4151084F000B58603 /* VKContactsRetriever.h */,
+			);
+			name = ContactsRetriever;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1181,7 +1291,7 @@
 				B11E6BD1151F6BAD00012E29 /* VKRequestFactoryTest.m in Sources */,
 				B11E6BD2151F6BAD00012E29 /* VKAuthenticatorTest.m in Sources */,
 				B11E6BD4151F6BBC00012E29 /* VKRequestSenderStub.m in Sources */,
-				B11E6BD6151F6BC000012E29 /* VKTestContainer.m in Sources */,
+				B11E6BD6151F6BC000012E29 /* VKUnitTestContainer.m in Sources */,
 				B11E6BD8151F6BD400012E29 /* VKRequestFactoryImpl.m in Sources */,
 				B11E6BD9151F6BD400012E29 /* VKAuthenticator.m in Sources */,
 				B11E6BDB151F6BE100012E29 /* VKLoginRequest.m in Sources */,
@@ -1196,7 +1306,7 @@
 				B11E6BE8151F6E7C00012E29 /* OxICSimpleWrapperFactory.m in Sources */,
 				B11E6BE9151F6E8C00012E29 /* OxICSimpleObjectWrapper.m in Sources */,
 				B1E6CBC4151084F000B58590 /* VKRequestFactoryStub.m in Sources */,
-				B1E6CBC4151084F000B585A5 /* VKTestContainerTestCase.m in Sources */,
+				B1E6CBC4151084F000B585A5 /* VKUnitTestContainerTestCase.m in Sources */,
 				B1E6CBC4151084F000B585BD /* VKLoginScreenTest.m in Sources */,
 				B1E6CBC4151084F000B585C1 /* VKLoginScreen.m in Sources */,
 				B1E6CBC4151084F000B585CF /* HttpRequestStub.m in Sources */,
@@ -1213,6 +1323,17 @@
 				B1D597571529A5060094A536 /* SBJsonTokeniser.m in Sources */,
 				B1D5975A1529A5060094A536 /* SBJsonUTF8Stream.m in Sources */,
 				B1D5975D1529A5060094A536 /* SBJsonWriter.m in Sources */,
+				B1E6CBC4151084F000B585EC /* VKContactsRequestTest.m in Sources */,
+				B1E6CBC4151084F000B585F1 /* VKContactsRequest.m in Sources */,
+				B1E6CBC4151084F000B585F4 /* VKTokenInjectorRequestSenderDecoratorTest.m in Sources */,
+				B1E6CBC4151084F000B585F9 /* VKTokenInjectorRequestSenderDecorator.m in Sources */,
+				B1E6CBC4151084F000B585FD /* VKContactsRetrieverTest.m in Sources */,
+				B1E6CBC4151084F000B58602 /* VKContactsRetriever.m in Sources */,
+				B1E6CBC4151084F000B58606 /* VKRequestHandler.m in Sources */,
+				B1E6CBC4151084F000B58609 /* VKLoginRequestHandler.m in Sources */,
+				B1E6CBC4151084F000B5860D /* VKContactsRequestHandler.m in Sources */,
+				B1E6CBC4151084F000B58613 /* VKContact.m in Sources */,
+				B1E6CBC4151084F000B58617 /* VKContactCreator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1272,6 +1393,10 @@
 				B1E6CBC4151084F000B585DF /* VKAbstractRequestSender.m in Sources */,
 				B1E6CBC4151084F000B585E4 /* VKContainer.m in Sources */,
 				B1E6CBC4151084F000B585E8 /* VKIntegrationTestContainer.m in Sources */,
+				B1E6CBC4151084F000B585EF /* VKContactsRequest.m in Sources */,
+				B1E6CBC4151084F000B585F7 /* VKTokenInjectorRequestSenderDecorator.m in Sources */,
+				B1E6CBC4151084F000B58600 /* VKContactsRetriever.m in Sources */,
+				B1E6CBC4151084F000B58611 /* VKContact.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1332,6 +1457,11 @@
 				B1E6CBC4151084F000B585E2 /* VKSyncRequestSender.m in Sources */,
 				B1E6CBC4151084F000B585E5 /* VKContainer.m in Sources */,
 				B1E6CBC4151084F000B585E9 /* VKIntegrationTestContainer.m in Sources */,
+				B1E6CBC4151084F000B585F0 /* VKContactsRequest.m in Sources */,
+				B1E6CBC4151084F000B585F8 /* VKTokenInjectorRequestSenderDecorator.m in Sources */,
+				B1E6CBC4151084F000B58601 /* VKContactsRetriever.m in Sources */,
+				B1E6CBC4151084F000B58612 /* VKContact.m in Sources */,
+				B1E6CBC4151084F000B5861C /* VKContactsRetrieverIntegrationTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

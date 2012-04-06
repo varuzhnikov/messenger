@@ -15,7 +15,7 @@ static NSString *const GRANT_TYPE_PARAM_NAME = @"grant_type";
 static NSString *const CLIENT_ID_PARAM_NAME = @"client_id";
 static NSString *const CLIENT_SECRET_PARAM_NAME = @"client_secret";
 static NSString *const SCOPE_PARAM_NAME = @"scope";
-static NSString *const TOKEN_PARAM_NAME = @"access_token";
+static NSString *const TOKEN_PARAM_NAME = @"access_token";   //TODO move to base class
 
 @interface VKLoginRequest : VKRequest
 - (id)initWithLogin:(NSString *)login andPassword:(NSString *)password;

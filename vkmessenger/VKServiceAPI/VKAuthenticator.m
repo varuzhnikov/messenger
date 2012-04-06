@@ -16,7 +16,7 @@
 
 @implementation VKAuthenticator {
 @private
-    id _serviceAPI;
+    id _requestSender;
     id <VKRequestFactory> _requestFactory;
     VKRequest *_loginRequest;
     id <VKErrorNotifier> _errorNotifier;
@@ -25,8 +25,8 @@
 IoCName(authenticator)
 IoCSingleton
 IoCLazy
-IoCInject(serviceAPI, serviceAPI)
-@synthesize serviceAPI = _serviceAPI;
+IoCInject(requestSender, requestSender )
+@synthesize requestSender = _requestSender;
 
 IoCInject(requestFactory, requestFactory)
 @synthesize requestFactory = _requestFactory;
@@ -46,7 +46,7 @@ IoCInject(errorNotifier, errorNotifier)
 - (void)requestFinished:(VKRequest *)request {
     VKLoginRequest *loginRequest = (VKLoginRequest *) request;
 
-    self.serviceAPI.token = loginRequest.token;
+    self.requestSender.token = loginRequest.token;
 
     self.loginRequest = nil;
 
@@ -55,7 +55,7 @@ IoCInject(errorNotifier, errorNotifier)
 
 
 - (void)dealloc {
-    self.serviceAPI = nil;
+    self.requestSender = nil;
     self.requestFactory = nil;
     self.loginRequest = nil;
     self.delegate = nil;
@@ -67,7 +67,7 @@ IoCInject(errorNotifier, errorNotifier)
 - (void)loginWithUsername:(NSString *)userName andPassword:(NSString *)password {
     self.loginRequest = [self.requestFactory createLoginRequestWithUsername:userName andPasword:password];
     self.loginRequest.delegate = self;
-    [self.serviceAPI sendRequest:self.loginRequest];
+    [self.requestSender sendRequest:self.loginRequest];
 }
 
 @end
