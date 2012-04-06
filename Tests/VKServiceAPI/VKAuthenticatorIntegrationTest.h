@@ -21,7 +21,7 @@
     VKRequest *_request;
 
     VKAuthenticator *_authenticator;
-    id<VKRequestSender> _serviceAPI;
+    id<VKRequestSender> _requestSender;
 }
 
 @end

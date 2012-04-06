@@ -24,7 +24,7 @@
     [super setUp];
     _authenticator = [self.container getObject:@"authenticator"];
     _authenticator.errorNotifier = nil;
-    _serviceAPI = [self.container getObject:@"serviceAPI"];
+    _requestSender = [self.container getObject:@"requestSender"];
     _authenticator.delegate = self;
 }
 
@@ -44,13 +44,13 @@
 
 - (void)loginFinished {
     NSLog(@"Login finished");
-    NSLog(@"serviceAPI token %@, ", _serviceAPI.token);
-    GHAssertTrue(_serviceAPI.token.length > 0, @"should get nonempty token from server");
+    NSLog(@"serviceAPI token %@, ", _requestSender.token);
+    GHAssertTrue(_requestSender.token.length > 0, @"should get nonempty token from server");
 }
 
 - (void)loginFailed {
     NSLog(@"Login failed");
-    GHAssertNil(_serviceAPI.token, @"token should be nil after failed login");
+    GHAssertNil(_requestSender.token, @"token should be nil after failed login");
 }
 
 

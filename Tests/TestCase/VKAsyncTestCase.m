@@ -6,7 +6,6 @@
 
 
 #import "VKAsyncTestCase.h"
-#import "VKTestContainer.h"
 #import "VKProductionContainer.h"
 #import "VKIntegrationTestContainer.h"
 

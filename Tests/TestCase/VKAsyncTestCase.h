@@ -8,7 +8,6 @@
 #import <Foundation/Foundation.h>
 #import <GHUnitIOS/GHAsyncTestCase.h>
 
-@class VKTestContainer;
 @class VKProductionContainer;
 @class VKIntegrationTestContainer;
 

@@ -7,18 +7,18 @@
 
 #import <Foundation/Foundation.h>
 #import <SenTestingKit/SenTestingKit.h>
-#import "VKTestContainerTestCase.h"
+#import "VKUnitTestContainerTestCase.h"
 #import "VKAuthenticatorDelegate.h"
 
-@class VKTestContainer;
+@class VKUnitTestContainer;
 @class VKAsyncRequestSender;
 @class VKAuthenticator;
 @protocol VKErrorNotifier;
 @class VKErrorNotifierStub;
 
 
-@interface VKAuthenticatorTest : VKTestContainerTestCase<VKAuthenticatorDelegate> {
-    VKAsyncRequestSender *_serviceAPI;
+@interface VKAuthenticatorTest : VKUnitTestContainerTestCase <VKAuthenticatorDelegate> {
+    VKAsyncRequestSender *_requestsSender;
     VKAuthenticator *_authenticator;
     VKErrorNotifierStub *_errorNotifier;
     BOOL loginFinished;
