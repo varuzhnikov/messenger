@@ -10,8 +10,8 @@
 
 @protocol VKRequestDelegate;
 
-static NSString *const GET_PARAMETERS_DELIMETER = @"?";
-static NSString *const HTTP_GET_PARAMS_DELIMETER = @"&";
+static NSString *const GET_PARAMETERS_DELIMITER = @"?";
+static NSString *const HTTP_GET_PARAMS_DELIMITER = @"&";
 static NSString *const ERROR_DESCRIPTION_KEY = @"error_description";
 static NSString *const ERROR_KEY = @"error";
 static NSString *const RESPONSE_KEY = @"response";
