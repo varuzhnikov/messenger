@@ -8,7 +8,7 @@
 #import "VKLoginScreenTest.h"
 #import "VKLoginScreen.h"
 #import "OxICContainer.h"
-#import "VKTestContainer.h"
+#import "VKUnitTestContainer.h"
 #import "OCMockObject.h"
 #import "VKAuthenticator.h"
 #import "VKTestConstants.h"

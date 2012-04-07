@@ -8,12 +8,12 @@
 #import <Foundation/Foundation.h>
 #import <SenTestingKit/SenTestingKit.h>
 
-@class VKTestContainer;
+@class VKUnitTestContainer;
 
 
-@interface VKTestContainerTestCase : SenTestCase
+@interface VKUnitTestContainerTestCase : SenTestCase
 
-@property(nonatomic, retain) VKTestContainer *container;
+@property(nonatomic, retain) VKUnitTestContainer *container;
 
 
 @end

@@ -13,6 +13,8 @@
 #import "VKAsyncRequestSender.h"
 #import "VKAuthenticator.h"
 #import "OxICSimpleWrapperFactory.h"
+#import "VKTokenInjectorRequestSenderDecorator.h"
+#import "VKContactsRetriever.h"
 
 
 @implementation VKContainer {
@@ -27,6 +29,8 @@
         [self addDefinitionFromClassName:NSStringFromClass([VKLoginScreen class])];
         [self addDefinitionFromClassName:NSStringFromClass([VKLoginViewController class])];
         [self addDefinitionFromClassName:NSStringFromClass([VKErrorNotifierImpl class])];
+        [self addDefinitionFromClassName:NSStringFromClass([VKTokenInjectorRequestSenderDecorator class])];
+        [self addDefinitionFromClassName:NSStringFromClass([VKContactsRetriever class])];
     }
 
     return self;

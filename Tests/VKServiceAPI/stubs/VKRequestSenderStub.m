@@ -10,34 +10,42 @@
 #import "VKLoginRequest.h"
 #import "VKTestConstants.h"
 #import "HttpRequestStub.h"
+#import "VKLoginRequestHandler.h"
+#import "VKContactsRequestHandler.h"
+#import "VKContactsRequest.h"
 
 
 @implementation VKRequestSenderStub {
 
 @private
     NSString *_token;
+    NSMutableDictionary *requestHandlers;
 }
 @synthesize token = _token;
 
-IoCName(serviceAPI)
+IoCName(httpRequestSender)
 IoCSingleton
 IoCLazy
 
-- (void)sendRequest:(VKRequest *)request {
-
-    VKLoginRequest *loginRequest = (VKLoginRequest *) request;
-    NSLog(@"username :%@", loginRequest.login);
-    NSLog(@"password :%@", loginRequest.password);
-    HttpRequestStub *httpRequestStub = [[[HttpRequestStub alloc] init] autorelease];
-    if (([loginRequest.login isEqualToString:@"username"]) && ([loginRequest.password isEqualToString:@"password"])) {
-
-        httpRequestStub.responseString = [NSString stringWithFormat:@"{\"%@\":\"token_from_server\"}", TOKEN_PARAM_NAME];
-        [request requestFinished:httpRequestStub];
-    } else {
-        httpRequestStub.responseString = [NSString stringWithFormat:JSON_WITH_ERROR_AND_DESCRIPTION, TOKEN_PARAM_NAME];
-        [request requestFailed:httpRequestStub];
-        self.token = @"";
+- (id)init {
+    self = [super init];
+    if (self) {
+        requestHandlers = [[NSMutableDictionary alloc] init];
+        [requestHandlers setObject:[[[VKLoginRequestHandler alloc] init] autorelease] forKey:[VKLoginRequest class]];
+        [requestHandlers setObject:[[[VKContactsRequestHandler alloc] init] autorelease] forKey:[VKContactsRequest class]];
     }
+
+    return self;
+}
+
+- (void)dealloc {
+    [requestHandlers release];
+    [super dealloc];
+}
+
+
+- (void)sendRequest:(VKRequest *)request {
+    [[requestHandlers objectForKey:[request class]] handleRequest:request];
 }
 
 

@@ -6,7 +6,7 @@
 
 
 #import "VKAuthenticatorTest.h"
-#import "VKTestContainer.h"
+#import "VKUnitTestContainer.h"
 #import "VKAsyncRequestSender.h"
 #import "VKAuthenticator.h"
 #import "VKRequest.h"
@@ -17,36 +17,31 @@
 
 @implementation VKAuthenticatorTest {
 
-@private
-    VKTestContainer *_container;
 }
-@synthesize container = _container;
 
 
 - (void)setUp {
     [super setUp];
-    _container = [[VKTestContainer alloc] init];
     _authenticator = [self.container getObject:@"authenticator"];
-    _serviceAPI = [self.container getObject:@"serviceAPI"];
+    _requestsSender = [self.container getObject:@"requestSender"];
     _errorNotifier = [self.container getObject:@"errorNotifier"];
 }
 
 - (void)tearDown {
-    self.container = nil;
     [super tearDown];
 
 }
 
-- (void)test_Service_Api_Should_Get_Empty_Token_After_Failed_Login {
+- (void)test_Request_Sender_Should_Get_Nil_Token_After_Failed_Login {
     [_authenticator loginWithUsername:@"" andPassword:@""];
 
-    STAssertEqualObjects(_serviceAPI.token, @"", @"service api should get empty token if login failed");
+    STAssertNil(_requestsSender.token, @"request sender should get nil token if login failed");
 }
 
 - (void)test_Authenticator_Should_Set_Token_After_Request_Finished {
     [_authenticator loginWithUsername:CORRECT_USERNAME andPassword:CORRECT_PASSWORD];
 
-    STAssertEqualObjects([_authenticator.serviceAPI token], @"token_from_server", @"should set token after request finished");
+    STAssertEqualObjects([_authenticator.requestSender token], @"token_from_server", @"should set token after request finished");
 }
 
 - (void)test_Authenticator_Should_Notify_Delegate_After_Successful_Login {

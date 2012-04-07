@@ -123,6 +123,10 @@
 
 }
 
+- (NSURL *)baseUrl {
+    return [NSURL URLWithString:self.urlString];
+}
+
 - (NSURL *)url {
     NSMutableString *resultURL = [NSMutableString stringWithString:self.urlString];
 
@@ -136,13 +140,13 @@
 }
 
 - (void)addAllGETParamsTo:(NSMutableString *)resultURL {
-    [resultURL appendString:GET_PARAMETERS_DELIMETER];
+    [resultURL appendString:GET_PARAMETERS_DELIMITER];
 
     for (NSString *name in [GETParameters allKeys]) {
         NSString *paramValue = [GETParameters objectForKey:name];
         NSString *encodedParamValue = [paramValue stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
         [resultURL appendString:[NSString stringWithFormat:@"%@=%@", name, encodedParamValue]];
-        [resultURL appendString:HTTP_GET_PARAMS_DELIMETER];
+        [resultURL appendString:HTTP_GET_PARAMS_DELIMITER];
     }
     [self removeLastHttpGETDelimiterFrom:resultURL];
 }
