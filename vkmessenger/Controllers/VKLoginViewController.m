@@ -85,6 +85,17 @@ IoCInject(loginScreen, loginScreen)
     [self.loginScreen enteredLogin:self.loginTextField.text andPassword:self.passwordTextField.text];
 }
 
+- (BOOL) textFieldShouldReturn:(UITextField *) textField {
+    BOOL didResign = [textField resignFirstResponder];
+    if (!didResign) return NO;
+    
+    if ([textField isKindOfClass:[VKTextField class]])
+        dispatch_async(dispatch_get_current_queue(), 
+                       ^ { [[(VKTextField *)textField nextField] becomeFirstResponder]; });
+    
+    return YES;
+}
+
 - (void)enterInApplication {
     VKApplicationController *vkApplicationController = [[VKApplicationController alloc] initWithNibName:@"VKApplicationController" bundle:nil];
     self.view.window.rootViewController = vkApplicationController;
@@ -134,6 +145,5 @@ IoCInject(loginScreen, loginScreen)
     
     return cell;
 }
-
 
 @end

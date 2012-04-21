@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D83D882153C7ADB005FCBCA /* VKTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D83D881153C7ADB005FCBCA /* VKTextField.m */; };
 		4032B64915286DC800CB463D /* Header.png in Resources */ = {isa = PBXBuildFile; fileRef = 4032B64515286DC800CB463D /* Header.png */; };
 		4032B64A15286DC800CB463D /* Header@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4032B64615286DC800CB463D /* Header@2x.png */; };
 		4032B6D21528C2D300CB463D /* VKLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1D4C5B51512603F001E6AA2 /* VKLoginViewController.xib */; };
@@ -229,6 +230,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D83D880153C7ADB005FCBCA /* VKTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKTextField.h; sourceTree = "<group>"; };
+		3D83D881153C7ADB005FCBCA /* VKTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKTextField.m; sourceTree = "<group>"; };
 		4032B64515286DC800CB463D /* Header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Header.png; sourceTree = "<group>"; };
 		4032B64615286DC800CB463D /* Header@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Header@2x.png"; sourceTree = "<group>"; };
 		4032B6D31528C43000CB463D /* Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background@2x.png"; sourceTree = "<group>"; };
@@ -516,6 +519,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D83D87E153C7A50005FCBCA /* views */ = {
+			isa = PBXGroup;
+			children = (
+				3D83D880153C7ADB005FCBCA /* VKTextField.h */,
+				3D83D881153C7ADB005FCBCA /* VKTextField.m */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
 		4032B64415286DC800CB463D /* from vk */ = {
 			isa = PBXGroup;
 			children = (
@@ -696,6 +708,7 @@
 		B1D4C5B31512603F001E6AA2 /* vkmessenger */ = {
 			isa = PBXGroup;
 			children = (
+				3D83D87E153C7A50005FCBCA /* views */,
 				B1E6CBC4151084F000B585FA /* VKTokenInjectorRequestSenderDecorator.h */,
 				B1E6CBC4151084F000B585F6 /* VKTokenInjectorRequestSenderDecorator.m */,
 				B1D5975F1529A6160094A536 /* supporting files */,
@@ -1475,6 +1488,7 @@
 				B1E6CBC4151084F000B585F7 /* VKTokenInjectorRequestSenderDecorator.m in Sources */,
 				B1E6CBC4151084F000B58600 /* VKContactsRetriever.m in Sources */,
 				B1E6CBC4151084F000B58611 /* VKContact.m in Sources */,
+				3D83D882153C7ADB005FCBCA /* VKTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

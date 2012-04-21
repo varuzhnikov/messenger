@@ -9,15 +9,17 @@
 
 
 #import "VKLoginScreenDelegate.h"
+#import "VKTextField.h"
 @class VKLoginScreen;
 
 @interface VKLoginViewController : UIViewController<VKLoginScreenDelegate, UITableViewDataSource>
 
 -(IBAction)loginButtonDidPress:(id)sender;
+-(BOOL) textFieldShouldReturn:(UITextField *) textField;
 
 @property(nonatomic, retain) VKLoginScreen *loginScreen;
-@property (retain, nonatomic) IBOutlet UITextField *passwordTextField;
-@property (retain, nonatomic) IBOutlet UITextField *loginTextField;
+@property (retain, nonatomic) IBOutlet VKTextField *passwordTextField;
+@property (retain, nonatomic) IBOutlet VKTextField *loginTextField;
 @property (retain, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
 
 
