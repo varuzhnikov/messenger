@@ -8,7 +8,7 @@
 #import "VKContactsRequestTest.h"
 #import "VKContactsRequest.h"
 #import "VKContact.h"
-#import "VKContactCreator.h"
+#import "VKContactsCreator.h"
 
 
 @interface VKContactsRequestTest ()
@@ -69,7 +69,7 @@
     request.responseString = @"{\"response\":[{\"uid\":91345978,\"first_name\":\"Виталий\",\"last_name\":\"Ружников\",\"nickname\":\"\",\"photo\":\"http:\\/\\/cs5128.userapi.com\\/u91345978\\/e_5f1b7c70.jpg\",\"online\":1}]}";
 
     VKContact *actualContact = [request.contacts lastObject];
-    VKContact *expectedContact = [VKContactCreator createContact];
+    VKContact *expectedContact = [VKContactsCreator createContact];
 
     [self assertContacts:actualContact expectedContact:expectedContact];
 }

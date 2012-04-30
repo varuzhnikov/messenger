@@ -10,8 +10,10 @@
 @class VKContact;
 
 
-@interface VKContactCreator : NSObject
+@interface VKContactsCreator : NSObject
 
 
 + (VKContact *)createContact;
+
++ (NSMutableArray *)createContacts;
 @end

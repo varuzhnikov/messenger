@@ -60,6 +60,8 @@
 		B12BEA0E15108A06006B2592 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B5856B /* libxml2.dylib */; };
 		B12BEA1015108A61006B2592 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12BEA0F15108A61006B2592 /* CoreData.framework */; };
 		B12BEA1115108A68006B2592 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12BEA0F15108A61006B2592 /* CoreData.framework */; };
+		B16ED90A153EFF0300AB1E23 /* VKContactsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B16ED908153EFF0300AB1E23 /* VKContactsListViewController.m */; };
+		B16ED90B153EFF0300AB1E23 /* VKContactsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B16ED909153EFF0300AB1E23 /* VKContactsListViewController.xib */; };
 		B1A89BCD150E2E5D0068BD8C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF797150BDEE000007A33 /* CFNetwork.framework */; };
 		B1A89BCF150E2E680068BD8C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF79D150BDF0500007A33 /* libz.dylib */; };
 		B1A89BD0150E2E8B0068BD8C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF79B150BDEF300007A33 /* MobileCoreServices.framework */; };
@@ -75,6 +77,7 @@
 		B1CCF79A150BDEEB00007A33 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF799150BDEEB00007A33 /* SystemConfiguration.framework */; };
 		B1CCF79C150BDEF300007A33 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF79B150BDEF300007A33 /* MobileCoreServices.framework */; };
 		B1CCF79E150BDF0500007A33 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CCF79D150BDF0500007A33 /* libz.dylib */; };
+		B1D12AE415404F9E00483AD7 /* Contacts.png in Resources */ = {isa = PBXBuildFile; fileRef = B1D12AE215404F9E00483AD7 /* Contacts.png */; };
 		B1D4C6311512603F001E6AA2 /* VKApplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C5B91512603F001E6AA2 /* VKApplicationController.m */; };
 		B1D4C6321512603F001E6AA2 /* VKApplicationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1D4C5BA1512603F001E6AA2 /* VKApplicationController.xib */; };
 		B1D4C6331512603F001E6AA2 /* VKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4C5BC1512603F001E6AA2 /* VKLoginViewController.m */; };
@@ -224,8 +227,17 @@
 		B1E6CBC4151084F000B58611 /* VKContact.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58610 /* VKContact.m */; };
 		B1E6CBC4151084F000B58612 /* VKContact.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58610 /* VKContact.m */; };
 		B1E6CBC4151084F000B58613 /* VKContact.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58610 /* VKContact.m */; };
-		B1E6CBC4151084F000B58617 /* VKContactCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58616 /* VKContactCreator.m */; };
+		B1E6CBC4151084F000B58617 /* VKContactsCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58616 /* VKContactsCreator.m */; };
 		B1E6CBC4151084F000B5861C /* VKContactsRetrieverIntegrationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B5861B /* VKContactsRetrieverIntegrationTest.m */; };
+		B1E6CBC4151084F000B5861F /* VKContactTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B5861E /* VKContactTest.m */; };
+		B1E6CBC4151084F000B58623 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58622 /* NSString+Additions.m */; };
+		B1E6CBC4151084F000B58624 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58622 /* NSString+Additions.m */; };
+		B1E6CBC4151084F000B58625 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58622 /* NSString+Additions.m */; };
+		B1E6CBC4151084F000B5862A /* VKContactsListScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58629 /* VKContactsListScreen.m */; };
+		B1E6CBC4151084F000B5862B /* VKContactsListScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58629 /* VKContactsListScreen.m */; };
+		B1E6CBC4151084F000B5862C /* VKContactsListScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58629 /* VKContactsListScreen.m */; };
+		B1E6CBC4151084F000B5862F /* VKContactsListScreenTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B5862E /* VKContactsListScreenTest.m */; };
+		B1E6CBC4151084F000B58633 /* VKContactsRetrieverStub.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E6CBC4151084F000B58632 /* VKContactsRetrieverStub.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -260,6 +272,9 @@
 		B11E6BCA151F6B2900012E29 /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
 		B12BEA0F15108A61006B2592 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		B15558771524764A00D55AB9 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
+		B16ED907153EFF0300AB1E23 /* VKContactsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKContactsListViewController.h; sourceTree = "<group>"; };
+		B16ED908153EFF0300AB1E23 /* VKContactsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKContactsListViewController.m; sourceTree = "<group>"; };
+		B16ED909153EFF0300AB1E23 /* VKContactsListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VKContactsListViewController.xib; sourceTree = "<group>"; };
 		B17DB6BA15243C5000AAB172 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
 		B17DB6BB15243C5000AAB172 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
 		B17DB6BC15243C5000AAB172 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
@@ -275,6 +290,7 @@
 		B1CCF799150BDEEB00007A33 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		B1CCF79B150BDEF300007A33 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		B1CCF79D150BDF0500007A33 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		B1D12AE215404F9E00483AD7 /* Contacts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Contacts.png; sourceTree = "<group>"; };
 		B1D4C5B71512603F001E6AA2 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ru; path = ru.lproj/VKLoginViewController.xib; sourceTree = "<group>"; };
 		B1D4C5B81512603F001E6AA2 /* VKApplicationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKApplicationController.h; sourceTree = "<group>"; };
 		B1D4C5B91512603F001E6AA2 /* VKApplicationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKApplicationController.m; sourceTree = "<group>"; };
@@ -462,11 +478,21 @@
 		B1E6CBC4151084F000B5860E /* VKContactsRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKContactsRequestHandler.h; sourceTree = "<group>"; };
 		B1E6CBC4151084F000B58610 /* VKContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKContact.m; sourceTree = "<group>"; };
 		B1E6CBC4151084F000B58614 /* VKContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKContact.h; sourceTree = "<group>"; };
-		B1E6CBC4151084F000B58616 /* VKContactCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKContactCreator.m; sourceTree = "<group>"; };
-		B1E6CBC4151084F000B58618 /* VKContactCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKContactCreator.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B58616 /* VKContactsCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKContactsCreator.m; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B58618 /* VKContactsCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKContactsCreator.h; sourceTree = "<group>"; };
 		B1E6CBC4151084F000B5861A /* VKContactsRetrieverDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKContactsRetrieverDelegate.h; sourceTree = "<group>"; };
 		B1E6CBC4151084F000B5861B /* VKContactsRetrieverIntegrationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKContactsRetrieverIntegrationTest.m; sourceTree = "<group>"; };
 		B1E6CBC4151084F000B5861D /* VKContactsRetrieverIntegrationTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKContactsRetrieverIntegrationTest.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B5861E /* VKContactTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKContactTest.m; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B58620 /* VKContactTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKContactTest.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B58622 /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B58626 /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B58629 /* VKContactsListScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKContactsListScreen.m; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B5862D /* VKContactsListScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKContactsListScreen.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B5862E /* VKContactsListScreenTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKContactsListScreenTest.m; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B58630 /* VKContactsListScreenTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKContactsListScreenTest.h; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B58632 /* VKContactsRetrieverStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKContactsRetrieverStub.m; sourceTree = "<group>"; };
+		B1E6CBC4151084F000B58634 /* VKContactsRetrieverStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKContactsRetrieverStub.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -519,6 +545,7 @@
 		4032B64415286DC800CB463D /* from vk */ = {
 			isa = PBXGroup;
 			children = (
+				B1D12AE215404F9E00483AD7 /* Contacts.png */,
 				40A9DD671529F99700597955 /* Online.png */,
 				40A9DD681529F99700597955 /* Online@2x.png */,
 				40F1445C1529BF3C00BA1159 /* Header_Button.png */,
@@ -584,6 +611,16 @@
 				B11E6BCA151F6B2900012E29 /* UnitTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B1596689153E9D29004CB677 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				B16ED907153EFF0300AB1E23 /* VKContactsListViewController.h */,
+				B16ED908153EFF0300AB1E23 /* VKContactsListViewController.m */,
+				B16ED909153EFF0300AB1E23 /* VKContactsListViewController.xib */,
+			);
+			name = Contacts;
 			sourceTree = "<group>";
 		};
 		B17DB6B715243C5000AAB172 /* OCMock */ = {
@@ -710,6 +747,7 @@
 				B1E6CBC4151084F000B585AA /* Container */,
 				B1E6CBC4151084F000B585BA /* ScreenModels */,
 				B1E6CBC4151084F000B5860F /* Model */,
+				B1E6CBC4151084F000B58621 /* Utils */,
 			);
 			path = vkmessenger;
 			sourceTree = "<group>";
@@ -717,6 +755,7 @@
 		B1D4C5B41512603F001E6AA2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B1596689153E9D29004CB677 /* Contacts */,
 				40A9DD5F1529F26F00597955 /* Messages */,
 				40A9DD5D1529F24D00597955 /* Login And Register */,
 				B1D4C5B81512603F001E6AA2 /* VKApplicationController.h */,
@@ -1001,6 +1040,7 @@
 				B1E6CBC4151084F000B585C7 /* ErrorHandling */,
 				B1D4C66E15126051001E6AA2 /* RequestSender */,
 				B1D597661529A8420094A536 /* Authenticator */,
+				B1E6CBC4151084F000B58627 /* VKContactsRetriever */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -1092,6 +1132,8 @@
 		B1E6CBC4151084F000B585BA /* ScreenModels */ = {
 			isa = PBXGroup;
 			children = (
+				B1E6CBC4151084F000B5862D /* VKContactsListScreen.h */,
+				B1E6CBC4151084F000B58629 /* VKContactsListScreen.m */,
 				B1E6CBC4151084F000B585C2 /* VKLoginScreen.h */,
 				B1E6CBC4151084F000B585BF /* VKLoginScreen.m */,
 				B1E6CBC4151084F000B585C4 /* VKLoginScreenDelegate.h */,
@@ -1102,6 +1144,8 @@
 		B1E6CBC4151084F000B585BB /* ScreenModels */ = {
 			isa = PBXGroup;
 			children = (
+				B1E6CBC4151084F000B58630 /* VKContactsListScreenTest.h */,
+				B1E6CBC4151084F000B5862E /* VKContactsListScreenTest.m */,
 				B1E6CBC4151084F000B585BE /* VKLoginScreenTest.h */,
 				B1E6CBC4151084F000B585BC /* VKLoginScreenTest.m */,
 			);
@@ -1171,8 +1215,10 @@
 		B1E6CBC4151084F000B58615 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B1E6CBC4151084F000B58618 /* VKContactCreator.h */,
-				B1E6CBC4151084F000B58616 /* VKContactCreator.m */,
+				B1E6CBC4151084F000B58620 /* VKContactTest.h */,
+				B1E6CBC4151084F000B5861E /* VKContactTest.m */,
+				B1E6CBC4151084F000B58618 /* VKContactsCreator.h */,
+				B1E6CBC4151084F000B58616 /* VKContactsCreator.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1185,6 +1231,32 @@
 				B1E6CBC4151084F000B58603 /* VKContactsRetriever.h */,
 			);
 			name = ContactsRetriever;
+			sourceTree = "<group>";
+		};
+		B1E6CBC4151084F000B58621 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B1E6CBC4151084F000B58626 /* NSString+Additions.h */,
+				B1E6CBC4151084F000B58622 /* NSString+Additions.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B1E6CBC4151084F000B58627 /* VKContactsRetriever */ = {
+			isa = PBXGroup;
+			children = (
+				B1E6CBC4151084F000B58631 /* stubs */,
+			);
+			name = VKContactsRetriever;
+			sourceTree = "<group>";
+		};
+		B1E6CBC4151084F000B58631 /* stubs */ = {
+			isa = PBXGroup;
+			children = (
+				B1E6CBC4151084F000B58634 /* VKContactsRetrieverStub.h */,
+				B1E6CBC4151084F000B58632 /* VKContactsRetrieverStub.m */,
+			);
+			name = stubs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1312,6 +1384,8 @@
 				40A9DD661529F4F900597955 /* ChatCell.xib in Resources */,
 				40A9DD691529F99700597955 /* Online.png in Resources */,
 				40A9DD6A1529F99700597955 /* Online@2x.png in Resources */,
+				B16ED90B153EFF0300AB1E23 /* VKContactsListViewController.xib in Resources */,
+				B1D12AE415404F9E00483AD7 /* Contacts.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1408,7 +1482,12 @@
 				B1E6CBC4151084F000B58609 /* VKLoginRequestHandler.m in Sources */,
 				B1E6CBC4151084F000B5860D /* VKContactsRequestHandler.m in Sources */,
 				B1E6CBC4151084F000B58613 /* VKContact.m in Sources */,
-				B1E6CBC4151084F000B58617 /* VKContactCreator.m in Sources */,
+				B1E6CBC4151084F000B58617 /* VKContactsCreator.m in Sources */,
+				B1E6CBC4151084F000B5861F /* VKContactTest.m in Sources */,
+				B1E6CBC4151084F000B58625 /* NSString+Additions.m in Sources */,
+				B1E6CBC4151084F000B5862C /* VKContactsListScreen.m in Sources */,
+				B1E6CBC4151084F000B5862F /* VKContactsListScreenTest.m in Sources */,
+				B1E6CBC4151084F000B58633 /* VKContactsRetrieverStub.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1475,6 +1554,9 @@
 				B1E6CBC4151084F000B585F7 /* VKTokenInjectorRequestSenderDecorator.m in Sources */,
 				B1E6CBC4151084F000B58600 /* VKContactsRetriever.m in Sources */,
 				B1E6CBC4151084F000B58611 /* VKContact.m in Sources */,
+				B16ED90A153EFF0300AB1E23 /* VKContactsListViewController.m in Sources */,
+				B1E6CBC4151084F000B58623 /* NSString+Additions.m in Sources */,
+				B1E6CBC4151084F000B5862A /* VKContactsListScreen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1540,6 +1622,8 @@
 				B1E6CBC4151084F000B58601 /* VKContactsRetriever.m in Sources */,
 				B1E6CBC4151084F000B58612 /* VKContact.m in Sources */,
 				B1E6CBC4151084F000B5861C /* VKContactsRetrieverIntegrationTest.m in Sources */,
+				B1E6CBC4151084F000B58624 /* NSString+Additions.m in Sources */,
+				B1E6CBC4151084F000B5862B /* VKContactsListScreen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

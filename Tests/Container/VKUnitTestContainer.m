@@ -15,6 +15,7 @@
 #import "VKErrorNotifierStub.h"
 #import "VKContactsRetriever.h"
 #import "VKTokenInjectorRequestSenderDecorator.h"
+#import "VKContactsListScreen.h"
 
 
 @implementation VKUnitTestContainer {
@@ -30,6 +31,7 @@
         [self addDefinitionFromClassName:NSStringFromClass([VKErrorNotifierStub class])];
         [self addDefinitionFromClassName:NSStringFromClass([VKContactsRetriever class])];
         [self addDefinitionFromClassName:NSStringFromClass([VKTokenInjectorRequestSenderDecorator class])];
+        [self addDefinitionFromClassName:NSStringFromClass([VKContactsListScreen class])];
     }
 
     return self;

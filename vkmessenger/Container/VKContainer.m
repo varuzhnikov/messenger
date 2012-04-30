@@ -15,6 +15,7 @@
 #import "OxICSimpleWrapperFactory.h"
 #import "VKTokenInjectorRequestSenderDecorator.h"
 #import "VKContactsRetriever.h"
+#import "VKContactsListScreen.h"
 
 
 @implementation VKContainer {
@@ -31,6 +32,7 @@
         [self addDefinitionFromClassName:NSStringFromClass([VKErrorNotifierImpl class])];
         [self addDefinitionFromClassName:NSStringFromClass([VKTokenInjectorRequestSenderDecorator class])];
         [self addDefinitionFromClassName:NSStringFromClass([VKContactsRetriever class])];
+        [self addDefinitionFromClassName:NSStringFromClass([VKContactsListScreen class])];
     }
 
     return self;

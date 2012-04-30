@@ -15,6 +15,7 @@
 #import "VKErrorNotifier.h"
 #import "VKTokenInjectorRequestSenderDecorator.h"
 #import "VKContactsRetriever.h"
+#import "VKContactsListScreen.h"
 
 
 @implementation VKProductionContainerTest {
@@ -78,6 +79,13 @@
     GHAssertNotNil(contactsRetriever, @"contacts retriever should be initialized");
     GHAssertNotNil(contactsRetriever.errorNotifier, @"property error notifier should be initialized");
     GHAssertNotNil(contactsRetriever.requestSender, @"property request sender should be initialized");
+}
+
+- (void)test_Contacts_List_Screen_Model_Should_Be_Initialized {
+    VKContactsListScreen *screenModel = [self.container getObject:@"contactsListScreen"];
+
+    GHAssertNotNil(screenModel, @"contacts list screen model should be initialized");
+    GHAssertNotNil(screenModel.contactsRetriever, @"contacts retriever property should be initialized");
 }
 
 
