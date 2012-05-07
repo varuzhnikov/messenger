@@ -33,8 +33,8 @@
     }
 
     if ([NSString isEmpty:self.firstName]) {
-            return self.lastName;
-        }
+        return self.lastName;
+    }
 
     if ([NSString isEmpty:self.lastName]) {
         return self.firstName;
