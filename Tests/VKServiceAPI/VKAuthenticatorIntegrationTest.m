@@ -34,23 +34,42 @@
 }
 
 - (void)test_Should_Get_Access_Token_From_Server {
+    [self prepare];
+    
     [_authenticator loginWithUsername:@"denis.tarazanov@gmail.com" andPassword:@"_Gu^iL@D"];
-}
-
-- (void)test_Should_Failed_Login_With_Wrong_Requisites {
-
-    [_authenticator loginWithUsername:CORRECT_USERNAME andPassword:WRONG_PASSWORD];
-}
-
-- (void)loginFinished {
+    
+    // Wait for notify
+    [self waitForStatus:kGHUnitWaitStatusSuccess timeout:10.0];
+    
     NSLog(@"Login finished");
     NSLog(@"serviceAPI token %@, ", _requestSender.token);
     GHAssertTrue(_requestSender.token.length > 0, @"should get nonempty token from server");
 }
 
-- (void)loginFailed {
+- (void)test_Should_Failed_Login_With_Wrong_Requisites {
+    [self prepare];
+    
+    [_authenticator loginWithUsername:CORRECT_USERNAME andPassword:WRONG_PASSWORD];
+    
+    // Wait for notify
+    [self waitForStatus:kGHUnitWaitStatusSuccess timeout:10.0];
+    
     NSLog(@"Login failed");
     GHAssertNil(_requestSender.token, @"token should be nil after failed login");
+}
+
+- (void)loginFinished {
+    // Notify the wait. Notice the forSelector points to the test above. 
+    // This is so that stray notifies don't error or falsely succeed other tests.
+    // To ignore the check, forSelector can be NULL.
+    [self notify:kGHUnitWaitStatusSuccess forSelector:@selector(test_Should_Get_Access_Token_From_Server)];
+}
+
+- (void)loginFailed {
+    // Notify the wait. Notice the forSelector points to the test above. 
+    // This is so that stray notifies don't error or falsely succeed other tests.
+    // To ignore the check, forSelector can be NULL.
+    [self notify:kGHUnitWaitStatusSuccess forSelector:@selector(test_Should_Failed_Login_With_Wrong_Requisites )];
 }
 
 

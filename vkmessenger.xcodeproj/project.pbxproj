@@ -1321,7 +1321,7 @@
 		B1CCF6CF150BD81200007A33 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 			};
 			buildConfigurationList = B1CCF6D2150BD81200007A33 /* Build configuration list for PBXProject "vkmessenger" */;
 			compatibilityVersion = "Xcode 3.2";
